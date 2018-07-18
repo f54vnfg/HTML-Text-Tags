@@ -6,14 +6,17 @@
   <title></title>
   <style media="screen">
     body {
+      background-color: #eee;
       font-family: helvetica;
       font-size: 16px;
+      text-align: justify;
       max-width: 960px;
     }
 
     section {
-      border: dotted 1px #ccc;
+      border: dotted 1px #2d2d2d;
       padding: 5px 10px;
+      margin: 5px 0;
     }
   </style>
 </head>
@@ -25,68 +28,96 @@
 
 <body>
   <section>
-    <p><strong>&lt;b&gt;</strong> and <strong>&lt;strong&gt;</strong> &ndash; Both tags would make a text look bold. However, second tag also describes a higher importance of the text. Also, according to the HTML 5 specification, the <strong>&lt;b&gt;</strong>      tag should be used as a LAST resort when no other tag is more appropriate. <br /> Example : <b>bold text</b>.</p>
+    <p><strong>&lt;b&gt;</strong> and <strong>&lt;strong&gt;</strong> Both tags would make a text look bold. However, second tag also describes a higher importance of the text. Also, according to the HTML 5 specification, the <strong>&lt;b&gt;</strong> tag
+      should be used as a LAST resort when no other tag is more appropriate.</p>
+    <p>HTML : &lt;b&gt;bold text&lt;&sol;b&gt;.</p>
+    <hr>
+    <p>Result : <b>bold text</b>.</p>
+
   </section>
 
   <section>
-    <p><strong>&lt;i&gt;</strong> and <strong>&lt;em&gt;</strong> &ndash; Both tags would make a text look italic. However, second tag also describes a higher emphases of the text. Also, according to the HTML 5 specification, the <strong>&lt;i&gt;</strong>      tag should be used as a LAST resort when no other tag is more appropriate.</p>
-    <p>Example: <i>italic text</i>.</p>
+    <p><strong>&lt;i&gt;</strong> and <strong>&lt;em&gt;</strong> Both tags would make a text look italic. However, second tag also describes a higher emphases of the text. Also, according to the HTML 5 specification, the <strong>&lt;i&gt;</strong> tag should
+      be used as a LAST resort when no other tag is more appropriate.</p>
+      <p>HTML: &lt;i&gt;italic text&lt;&sol;i&gt; </p>
+      <hr>
+    <p>Result: <i>italic text</i>.</p>
   </section>
 
   <section>
-    <p><strong>&lt;br&gt;</strong> &ndash; asdasd</p>
+    <p><strong>&lt;br&gt;</strong> This tag inserts a single line break. In simple terms, this line serves as the 'enter' key for the webpage as it does on a word document. Also, this is an empty self closing tag which means that it has no need for a closing
+      tag.</p>
+
+    <p>Example : Text &lt;br &sol;&gt;</p>
+    <hr>
+    <p>Result:<br />Text</p>
   </section>
 
   <section>
-    <p><strong>&lt;hr&gt;</strong> &ndash; asdasd</p>
+    <p><strong>&lt;hr&gt;</strong> This element is used to separate content (or define a change) in an HTML page. In simple terms this tag puts a nice line accross the whole page within the box model of the parent element, and it's manly used as a separator
+      for different sections.</p>
+    <p>Example : Text &lt;hr&gt;
+      <hr /> Text</p>
   </section>
 
   <section>
-    <p><strong>&lt;p&gt;</strong> &ndash; asdasd</p>
+    <p><strong>&lt;p&gt;</strong> This is the paragraph tag, widley used for containing a blocks of text. Also, this paragraph has some left margin by default from the user agent CSS.</p>
+
+    <p>HTML: &lt;p&gt;Text&lt;&sol;p&gt;</p>
+    <hr />
+    <p>Result:
+      <p>Text</p>
+    </p>
   </section>
 
   <section>
-    <p><strong>&lt;q&gt;</strong> &ndash; asdasd</p>
+    <p><strong>&lt;q&gt;</strong> This tag is used for short quatitons and browser usually insert quatation makrs around the quote.</p>
+
+    <p>HTML: &lt;q&gt;Text&lt;&sol;q&gt;</p>
+    <hr />
+    <p>Result: <q>Text</q></p>
   </section>
 
   <section>
-    <p><strong>&lt;ins&gt;</strong> &ndash; asdasd</p>
+    <p><strong>&lt;ins&gt;</strong> asdasd</p>
   </section>
 
   <section>
-    <p><strong>&lt;del&gt;</strong> &ndash; asdasd</p>
+    <p><strong>&lt;del&gt;</strong> asdasd</p>
   </section>
 
   <section>
-    <p><strong>&lt;s&gt;</strong> &ndash; asdasd</p>
+    <p><strong>&lt;s&gt;</strong> asdasd</p>
   </section>
 
   <section>
-    <p><strong>&lt;mark&gt;</strong> &ndash; asdasd</p>
+    <p><strong>&lt;mark&gt;</strong> asdasd</p>
   </section>
 
   <section>
-    <p><strong>&lt;cite&gt;</strong> &ndash; asdasd</p>
+    <p><strong>&lt;cite&gt;</strong> asdasd</p>
   </section>
 
   <section>
-    <p><strong>&lt;backquote&gt;</strong> &ndash; asdasd</p>
+    <p><strong>&lt;backquote&gt;</strong> asdasd</p>
   </section>
 
   <section>
-    <p><strong>&lt;abbr&gt;</strong> &ndash; asdasd</p>
+    <p><strong>&lt;abbr&gt;</strong> asdasd</p>
   </section>
 
   <section>
-    <p><strong>&lt;dfn&gt;</strong> &ndash; asdasd</p>
+    <p><strong>&lt;dfn&gt;</strong> asdasd</p>
   </section>
 
   <section>
-    <p><strong>&lt;sup&gt;</strong> &ndash; This tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. An example: 5<sup>th</sup>.</p>
+    <p><strong>&lt;sup&gt;</strong> This tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font.</p>
+    <p>An example: 5<sup>th</sup>.</p>
   </section>
 
   <section>
-    <p><strong>&lt;sub&gt;</strong> &ndash; This tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. An example: H<sub>2</sub>O.</p>
+    <p><strong>&lt;sub&gt;</strong> This tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.</p>
+    <p>An example: H<sub>2</sub>O.</p>
   </section>
 </body>
 
