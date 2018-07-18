@@ -13,16 +13,23 @@
       max-width: 960px;
       margin: 0 auto;
     }
+
     section {
       border: groove 1px #2d2d2d;
       padding: 5px 10px;
       margin: 50px 0;
     }
+
     header h1 {
       text-align: center;
     }
+
     .indent {
       margin-left: 10px;
+    }
+
+    .indent2 {
+      margin-left: 20px;
     }
   </style>
 </head>
@@ -33,15 +40,13 @@
 
 <body>
   <section>
-    <p><strong>&lt;b&gt;</strong> and <strong>&lt;strong&gt;</strong> Both tags would make a text look bold. However, the second tag also describes a higher importance of the text. Also, according to the HTML 5 specification, the <strong>&lt;b&gt;</strong> tag
-      should be used as a LAST resort when no other tag is more appropriate.</p>
+    <p><strong>&lt;b&gt;</strong> and <strong>&lt;strong&gt;</strong> Both tags would make a text look bold. However, the second tag also describes a higher importance of the text. Also, according to the HTML 5 specification, the <strong>&lt;b&gt;</strong>      tag should be used as a LAST resort when no other tag is more appropriate.</p>
     <p>HTML : &lt;b&gt;bold text&lt;&sol;b&gt;.</p>
     <p>Result : <b>bold text</b>.</p>
   </section>
 
   <section>
-    <p><strong>&lt;i&gt;</strong> and <strong>&lt;em&gt;</strong> Both tags would make a text look italic. However, the second second tag also describes a higher emphasis of the text. Also, according to the HTML 5 specification, the <strong>&lt;i&gt;</strong> tag should
-      be used as a LAST resort when no other tag is more appropriate.</p>
+    <p><strong>&lt;i&gt;</strong> and <strong>&lt;em&gt;</strong> Both tags would make a text look italic. However, the second second tag also describes a higher emphasis of the text. Also, according to the HTML 5 specification, the <strong>&lt;i&gt;</strong>      tag should be used as a LAST resort when no other tag is more appropriate.</p>
     <p>HTML: &lt;i&gt;italic text&lt;&sol;i&gt; </p>
     <p>Result: <i>italic text</i>.</p>
   </section>
@@ -55,7 +60,8 @@
   </section>
 
   <section>
-    <p><strong>&lt;hr&gt;</strong> This element is used to separate content (or define a change) in an HTML page. In simple terms, this tag puts a nice line across the whole page within the box model of the parent element, and it's mainly used as a separator for different sections.</p>
+    <p><strong>&lt;hr&gt;</strong> This element is used to separate content (or define a change) in an HTML page. In simple terms, this tag puts a nice line across the whole page within the box model of the parent element, and it's mainly used as a separator
+      for different sections.</p>
     <p>Example : Text &lt;hr&sol;&gt;</p>
     <p> Results: Text
       <hr />
@@ -73,23 +79,44 @@
   <section>
     <p><strong>&lt;q&gt;</strong> This tag is used for short questions and browser usually insert quotation marks around the quote.</p>
     <p>HTML: &lt;q&gt;Text&lt;&sol;q&gt;</p>
-    <p>Result: <q>Text</q></p>
+    <p>Result: <q>Don't cry because it's over, smile because it happened.</q> &ndash; Dr. Seuss</p>
   </section>
 
   <section>
-    <p><strong>&lt;ins&gt;</strong> This tag is mean to be used on some text that has been inserted into the text. This is usually used in blogs to showcase updated text. However, by having an underline it makes the text stand out, as far as I have seen this reason this the tag is often left out.</p>
+    <p><strong>&lt;backquote&gt;</strong> This tag is used to define and reference a full paragraph quote. This tag is very similar to the &lt;q&gt; tag but where the &lt;q&gt; is for short quotes, this tag is for full paragraph quote. </p>
+
+  <p>HTML:</p>
+      <div>&lt;backquote&gt;</div>
+    <div class="indent">&lt;p&gt;</div>
+    <div class="indent2">You've gotta dance like there's nobody &lt;br&gt;<br> watching, Love like you'll never be hurt, Sing like &lt;br&gt;<br> there's nobody listening, And live like it's heaven &lt;br&gt;<br> on earth. ― William W. Purkey
+    </div>
+    <div class="indent">&lt;&sol;p&gt;</div>
+    <div>&lt;&sol;backquote&gt;</div>
+
+    <backquote>
+      <p>Result:</p>
+      <p class="indent"><br> You've gotta dance like there's nobody <br> watching, Love like you'll never be hurt, Sing like <br> there's nobody listening, And live like it's heaven <br> on earth. ― William W. Purkey
+      </p>
+    </backquote>
+  </section>
+
+  <section>
+    <p><strong>&lt;ins&gt;</strong> This tag is mean to be used on some text that has been inserted into the text. This is usually used in blogs to showcase updated text. However, by having an underline it makes the text stand out, as far as I have seen
+      this reason this the tag is often left out.</p>
     <p>HTML: &lt;ins&gt;Text&lt;ins&gt;</p>
     <p>Result: <ins>Text</ins></p>
   </section>
 
   <section>
-    <p><strong>&lt;s&gt;</strong> This tag is similar to the &lt;del&gt; tag, but here the text is meant to be not relevant anymore, not deleted. Also, this tag can be used in online shops to highlight the price discount by having the normal price with a line through it.</p>
+    <p><strong>&lt;s&gt;</strong> This tag is similar to the &lt;del&gt; tag, but here the text is meant to be not relevant anymore, not deleted. Also, this tag can be used in online shops to highlight the price discount by having the normal price with a
+      line through it.</p>
     <p>HTML: Price: &lt;s&gt;&pound;199&lt;&sol;s&gt;</p>
     <p>Result: Price: <del>&pound;199</del></p>
   </section>
 
   <section>
-    <p><strong>&lt;del&gt;</strong> This tag is meant to use on some text that has been deleted but is kept as a reference. This tag is usually used in blogs where incorrect is marked but not deleted. Usually to show that the text was wrong but was corrected. These tags are  givng meanings to the screen readers, both tags display idetically in the browser.</p>
+    <p><strong>&lt;del&gt;</strong> This tag is meant to use on some text that has been deleted but is kept as a reference. This tag is usually used in blogs where incorrect is marked but not deleted. Usually to show that the text was wrong but was corrected.
+      These tags are givng meanings to the screen readers, both tags display idetically in the browser.</p>
     <p>HTML: It was my &lt;del&gt;worst&lt;&sol;del&gt; idea.</p>
     <p>Result: It was my <del>worst</del> best idea.</p>
   </section>
@@ -113,27 +140,21 @@
   </section>
 
   <section>
-    <p><strong>&lt;cite&gt;</strong> **asdasdasd</p>
+    <p><strong>&lt;cite&gt;</strong>This tag is used to define text that you would like to reference. In HTML5 this should refer to the text it self and not the author. </p>
     <p>HTML: &lt;cite&gt;Text&lt;&sol;cite&gt;</p>
     <p>Result: <cite>Text</cite></p>
   </section>
 
   <section>
-    <p><strong>&lt;backquote&gt;</strong> **asdasdasd</p>
-    <p>HTML: &lt;backquote&gt;Text&lt;&sol;backquote&gt;</p>
-    <p>Result:
-      <backquote>Text</backquote>
-    </p>
-  </section>
-
-  <section>
-    <p><strong>&lt;abbr&gt;</strong> **This is the new acronym tag</p>
+    <p><strong>&lt;abbr&gt;</strong> This is the new acronym tag and it's used for abbreveiation of text. Bascially if you have a shorten term like 'NSA' you can have this text around this tag and when user hovers over it he will get the full term. This
+      is also used by screen readers.</p>
     <p>HTML: &lt;abbr&gt;Text&lt;&sol;abbr&gt;</p>
     <p>Result: <abbr>Text</abbr></p>
   </section>
 
   <section>
-    <p><strong>&lt;dfn&gt;</strong> **asdasdasd</p>
+    <p><strong>&lt;dfn&gt;</strong> This tag is used to explain new terminolgoies. They call it as the defining instance of a new term. So if you have explain something like for example a hedge fund you would use this tag around that word. This will be used
+      by screen readers, most browsers would not do anything to the text it self, some would make the text italic.</p>
     <p>HTML: &lt;dfn&gt;Text&lt;&sol;dfn&gt;</p>
     <p>Result: <dfn title="Text">Text</dfn></p>
   </section>
@@ -151,7 +172,7 @@
       <div>&lt;address&gt;</div>
     </p>
 
-    <p> Result:
+    <p> Result:</p>
       <div class="indent">
         <address>
         Business Name <br>
@@ -161,7 +182,7 @@
         B4 7BD
       </address>
       </div>
-    </p>
+
   </section>
 </body>
 
