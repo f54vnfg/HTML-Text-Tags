@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>HTML5: The Basics Tags</title>
   <style media="screen">
     body {
       background-color: #eee;
@@ -11,19 +11,23 @@
       font-size: 16px;
       text-align: justify;
       max-width: 960px;
+      margin: 0 auto;
     }
 
     section {
-      border: dotted 1px #2d2d2d;
+      border: groove 1px #2d2d2d;
       padding: 5px 10px;
-      margin: 5px 0;
+      margin: 50px 0;
+    }
+
+    header h1 {
+      text-align: center;
     }
   </style>
 </head>
 
 <header>
   <h1>HTML5: The Basics Tags</h1>
-  <hr />
 </header>
 
 <body>
@@ -31,40 +35,36 @@
     <p><strong>&lt;b&gt;</strong> and <strong>&lt;strong&gt;</strong> Both tags would make a text look bold. However, second tag also describes a higher importance of the text. Also, according to the HTML 5 specification, the <strong>&lt;b&gt;</strong> tag
       should be used as a LAST resort when no other tag is more appropriate.</p>
     <p>HTML : &lt;b&gt;bold text&lt;&sol;b&gt;.</p>
-    <hr>
     <p>Result : <b>bold text</b>.</p>
-
   </section>
 
   <section>
     <p><strong>&lt;i&gt;</strong> and <strong>&lt;em&gt;</strong> Both tags would make a text look italic. However, second tag also describes a higher emphases of the text. Also, according to the HTML 5 specification, the <strong>&lt;i&gt;</strong> tag should
       be used as a LAST resort when no other tag is more appropriate.</p>
-      <p>HTML: &lt;i&gt;italic text&lt;&sol;i&gt; </p>
-      <hr>
+    <p>HTML: &lt;i&gt;italic text&lt;&sol;i&gt; </p>
     <p>Result: <i>italic text</i>.</p>
   </section>
 
   <section>
     <p><strong>&lt;br&gt;</strong> This tag inserts a single line break. In simple terms, this line serves as the 'enter' key for the webpage as it does on a word document. Also, this is an empty self closing tag which means that it has no need for a closing
-      tag.</p>
-
+      tag.
+    </p>
     <p>Example : Text &lt;br &sol;&gt;</p>
-    <hr>
     <p>Result:<br />Text</p>
   </section>
 
   <section>
     <p><strong>&lt;hr&gt;</strong> This element is used to separate content (or define a change) in an HTML page. In simple terms this tag puts a nice line accross the whole page within the box model of the parent element, and it's manly used as a separator
       for different sections.</p>
-    <p>Example : Text &lt;hr&gt;
-      <hr /> Text</p>
+    <p>Example : Text &lt;hr&sol;&gt;</p>
+    <p> Results: Text
+      <hr />
+    </p>
   </section>
 
   <section>
     <p><strong>&lt;p&gt;</strong> This is the paragraph tag, widley used for containing a blocks of text. Also, this paragraph has some left margin by default from the user agent CSS.</p>
-
     <p>HTML: &lt;p&gt;Text&lt;&sol;p&gt;</p>
-    <hr />
     <p>Result:
       <p>Text</p>
     </p>
@@ -72,52 +72,87 @@
 
   <section>
     <p><strong>&lt;q&gt;</strong> This tag is used for short quatitons and browser usually insert quatation makrs around the quote.</p>
-
     <p>HTML: &lt;q&gt;Text&lt;&sol;q&gt;</p>
-    <hr />
     <p>Result: <q>Text</q></p>
   </section>
 
   <section>
-    <p><strong>&lt;ins&gt;</strong> asdasd</p>
+    <p><strong>&lt;ins&gt;</strong> This tag is mean to be used on some text that has been inserted into the text. This is usally used in blogs to showcase updated text. However, with having an underline it makes the text stand out, so for this reason this
+      tag is often left out. </p>
+    <p>HTML: &lt;ins&gt;Text&lt;ins&gt;</p>
+    <p>Result: <ins>Text</ins></p>
   </section>
 
   <section>
-    <p><strong>&lt;del&gt;</strong> asdasd</p>
+    <p><strong>&lt;del&gt;</strong> This tag is meant to used on some text that has been deleted, but is kept as a reference.This tag is usally used in blogs where incorrect is marked but not deleted. Ususally to show that the text was wrong but was corrected.
+      Also, this tag can be used in online shops to highlight price discount.</p>
+    <p>HTML: It was my &lt;del&gt;worst&lt;&sol;del&gt; idea.</p>
+    <p>Result: It was my <del>worst</del> best idea.</p>
   </section>
 
   <section>
-    <p><strong>&lt;s&gt;</strong> asdasd</p>
+    <p><strong>&lt;s&gt;</strong> This tag is similar to the &lt;del&gt; tag, but here the text is mean to be irrelevent, not deleted. These are meaning givng to the screen readers, both tags display idetically in the browser.</p>
+    <p>HTML: Price: &lt;s&gt;&pound;199&lt;&sol;s&gt;</p>
+    <p>Result: Price: <del>&pound;199</del></p>
   </section>
 
   <section>
-    <p><strong>&lt;mark&gt;</strong> asdasd</p>
-  </section>
-
-  <section>
-    <p><strong>&lt;cite&gt;</strong> asdasd</p>
-  </section>
-
-  <section>
-    <p><strong>&lt;backquote&gt;</strong> asdasd</p>
-  </section>
-
-  <section>
-    <p><strong>&lt;abbr&gt;</strong> asdasd</p>
-  </section>
-
-  <section>
-    <p><strong>&lt;dfn&gt;</strong> asdasd</p>
+    <p><strong>&lt;mark&gt;</strong> This tag is mean to be used to define and highlight parts of your text.</p>
+    <p>HTML: &lt;mark&gt;Text&lt;&sol;mark&gt;</p>
+    <p>Result: <mark>Text</mark></p>
   </section>
 
   <section>
     <p><strong>&lt;sup&gt;</strong> This tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font.</p>
-    <p>An example: 5<sup>th</sup>.</p>
+    <p>HTML: 5&lt;sup&gt;th&lt;sup&sol;&gt;</p>
+    <p>Result: 5<sup>th</sup></p>
   </section>
 
   <section>
     <p><strong>&lt;sub&gt;</strong> This tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.</p>
-    <p>An example: H<sub>2</sub>O.</p>
+    <p>HTML: H &lt;sub&gt;2&lt;sub&sol;&gt;O</p>
+    <p>Result: H<sub>2</sub>O</p>
+  </section>
+
+  <section>
+    <p><strong>&lt;cite&gt;</strong> asdasdasd</p>
+    <p>HTML: &lt;cite&gt;Text&lt;&sol;cite&gt;</p>
+    <p>Result: <cite>Text</cite></p>
+  </section>
+
+  <section>
+    <p><strong>&lt;backquote&gt;</strong>asdasdasd</p>
+    <p>HTML: &lt;backquote&gt;Text&lt;&sol;backquote&gt;</p>
+    <p>Result:
+      <backquote>Text</backquote>
+    </p>
+  </section>
+
+
+  <section>
+    <p><strong>&lt;abbr&gt;</strong>This is the new acronym tag</p>
+    <p>HTML: &lt;abbr&gt;Text&lt;&sol;abbr&gt;</p>
+    <p>Result: <abbr>Text</abbr></p>
+  </section>
+
+  <section>
+    <p><strong>&lt;dfn&gt;</strong>asdasdasd</p>
+    <p>HTML: &lt;dfn&gt;Text&lt;&sol;dfn&gt;</p>
+    <p>Result: <dfn title="Text">Text</dfn></p>
+  </section>
+
+  <section>
+    <p><strong>&lt;address&gt;</strong> asdasd</p>
+    <p>&lt;address&gt; &lt;&sol;address&gt;</p>
+    <p> Result:
+      <address>
+      Business Name <br>
+      The Parkside Building<br>
+      5 Cardigan St<br>
+      Birmingham<br>
+      B4 7BD
+    </address>
+    </p>
   </section>
 </body>
 
