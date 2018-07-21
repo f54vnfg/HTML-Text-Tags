@@ -1,0 +1,42 @@
+$background: #f1f1f1;
+$border: #2d2d2d;
+$textColor: #3e3e3e;
+$href: rgba(45, 125, 210, 1);
+$href-hover: rgb(56, 178, 255);
+$colorx: #a6a553;
+
+
+$color223: #ddd;
+$color14: #edf1ff;
+$color2: #97cc04;
+$color3: #eeb902;
+$color4: #f45d01;
+$color5: #474647;
+
+html {
+  background: $background;
+  color: $textColor;
+}
+
+section {
+  border: groove 1px $border;
+}
+
+
+nav {
+  li {
+    border-bottom: $colorx solid 1px;
+    &:hover {
+      border-bottom: $href-hover solid 1px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $textColor;
+
+    &:hover {
+      color: $color4;
+    }
+  }
+}

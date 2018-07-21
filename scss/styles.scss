@@ -1,33 +1,46 @@
-@import "base";
+// Main scss file
+@import "../extras/normalize";
+@import "size-settings";
+@import "theme";
 
+* {
+  box-sizing: border-box;
+}
 
-// $font-family: helvetica, sans-serif;
-// $background-color: #eee;
-// $border-color: #2d2d2d;
-//
-// body {
-//   background-color: $background-color;
-//   font-family: $font-family;
-//   font-size: 16px;
-//   text-align: justify;
-//   max-width: 960px;
-//   margin: 0 auto;
-// }
-//
-// section {
-//   border: groove 1px $border-color;
-//   padding: 15px;
-//   margin: 50px 0;
-// }
-//
-// header h1 {
-//   text-align: center;
-// }
-//
-// .indent {
-//   margin-left: 10px;
-// }
-//
-// .indent2 {
-//   margin-left: 20px;
-// }
+body {
+  text-align: justify;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  li {
+    display: block;
+    padding: $spacing-smaller;
+    margin: $spacing-small;
+  }
+  margin-bottom: $spacing-normal;
+}
+
+section {
+  padding: $spacing-smaller;
+  margin: 0 0 $spacing-larger;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.indent {
+  margin-left: $spacing-smaller;
+}
+
+.indent2 {
+  margin-left: $spacing-smaller*2;
+}

@@ -1,7 +1,3 @@
-//
-// Base Settings - High level settings for the entire site.
-//
-
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
 
 body {
@@ -12,6 +8,13 @@ body {
 $base-spacing-units: 24px;
 $base-font-size: 16px;
 $base-line-hight: $base-spacing-units;
+
+// Font weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-bolder: 700;
+$font-weight-heading: $font-weight-bold;
 
 // Spacing sizes;
 $spacing-smaller: $base-spacing-units / 3;
@@ -29,13 +32,6 @@ $font-size-large: $base-font-size * 1.5;
 $font-size-larger: $base-font-size * 2;
 $font-size-largest: $base-font-size * 3;
 
-// Font weights
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-bold: 500;
-$font-weight-bolder: 700;
-$font-weight-heading: $font-weight-bold;
-
 // Header sizes
 $heading-size-1: $base-font-size * 2;
 $heading-size-2: $base-font-size * 1.5;
@@ -43,3 +39,24 @@ $heading-size-3: $base-font-size * 1.35;
 $heading-size-4: $base-font-size * 1.2;
 $heading-size-5: $base-font-size;
 $heading-size-6: $base-font-size * 0.9;
+
+body {
+  //Set line heights
+  line-height: $base-line-hight;
+
+  //Set defult font weight
+  font-weight: $font-weight-normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  // Set heading font weights
+  font-weight: $font-weight-heading;
+}
+
+// Set heading sizes
+h1 { font-size: $heading-size-1; }
+h2 { font-size: $heading-size-2; }
+h3 { font-size: $heading-size-3; }
+h4 { font-size: $heading-size-4; }
+h5 { font-size: $heading-size-5; }
+h6 { font-size: $heading-size-6; }
