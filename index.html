@@ -4,27 +4,27 @@
 <head>
   <meta charset="utf-8">
   <title>HTML5: The Basics Tags</title>
-  <link rel="stylesheet" href="/scss/styles.min.css">
+  <link rel="stylesheet" href="/css/styles.min.css">
   <!-- IE9 HTML5 Fix -->
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
-<header>
-  <h1>HTML5: The Basics</h1>
-  <nav>
-    <ul>
-      <li>Home</li>
-      <li>HTML</li>
-      <li>Images</li>
-      <li>Tables</li>
-      <li>Layout</li>
-    </ul>
-  </nav>
-</header>
-
 <body>
+  <header>
+    <h1>HTML5: The Basics</h1>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>HTML</li>
+        <li>Images</li>
+        <li>Tables</li>
+        <li>Layout</li>
+      </ul>
+    </nav>
+  </header>
+
   <section>
     <p><strong>&lt;b&gt;</strong> and <strong>&lt;strong&gt;</strong> Both tags would make a text look bold. However, the second tag also describes a higher importance of the text. Also, according to the HTML 5 specification, the <strong>&lt;b&gt;</strong>      tag should be used as a LAST resort when no other tag is more appropriate.</p>
     <p>HTML : &lt;b&gt;bold text&lt;&sol;b&gt;.</p>
@@ -58,7 +58,10 @@
     <p><strong>&lt;p&gt;</strong> This is the paragraph tag, widely used for containing a block of text. Also, this paragraph has some left margin by default from the user agent CSS.</p>
     <p>HTML: &lt;p&gt;Text&lt;&sol;p&gt;</p>
     <p>Result:
-      <p>Text</p>
+      <div>
+        <p>Text</p>
+      </div>
+
     </p>
   </section>
 
@@ -170,10 +173,10 @@
     </div>
 
   </section>
-</body>
 
-<footer>
-  <p> Tag definition for each tag was sourced from <a href="https://www.w3schools.com/tags/tag_sub.asp">here</a>.</p>
-</footer>
+  <footer>
+    <p> Tag definition for each tag was sourced from <a href="https://www.w3schools.com/tags/tag_sub.asp">here</a>.</p>
+  </footer>
+</body>
 
 </html>
