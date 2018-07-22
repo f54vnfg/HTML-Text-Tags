@@ -1,11 +1,8 @@
 // Main scss file
 @import "../extras/normalize";
-@import "size-settings";
+@import "sizes";
+@import "fonts";
 @import "theme";
-
-* {
-  box-sizing: border-box;
-}
 
 body {
   text-align: justify;
@@ -29,7 +26,7 @@ nav {
 }
 
 section {
-  padding: $spacing-smaller;
+  padding: $spacing-large;
   margin: 0 0 $spacing-larger;
 }
 
@@ -37,10 +34,20 @@ header h1 {
   text-align: center;
 }
 
+.example-box {
+  margin-top: $spacing-smaller;
+  padding: $spacing-smaller;
+  // padding-bottom: 0;
+}
+
+.bottom-padding {
+  padding-bottom: $spacing-small;
+}
+
 .indent {
   margin-left: $spacing-smaller;
 }
 
 .indent2 {
-  margin-left: $spacing-smaller*2;
+  margin-left: $spacing-normal;
 }

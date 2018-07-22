@@ -1,42 +1,50 @@
-$background: #f1f1f1;
-$border: #2d2d2d;
-$textColor: #3e3e3e;
+$background: rgb(230, 230, 230);
+$box: rgb(235,235,235);
+$border: rgb(45, 45, 45);
+
+$text: rgb(50,50,50);
 $href: rgba(45, 125, 210, 1);
-$href-hover: rgb(56, 178, 255);
-$colorx: #a6a553;
+$hover: rgb(56, 178, 255);
+$list-border: rgb(166, 165, 83);
 
-
-$color223: #ddd;
-$color14: #edf1ff;
-$color2: #97cc04;
-$color3: #eeb902;
-$color4: #f45d01;
-$color5: #474647;
+$color5: rgb(71, 70, 71);
 
 html {
   background: $background;
-  color: $textColor;
+  color: $text;
 }
 
-section {
-  border: groove 1px $border;
+h1 {
+  text-shadow: 0 1px 0px $hover;
 }
-
 
 nav {
   li {
-    border-bottom: $colorx solid 1px;
+    border-bottom: groove 2px $color5;
+
     &:hover {
-      border-bottom: $href-hover solid 1px;
+      border-bottom: groove 2px $hover;
     }
   }
 
   a {
     text-decoration: none;
-    color: $textColor;
-
-    &:hover {
-      color: $color4;
-    }
+    color: $text;
   }
+}
+
+section {
+  border-right: groove 2px $box;
+  border-left: groove 2px $box;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 2px 2px 5px 1px $color5;
+
+  &:hover {
+    border-right: groove 2px $hover;
+    border-left: groove 2px $hover;
+  }
+}
+
+.example-box {
+  background: $box;
 }

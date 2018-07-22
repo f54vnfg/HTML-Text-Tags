@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
-
-body {
-  font-family: 'Quicksand', helvetica, sans-serif;
-}
 
 // High level settings for the entire site.
 $base-spacing-units: 24px;
@@ -42,11 +37,15 @@ $heading-size-6: $base-font-size * 0.9;
 
 body {
   //Set line heights
-  line-height: $base-line-hight;
+  // line-height: $base-line-hight;
 
   //Set defult font weight
   font-weight: $font-weight-normal;
 }
+
+// p {
+//   line-height:
+// }
 
 h1,h2,h3,h4,h5,h6 {
   // Set heading font weights
