@@ -1,13 +1,12 @@
 
 $border: rgb(45, 45, 45);
-$href: #2d7dd2;
 $list-border: rgb(166, 165, 83);
 //
 $background: rgb(230, 230, 230);
-$box: rgb(235,235,235);
+$box: rgb(240,240,240);
 $text: rgb(50,50,50);
 $hover: rgb(56, 178, 255);
-$color5x: rgb(70, 70, 70);
+
 //
 // New colors
 //
@@ -16,6 +15,7 @@ $color2: #453AD8;
 $color3: #20D499;
 $color4: #FFA826;
 $color5: #FFCF88;
+$color6: #464646;
 
 html {
   background: $background;
@@ -41,7 +41,7 @@ nav {
   background-color: $color2;
 
   li {
-    border-bottom: groove 2px $color5x;
+    border-bottom: groove 2px $color6;
 
     a {
       text-decoration: none;
@@ -59,7 +59,7 @@ section {
   border-left: groove 2px $box;
 
   /* offset-x | offset-y | blur-radius | spread-radius | color */
-  box-shadow: 2px 2px 5px 1px $color5x;
+  box-shadow: 1px 1px 3px 1px $color6;
 
   &:hover {
     border-right: groove 2px $hover;
@@ -68,5 +68,7 @@ section {
 
   .example-box {
     background: $box;
+    border: 1px groove $box;
+    // box-shadow: 1px 1px 1px $color6;
   }
 }

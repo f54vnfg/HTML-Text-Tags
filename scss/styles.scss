@@ -19,6 +19,10 @@ body {
     padding: $spacing-larger;
   }
 
+  section > p {
+    padding: $spacing-small 0;
+  }
+
   div > h2 {
     padding-bottom: $spacing-normal;
   }
@@ -39,27 +43,28 @@ nav {
   margin-bottom: $spacing-largest;
 }
 
-//
+.contentWrapper {
+  margin: 0 $spacing-larger;
+}
 
 section {
   padding: $spacing-large;
   margin: 0 0 $spacing-larger;
-}
 
-.example-box {
-  margin-top: $spacing-smaller;
-  padding: $spacing-smaller;
-  // padding-bottom: 0;
-}
+  .example-box {
+    margin-top: $spacing-smaller;
+    padding: $spacing-smaller;
+  }
 
-.bottom-padding {
-  padding-bottom: $spacing-small;
-}
+  .bottom-padding {
+    padding-bottom: $spacing-small;
+  }
 
-.indent {
-  margin-left: $spacing-smaller;
-}
+  .indent {
+    margin-left: $spacing-normal;
+  }
 
-.indent2 {
-  margin-left: $spacing-normal;
+  .indent2 {
+    margin-left: $spacing-normal *2;
+  }
 }
