@@ -1,52 +1,72 @@
+
+$border: rgb(45, 45, 45);
+$href: #2d7dd2;
+$list-border: rgb(166, 165, 83);
+//
 $background: rgb(230, 230, 230);
 $box: rgb(235,235,235);
-$border: rgb(45, 45, 45);
 $text: rgb(50,50,50);
-$href: rgba(45, 125, 210, 1);
 $hover: rgb(56, 178, 255);
-$list-border: rgb(166, 165, 83);
-$color5: rgb(71, 70, 71);
+$color5x: rgb(70, 70, 70);
+//
+// New colors
+//
+$color1: #2D7ED2;
+$color2: #453AD8;
+$color3: #20D499;
+$color4: #FFA826;
+$color5: #FFCF88;
 
 html {
   background: $background;
   color: $text;
+
+  body {
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
 }
 
-body {
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
+header {
+  h1 {
+    background-color: $color1;
+    color: $background;
 
-h1 {
-  text-shadow: 0 1px 0 $hover;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 1px 1px 0 $color2;
+  }
 }
 
 nav {
+  background-color: $color2;
+
   li {
-    border-bottom: groove 2px $color5;
+    border-bottom: groove 2px $color5x;
+
+    a {
+      text-decoration: none;
+      color: $color5;
+    }
 
     &:hover {
       border-bottom: groove 2px $hover;
     }
-  }
-
-  a {
-    text-decoration: none;
-    color: $text;
   }
 }
 
 section {
   border-right: groove 2px $box;
   border-left: groove 2px $box;
+
   /* offset-x | offset-y | blur-radius | spread-radius | color */
-  box-shadow: 2px 2px 5px 1px $color5;
+  box-shadow: 2px 2px 5px 1px $color5x;
 
   &:hover {
     border-right: groove 2px $hover;
     border-left: groove 2px $hover;
   }
-}
 
-.example-box {
-  background: $box;
+  .example-box {
+    background: $box;
+  }
 }

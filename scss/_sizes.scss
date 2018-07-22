@@ -28,7 +28,7 @@ $font-size-larger: $base-font-size * 2;
 $font-size-largest: $base-font-size * 3;
 
 // Header sizes
-$heading-size-1: $base-font-size * 2;
+$heading-size-1: $base-font-size * 3;
 $heading-size-2: $base-font-size * 1.5;
 $heading-size-3: $base-font-size * 1.35;
 $heading-size-4: $base-font-size * 1.2;
@@ -46,6 +46,10 @@ body {
 // p {
 //   line-height:
 // }
+
+nav > a {
+  font-style: $font-weight-bold;
+}
 
 h1,h2,h3,h4,h5,h6 {
   // Set heading font weights

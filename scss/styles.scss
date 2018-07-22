@@ -6,9 +6,22 @@
 
 body {
   max-width: 960px;
-  padding: $spacing-larger;
   margin: 0 auto;
   text-align: justify;
+
+  header > h1 {
+    text-align: center;
+    padding: $spacing-largest 0;
+    margin-bottom: 0;
+  }
+
+  section > div {
+    padding: $spacing-larger;
+  }
+
+  div > h2 {
+    padding-bottom: $spacing-normal;
+  }
 }
 
 nav {
@@ -26,17 +39,11 @@ nav {
   margin-bottom: $spacing-largest;
 }
 
+//
+
 section {
   padding: $spacing-large;
   margin: 0 0 $spacing-larger;
-}
-
-header > h1 {
-  text-align: center;
-}
-
-div > h2 {
-  padding-bottom: $spacing-normal;
 }
 
 .example-box {
