@@ -1,12 +1,10 @@
 $background: rgb(230, 230, 230);
 $box: rgb(235,235,235);
 $border: rgb(45, 45, 45);
-
 $text: rgb(50,50,50);
 $href: rgba(45, 125, 210, 1);
 $hover: rgb(56, 178, 255);
 $list-border: rgb(166, 165, 83);
-
 $color5: rgb(71, 70, 71);
 
 html {
@@ -14,8 +12,12 @@ html {
   color: $text;
 }
 
+body {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
 h1 {
-  text-shadow: 0 1px 0px $hover;
+  text-shadow: 0 1px 0 $hover;
 }
 
 nav {

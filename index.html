@@ -16,209 +16,213 @@
     <h1>HTML5: The Basics</h1>
     <nav>
       <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#html">HTML</a></li>
+        <li><a href="#wrap1html">HTML</a></li>
+        <li><a href="#wrap2layout">Layout</a></li>
         <li><a href="#images">Images</a></li>
         <li><a href="#tables">Tables</a></li>
-        <li><a href="#layout">Layout</a></li>
       </ul>
     </nav>
   </header>
 
-  <section>
-    <h3><strong>&lt;b&gt;</strong> and <strong>&lt;strong&gt;</strong></h3>
-    <p>Both tags would make a text look bold. However, the second tag also describes a higher importance of the text. Also, according to the HTML 5 specification, the <strong>&lt;b&gt;</strong> tag should be used as a LAST resort when no other tag is more
-      appropriate.
-    </p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML : &lt;b&gt;bold text&lt;&sol;b&gt;.</p>
-      <p>Result : <b>bold text</b>.</p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;i&gt;</strong> and <strong>&lt;em&gt;</strong></h3>
-    <p>Both tags would make a text look italic. However, the second second tag also describes a higher emphasis of the text. Also, according to the HTML 5 specification, the <strong>&lt;i&gt;</strong> tag should be used as a LAST resort when no other tag
-      is more appropriate.</p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML: &lt;i&gt;italic text&lt;&sol;i&gt; </p>
-      <p>Result: <i>italic text</i>.</p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;br&gt;</strong></h3>
-    <p>This tag inserts a single line break. In simple terms, this line serves as the 'enter' key for the webpage as it does on a word document. Also, this is an empty self-closing tag which means that it has no need for a closing tag.
-    </p>
-    <div class="example-box">
-      <p class="bottom-padding">Example : &lt;br &sol;&gt; Text</p>
-      <p>Result:<br />Text</p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;hr&gt;</strong></h3>
-    <p> This element is used to separate content (or define a change) in an HTML page. In simple terms, this tag puts a nice line across the whole page within the box model of the parent element, and it's mainly used as a separator for different sections.</p>
-    <div class="example-box">
-      <p class="bottom-padding">Example : &lt;hr &sol;&gt; Text </p>
-      <p> Results:</p>
-      <hr />
-      <p>Text </p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;p&gt;</strong></h3>
-    <p>This is the paragraph tag, widely used for containing a block of text. Also, this paragraph has some left margin by default from the user agent CSS.</p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML: &lt;p&gt;Text&lt;&sol;p&gt;</p>
-      <p>Result:</p>
-      <p>Text</p>
-    </div>
-
-
-  </section>
-
-  <section>
-    <h3><strong>&lt;ins&gt;</strong></h3>
-    <p>This tag is mean to be used on some text that has been inserted into the text. This is usually used in blogs to showcase updated text. However, by having an underline it makes the text stand out, as far as I have seen this reason this the tag is often
-      left out.</p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML: &lt;ins&gt;Text&lt;ins&gt;</p>
-      <p>Result: <ins>Text</ins></p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;s&gt;</strong></h3>
-    <p>This tag is similar to the &lt;del&gt; tag, but here the text is meant to be not relevant anymore, not deleted. Also, this tag can be used in online shops to highlight the price discount by having the normal price with a line through it.</p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML: Price: &lt;s&gt;&pound;199&lt;&sol;s&gt;</p>
-      <p>Result: Price: <del>&pound;199</del></p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;del&gt;</strong></h3>
-    <p>This tag is meant to use on some text that has been deleted but is kept as a reference. This tag is usually used in blogs where incorrect is marked but not deleted. Usually to show that the text was wrong but was corrected. These tags are givng meanings
-      to the screen readers, both tags display idetically in the browser.</p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML: It was my &lt;del&gt;worst&lt;&sol;del&gt; idea.</p>
-      <p>Result: It was my <del>worst</del> best idea.</p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;mark&gt;</strong></h3>
-    <p>This tag is mean to be used to define and highlight parts of your text.</p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML: &lt;mark&gt;Text&lt;&sol;mark&gt;</p>
-      <p>Result: <mark>Text</mark></p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;sup&gt;</strong></h3>
-    <p>This tag defines superscript text. Superscript text appears half a character above the normal line and is sometimes rendered in a smaller font.</p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML: 5&lt;sup&gt;th&lt;sup&sol;&gt;</p>
-      <p>Result: 5<sup>th</sup></p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;sub&gt;</strong></h3>
-    <p>This tag defines subscript text. Subscript text appears half a character below the normal line and is sometimes rendered in a smaller font.</p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML: H &lt;sub&gt;2&lt;sub&sol;&gt;O</p>
-      <p>Result: H<sub>2</sub>O</p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;cite&gt;</strong></h3>
-    <p>This tag is used to define text that you would like to reference. In HTML5 this should refer to the text it self and not the author. </p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML: &lt;cite&gt;Text&lt;&sol;cite&gt;</p>
-      <p>Result: <cite>Text</cite></p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;abbr&gt;</strong></h3>
-    <p>This is the new acronym tag and it's used for abbreveiation of text. Bascially if you have a shorten term like 'NSA' you can have this text around this tag and when user hovers over it he will get the full term. This is also used by screen readers.</p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML: &lt;abbr&gt;Text&lt;&sol;abbr&gt;</p>
-      <p>Result: <abbr>Text</abbr></p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;dfn&gt;</strong></h3>
-    <p> This tag is used to explain new terminolgoies. They call it as the defining instance of a new term. So if you have explain something like for example a hedge fund you would use this tag around that word. This will be used by screen readers, most browsers
-      would not do anything to the text it self, some would make the text italic.</p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML: &lt;dfn&gt;Text&lt;&sol;dfn&gt;</p>
-      <p>Result: <dfn title="Text">Text</dfn></p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;q&gt;</strong></h3>
-    <p>This tag is used for short questions and browser usually insert quotation marks around the quote.</p>
-    <div class="example-box">
-      <p class="bottom-padding">HTML: &lt;q&gt;Text&lt;&sol;q&gt;</p>
-      <p>Result: <q>Don't cry because it's over, smile because it happened.</q> &ndash; Dr. Seuss</p>
-    </div>
-  </section>
-
-  <section>
-    <h3><strong>&lt;backquote&gt;</strong></h3>
-    <p>This tag is used to define and reference a full paragraph quote. This tag is very similar to the &lt;q&gt; tag but where the &lt;q&gt; is for short quotes, this tag is for full paragraph quote. </p>
-    <div class="example-box">
-      <p>HTML:</p>
-      <div>&lt;backquote&gt;</div>
-      <div class="indent">&lt;p&gt;</div>
-      <div class="indent2">You've gotta dance like there's nobody &lt;br&gt;<br> watching, Love like you'll never be hurt, Sing like &lt;br&gt;<br> there's nobody listening, And live like it's heaven &lt;br&gt;<br> on earth. &ndash; William W. Purkey
+  <div id="wrap1html">
+    <h2>HTML BASIC TAGS</h2>
+    <section>
+      <h3><strong>&lt;b&gt;</strong> and <strong>&lt;strong&gt;</strong></h3>
+      <p>Both tags would make a text look bold. However, the second tag also describes a higher importance of the text. Also, according to the HTML 5 specification, the <strong>&lt;b&gt;</strong> tag should be used as a LAST resort when no other tag is more
+        appropriate.
+      </p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML : &lt;b&gt;bold text&lt;&sol;b&gt;.</p>
+        <p>Result : <b>bold text</b>.</p>
       </div>
-      <div class="indent">&lt;&sol;p&gt;</div>
-      <div class="bottom-padding">&lt;&sol;backquote&gt;</div>
-      <p>Result:</p><br>
-      <backquote class="indent" cite="https://www.goodreads.com/quotes/10123-you-ve-gotta-dance-like-there-s-nobody-watching-love-like-you-ll">
-        <p>You've gotta dance like there's nobody <br> watching, Love like you'll never be hurt, Sing like <br> there's nobody listening, And live like it's heaven <br> on earth. &ndash; William W. Purkey</p>
-      </backquote>
-    </div>
-  </section>
-  <section>
-    <h3><strong>&lt;address&gt;</strong></h3>
-    <p>This is the tag used for addresses, it's pretty much self-explanatory. just use other tags like &lt;&sol;br&gt;, &lt;&sol;div&gt; or &lt;&sol;p&gt; with a indent class to properly display your address.</p>
+    </section>
 
-    <div class="example-box">
-      <p class="bottom-padding"> HTML:</p> <br>
-      <div>&lt;address&gt;</div>
-      <div class="indent">Business Name &lt;br&gt;</div>
-      <div class="indent">The Parkside Building &lt;br&gt;</div>
-      <div class="indent">5 Cardigan St &lt;br&gt;</div>
-      <div class="indent">Birmingham &lt;br&gt;</div>
-      <div class="indent">B4 7BD &lt;br&gt;</div>
-      <div>&lt;address&gt;</div>
-      <br>
-      <p> Result:</p> <br>
-      <div class="indent">
-        <address>
+    <section>
+      <h3><strong>&lt;i&gt;</strong> and <strong>&lt;em&gt;</strong></h3>
+      <p>Both tags would make a text look italic. However, the second second tag also describes a higher emphasis of the text. Also, according to the HTML 5 specification, the <strong>&lt;i&gt;</strong> tag should be used as a LAST resort when no other tag
+        is more appropriate.</p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML: &lt;i&gt;italic text&lt;&sol;i&gt; </p>
+        <p>Result: <i>italic text</i>.</p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;br&gt;</strong></h3>
+      <p>This tag inserts a single line break. In simple terms, this line serves as the 'enter' key for the webpage as it does on a word document. Also, this is an empty self-closing tag which means that it has no need for a closing tag.
+      </p>
+      <div class="example-box">
+        <p class="bottom-padding">Example : &lt;br &sol;&gt; Text</p>
+        <p>Result:<br />Text</p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;hr&gt;</strong></h3>
+      <p> This element is used to separate content (or define a change) in an HTML page. In simple terms, this tag puts a nice line across the whole page within the box model of the parent element, and it's mainly used as a separator for different sections.</p>
+      <div class="example-box">
+        <p class="bottom-padding">Example : &lt;hr &sol;&gt; Text </p>
+        <p> Results:</p>
+        <hr />
+        <p>Text </p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;p&gt;</strong></h3>
+      <p>This is the paragraph tag, widely used for containing a block of text. Also, this paragraph has some left margin by default from the user agent CSS.</p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML: &lt;p&gt;Text&lt;&sol;p&gt;</p>
+        <p>Result:</p>
+        <p>Text</p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;ins&gt;</strong></h3>
+      <p>This tag is mean to be used on some text that has been inserted into the text. This is usually used in blogs to showcase updated text. However, by having an underline it makes the text stand out, as far as I have seen this reason this the tag is
+        often left out.</p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML: &lt;ins&gt;Text&lt;ins&gt;</p>
+        <p>Result: <ins>Text</ins></p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;s&gt;</strong></h3>
+      <p>This tag is similar to the &lt;del&gt; tag, but here the text is meant to be not relevant anymore, not deleted. Also, this tag can be used in online shops to highlight the price discount by having the normal price with a line through it.</p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML: Price: &lt;s&gt;&pound;199&lt;&sol;s&gt;</p>
+        <p>Result: Price: <del>&pound;199</del></p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;del&gt;</strong></h3>
+      <p>This tag is meant to use on some text that has been deleted but is kept as a reference. This tag is usually used in blogs where incorrect is marked but not deleted. Usually to show that the text was wrong but was corrected. These tags are givng
+        meanings to the screen readers, both tags display idetically in the browser.</p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML: It was my &lt;del&gt;worst&lt;&sol;del&gt; idea.</p>
+        <p>Result: It was my <del>worst</del> best idea.</p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;mark&gt;</strong></h3>
+      <p>This tag is mean to be used to define and highlight parts of your text.</p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML: &lt;mark&gt;Text&lt;&sol;mark&gt;</p>
+        <p>Result: <mark>Text</mark></p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;sup&gt;</strong></h3>
+      <p>This tag defines superscript text. Superscript text appears half a character above the normal line and is sometimes rendered in a smaller font.</p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML: 5&lt;sup&gt;th&lt;sup&sol;&gt;</p>
+        <p>Result: 5<sup>th</sup></p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;sub&gt;</strong></h3>
+      <p>This tag defines subscript text. Subscript text appears half a character below the normal line and is sometimes rendered in a smaller font.</p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML: H &lt;sub&gt;2&lt;sub&sol;&gt;O</p>
+        <p>Result: H<sub>2</sub>O</p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;cite&gt;</strong></h3>
+      <p>This tag is used to define text that you would like to reference. In HTML5 this should refer to the text it self and not the author. </p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML: &lt;cite&gt;Text&lt;&sol;cite&gt;</p>
+        <p>Result: <cite>Text</cite></p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;abbr&gt;</strong></h3>
+      <p>This is the new acronym tag and it's used for abbreveiation of text. Bascially if you have a shorten term like 'NSA' you can have this text around this tag and when user hovers over it he will get the full term. This is also used by screen readers.</p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML: &lt;abbr&gt;Text&lt;&sol;abbr&gt;</p>
+        <p>Result: <abbr>Text</abbr></p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;dfn&gt;</strong></h3>
+      <p> This tag is used to explain new terminolgoies. They call it as the defining instance of a new term. So if you have explain something like for example a hedge fund you would use this tag around that word. This will be used by screen readers, most
+        browsers would not do anything to the text it self, some would make the text italic.</p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML: &lt;dfn&gt;Text&lt;&sol;dfn&gt;</p>
+        <p>Result: <dfn title="Text">Text</dfn></p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;q&gt;</strong></h3>
+      <p>This tag is used for short questions and browser usually insert quotation marks around the quote.</p>
+      <div class="example-box">
+        <p class="bottom-padding">HTML: &lt;q&gt;Text&lt;&sol;q&gt;</p>
+        <p>Result: <q>Don't cry because it's over, smile because it happened.</q> &ndash; Dr. Seuss</p>
+      </div>
+    </section>
+
+    <section>
+      <h3><strong>&lt;backquote&gt;</strong></h3>
+      <p>This tag is used to define and reference a full paragraph quote. This tag is very similar to the &lt;q&gt; tag but where the &lt;q&gt; is for short quotes, this tag is for full paragraph quote. </p>
+      <div class="example-box">
+        <p>HTML:</p>
+        <div>&lt;backquote&gt;</div>
+        <div class="indent">&lt;p&gt;</div>
+        <div class="indent2">You've gotta dance like there's nobody &lt;br&gt;<br> watching, Love like you'll never be hurt, Sing like &lt;br&gt;<br> there's nobody listening, And live like it's heaven &lt;br&gt;<br> on earth. &ndash; William W. Purkey
+        </div>
+        <div class="indent">&lt;&sol;p&gt;</div>
+        <div class="bottom-padding">&lt;&sol;backquote&gt;</div>
+        <p>Result:</p><br>
+        <backquote class="indent" cite="https://www.goodreads.com/quotes/10123-you-ve-gotta-dance-like-there-s-nobody-watching-love-like-you-ll">
+          <p>You've gotta dance like there's nobody <br> watching, Love like you'll never be hurt, Sing like <br> there's nobody listening, And live like it's heaven <br> on earth. &ndash; William W. Purkey</p>
+        </backquote>
+      </div>
+    </section>
+    <section>
+      <h3><strong>&lt;address&gt;</strong></h3>
+      <p>This is the tag used for addresses, it's pretty much self-explanatory. just use other tags like &lt;&sol;br&gt;, &lt;&sol;div&gt; or &lt;&sol;p&gt; with a indent class to properly display your address.</p>
+
+      <div class="example-box">
+        <p class="bottom-padding"> HTML:</p> <br>
+        <div>&lt;address&gt;</div>
+        <div class="indent">Business Name &lt;br&gt;</div>
+        <div class="indent">The Parkside Building &lt;br&gt;</div>
+        <div class="indent">5 Cardigan St &lt;br&gt;</div>
+        <div class="indent">Birmingham &lt;br&gt;</div>
+        <div class="indent">B4 7BD &lt;br&gt;</div>
+        <div>&lt;address&gt;</div>
+        <br>
+        <p> Result:</p> <br>
+        <div class="indent">
+          <address>
         Business Name <br>
         The Parkside Building<br>
         5 Cardigan St<br>
         Birmingham<br>
         B4 7BD
       </address>
+        </div>
       </div>
+    </section>
     </div>
-  </section>
 
-  <footer>
-    <p> Tag definition for each tag was sourced from <a href="https://www.w3schools.com/tags/tag_sub.asp">here</a>.</p>
-  </footer>
+    <div id="wrap2layout">
+      <h2>CSS: Layouts: Floats, Flexbox, CSS Grid</h2>
+    </div>
+
+    <footer>
+      <p> Tag definition for each tag was sourced from <a href="https://www.w3schools.com/tags/tag_sub.asp">here</a>.</p>
+    </footer>
 </body>
 
 </html>

@@ -5,9 +5,10 @@
 @import "theme";
 
 body {
-  text-align: justify;
   max-width: 960px;
+  padding: $spacing-larger;
   margin: 0 auto;
+  text-align: justify;
 }
 
 nav {
@@ -22,7 +23,7 @@ nav {
     padding: $spacing-smaller;
     margin: $spacing-small;
   }
-  margin-bottom: $spacing-normal;
+  margin-bottom: $spacing-largest;
 }
 
 section {
@@ -30,8 +31,12 @@ section {
   margin: 0 0 $spacing-larger;
 }
 
-header h1 {
+header > h1 {
   text-align: center;
+}
+
+div > h2 {
+  padding-bottom: $spacing-normal;
 }
 
 .example-box {
