@@ -1,25 +1,21 @@
 
-$border: rgb(45, 45, 45);
-$list-border: rgb(166, 165, 83);
-//
-$background: rgb(230, 230, 230);
-$box: rgb(240,240,240);
-$text: rgb(50,50,50);
-$hover: rgb(56, 178, 255);
+// $color1: #a6a553;
+// $color3: #20D499;
+// $color2: #FFA826;
+// $color4: #FFCF88;
+// $color6: #2d2d2d;
 
-//
-// New colors
-//
 $color1: #2D7ED2;
-$color2: #453AD8;
-$color3: #20D499;
-$color4: #FFA826;
-$color5: #FFCF88;
-$color6: #464646;
+$color2: #38b2ff;
+$color3: #453AD8;
+$color5: #464646;
+$color6: #323232;
+$color7: #e6e6e6;
+$color8: #f0f0f0;
 
 html {
-  background: $background;
-  color: $text;
+  background: $color7;
+  color: $color6;
 
   body {
     /* offset-x | offset-y | blur-radius | color */
@@ -29,46 +25,47 @@ html {
 
 header {
   h1 {
-    background-color: $color1;
-    color: $background;
+    background-color: $color2;
+    color: $color7;
 
     /* offset-x | offset-y | blur-radius | color */
-    text-shadow: 1px 1px 0 $color2;
+    text-shadow: 1px 1px 0 $color5;
   }
 }
 
 nav {
-  background-color: $color2;
+  background-color: $color1;
 
   li {
-    border-bottom: groove 2px $color6;
+    border-bottom: groove 2px $color5;
 
     a {
       text-decoration: none;
-      color: $color5;
+      color: $color7;
+      text-shadow: 1px 1px 0 $color5;
     }
 
     &:hover {
-      border-bottom: groove 2px $hover;
+      border-bottom: groove 2px $color2;
     }
   }
 }
 
 section {
-  border-right: groove 2px $box;
-  border-left: groove 2px $box;
+  border-right: groove 2px $color8;
+  border-left: groove 2px $color8;
 
   /* offset-x | offset-y | blur-radius | spread-radius | color */
-  box-shadow: 1px 1px 3px 1px $color6;
+  box-shadow: 1px 1px 3px 1px $color5;
 
   &:hover {
-    border-right: groove 2px $hover;
-    border-left: groove 2px $hover;
+    border-right: groove 2px $color2;
+    border-left: groove 2px $color2;
   }
 
   .example-box {
-    background: $box;
-    border: 1px groove $box;
-    // box-shadow: 1px 1px 1px $color6;
+    background: $color8;
+    border: 1px groove $color8;
+    // box-shadow: 1px 1px 1px $color5;
   }
 }

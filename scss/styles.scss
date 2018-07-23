@@ -5,9 +5,24 @@
 @import "theme";
 
 body {
-  max-width: 960px;
+  max-width: 1260px;
   margin: 0 auto;
   text-align: justify;
+
+  .contentWrapper {
+    margin: 0 $spacing-larger;
+  }
+
+  #wrap2layout {
+    margin-top: $spacing-largest;
+  }
+
+  .subWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $spacing-larger;
+    grid-row-gap: $spacing-larger;
+  }
 
   header > h1 {
     text-align: center;
@@ -15,18 +30,21 @@ body {
     margin-bottom: 0;
   }
 
+  div > h2 {
+    padding-bottom: $spacing-normal;
+  }
+
   section > div {
     padding: $spacing-larger;
   }
 
   section > p {
-    padding: $spacing-small 0;
-  }
-
-  div > h2 {
-    padding-bottom: $spacing-normal;
+    padding: $spacing-normal 0 0;
+    height: 150px;
   }
 }
+
+
 
 nav {
   ul {
@@ -37,23 +55,23 @@ nav {
 
   li {
     display: block;
+    margin: $spacing-smaller;
+  }
+
+  a {
     padding: $spacing-smaller;
-    margin: $spacing-small;
+    display: inline-block;
   }
   margin-bottom: $spacing-largest;
 }
 
-.contentWrapper {
-  margin: 0 $spacing-larger;
-}
-
 section {
   padding: $spacing-large;
-  margin: 0 0 $spacing-larger;
-
+  // margin: 0 0 $spacing-larger;
   .example-box {
     margin-top: $spacing-smaller;
     padding: $spacing-smaller;
+    border-radius: $spacing-smaller;
   }
 
   .bottom-padding {
