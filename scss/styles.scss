@@ -136,20 +136,24 @@ nav ul {
 }
 //
 @media only screen and (min-width: 1023px) {
+  // This wraps all global sections.
+  .contentWrapper {
+    margin: 0 $spacing-large;
+  }
   section {
     padding: $spacing-large;
   }
-
   .subWrap {
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: $spacing-larger;
-    grid-row-gap: $spacing-larger;
+    grid-column-gap: $spacing-normal;
+    grid-row-gap: $spacing-normal;
   }
 
   section > p {
     padding: $spacing-normal 0 0;
     height: 150px;
   }
+
   // Space below nav menu.
   nav {
     margin-bottom: $spacing-larger;
