@@ -9,19 +9,8 @@ body {
   margin: 0 auto;
   text-align: justify;
 
-  .contentWrapper {
-    margin: 0 $spacing-larger;
-  }
-
   #wrap2layout {
     margin-top: $spacing-largest;
-  }
-
-  .subWrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: $spacing-larger;
-    grid-row-gap: $spacing-larger;
   }
 
   header > h1 {
@@ -37,22 +26,9 @@ body {
   section > div {
     padding: $spacing-larger;
   }
-
-  section > p {
-    padding: $spacing-normal 0 0;
-    height: 150px;
-  }
 }
 
-
-
 nav {
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
   li {
     display: block;
     margin: $spacing-smaller;
@@ -62,15 +38,15 @@ nav {
     padding: $spacing-smaller;
     display: inline-block;
   }
-  margin-bottom: $spacing-largest;
 }
+//
+//
 
 section {
-  padding: $spacing-large;
-  // margin: 0 0 $spacing-larger;
+  // padding: $spacing-large;
   .example-box {
     margin-top: $spacing-smaller;
-    padding: $spacing-smaller;
+    padding: $spacing-normal;
     border-radius: $spacing-smaller;
   }
 
@@ -84,5 +60,98 @@ section {
 
   .indent2 {
     margin-left: $spacing-normal *2;
+  }
+}
+//
+// Grid global variables.
+
+nav ul {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+
+.subWrap {
+  display: grid;
+}
+//
+@media only screen and (max-width: 480px) {
+  //
+
+  //
+  // This controls Nav Menu layout and spacing.
+  nav ul {
+    grid-template-columns: repeat(3, 80px);
+    grid-column-gap: 10px;
+  }
+  // This wraps all global sections.
+  .contentWrapper {
+    margin: 0 $spacing-small;
+  }
+  // This wraps all content sections
+  .subWrap {
+    grid-row-gap: $spacing-normal;
+  }
+  // This wraps all articles.
+  section {
+    padding: $spacing-small;
+  }
+  // This sets space for innder code example box.
+  section > p {
+    padding: $spacing-normal 0 $spacing-small;
+  }
+  // Space below nav menu.
+  nav {
+    margin-bottom: $spacing-normal;
+  }
+}
+//
+@media only screen and (min-width: 768px), only screen and (min-width: 700px) and (orientation: landscape) {
+  //
+  // This controls Nav Menu layout and spacing.
+  nav ul {
+    grid-template-columns: repeat(5, 80px);
+    grid-column-gap: 10px;
+  }
+  // This wraps all global sections.
+  .contentWrapper {
+    margin: 0 $spacing-normal;
+  }
+  // This wraps all content sections.
+  .subWrap {
+    grid-row-gap: $spacing-normal;
+  }
+  // This wraps all articles.
+  section {
+    padding: $spacing-normal;
+  }
+  // This sets space for innder code example box.
+  section > p {
+    padding: $spacing-normal 0 $spacing-small;
+  }
+  // Space below nav menu.
+  nav {
+    margin-bottom: $spacing-normal;
+  }
+}
+//
+@media only screen and (min-width: 1023px) {
+  section {
+    padding: $spacing-large;
+  }
+
+  .subWrap {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $spacing-larger;
+    grid-row-gap: $spacing-larger;
+  }
+
+  section > p {
+    padding: $spacing-normal 0 0;
+    height: 150px;
+  }
+  // Space below nav menu.
+  nav {
+    margin-bottom: $spacing-larger;
   }
 }
