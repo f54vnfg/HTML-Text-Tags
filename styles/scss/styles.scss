@@ -17,14 +17,12 @@ body {
     // 2nd section from the frust (temp)
     margin-top: $spacing-largest;
   }
-
   header > h1 {
     // Remove main website margins
     margin-bottom: 0;
     // Align main website heading
     text-align: center;
   }
-
   div > h2 {
     // Padding of the main section heading
     padding-bottom: $spacing-normal;
@@ -36,7 +34,6 @@ nav {
     // Separate menu items from background
     margin: $spacing-smaller;
   }
-
   a {
     // Allow menu item to be epandable
     display: block;
@@ -105,77 +102,79 @@ nav ul {
   border-radius: 10px;
   // Increase font size
   font-size: 48px;
-  // Set fixed width and height
+  // Set button fixed width
   width: 50px;
+  // Set button fixed height
   height: 50px;
-  // Adjust string symbol position
+  // Set string symbol position, sort of
   line-height: 0.1;
 }
 
 @media only screen and (max-width: 480px) {
-  //
-  // fix all coments below!
-  //
   header > h1 {
+    // Set height of main website heading/image
     padding: $spacing-largest 0;
   }
-  // This controls Nav Menu layout and spacing.
+  div > h2 {
+    // Set margin of all global sections
+    margin-top: $spacing-normal;
+  }
   nav ul {
+    // Set nav menu to 3 columns, each 80px wide
     grid-template-columns: repeat(3, 80px);
+    // Set nav menu items column gap to 10px
     grid-column-gap: 10px;
   }
-  // This wraps all global sections.
   .contentWrapper {
+    // Set margin of the global content wrapper
     margin: 0 $spacing-small;
   }
-  // This wraps all content sections
   .subWrap {
+    // Set row gap of the article sections
     grid-row-gap: $spacing-normal;
   }
-  // This wraps all articles.
   section {
+    // Set individual code article padding
     padding: $spacing-small;
   }
-  // This sets space for innder code example box.
   section > p {
+    // Set code article description padding
     padding: $spacing-normal 0 $spacing-small;
-  }
-  // Space below nav menu.
-  nav {
-    margin-bottom: $spacing-normal;
   }
 }
 
 @media only screen and (min-width: 481px),
   only screen and (min-width: 700px) and (orientation: landscape) {
   header > h1 {
-    //
+    // Set height of main website heading/image
     padding: $spacing-largest 0;
   }
-  // This controls Nav Menu layout and spacing.
+  div > h2 {
+    // Set margin of all global sections
+    margin-top: $spacing-normal;
+  }
   nav ul {
+    // Set nav menu to 3 columns, each 80px wide
     grid-template-columns: repeat(5, 80px);
+    // Set nav menu items column gap to 10px
     grid-column-gap: 10px;
   }
-  // This wraps all global sections.
   .contentWrapper {
+  // Set margin of the global content wrapper
     margin: 0 $spacing-normal;
   }
-  // This wraps all content sections.
+
   .subWrap {
+    // Set row gap of the article sections
     grid-row-gap: $spacing-normal;
   }
-  // This wraps all articles.
   section {
+    // Set individual code article padding
     padding: $spacing-normal;
   }
-  // This sets space for innder code example box.
   section > p {
+    // Set code article description padding
     padding: $spacing-normal 0 $spacing-small;
-  }
-  // Space below nav menu.
-  nav {
-    margin-bottom: $spacing-normal;
   }
 }
 
@@ -183,31 +182,36 @@ nav ul {
   header > h1 {
     padding: $spacing-largest * 2 0;
   }
-  // This wraps all global sections.
+  div > h2 {
+    // Set margin of all global sections
+    margin-top: $spacing-normal;
+  }
+  nav ul {
+    // Set nav menu to 3 columns, each 80px wide
+    grid-template-columns: repeat(6, 80px);
+    // Set nav menu items column gap to 10px
+    grid-column-gap: 20px;
+  }
   .contentWrapper {
+    // Set margin of the global content wrapper
     margin: 0 $spacing-large;
   }
-
-  section {
-    padding: $spacing-large;
-  }
-
   .subWrap {
+    // Set two row grid
     grid-template-columns: 1fr 1fr;
+    // Set column gap of the articles grid
     grid-column-gap: $spacing-normal;
+    // Set row gap of the articles grid
     grid-row-gap: $spacing-normal;
   }
-
+  section {
+    // Set individual code article padding
+    padding: $spacing-large;
+  }
   section > p {
+    // Set code article description padding
     padding: $spacing-normal 0 0;
     height: 150px;
   }
-  // Space below nav menu.
-  nav {
-    margin-bottom: $spacing-larger;
-  }
-  nav ul {
-    grid-template-columns: repeat(6, 80px);
-    grid-column-gap: 20px;
-  }
+
 }
