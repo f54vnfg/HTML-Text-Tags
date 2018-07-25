@@ -54,12 +54,12 @@ h2,h3,h4,h5,h6 {
 
 @media only screen and (max-width: 480px) {
   // Set heading sizes
-  h1 { font-size: $heading-size-2; }
-  h2 { font-size: $heading-size-3; }
-  h3 { font-size: $heading-size-4; }
-  h4 { font-size: $heading-size-5; }
-  h5 { font-size: $heading-size-6; }
-  h6 { font-size: $heading-size-6; }
+  h1 { font-size: $heading-size-3; }
+  h2 { font-size: $heading-size-4; }
+  h3 { font-size: $heading-size-5; }
+  // h4 { font-size: $heading-size-6; }
+  // h5 { font-size: $heading-size-6; }
+  // h6 { font-size: $heading-size-6; }
 }
 
 @media only screen and (min-width: 768px), only screen and (min-width: 700px) and (orientation: landscape) {
@@ -67,7 +67,7 @@ h2,h3,h4,h5,h6 {
   h1 { font-size: $heading-size-1; }
   h2 { font-size: $heading-size-2; }
   h3 { font-size: $heading-size-3; }
-  h4 { font-size: $heading-size-4; }
-  h5 { font-size: $heading-size-5; }
-  h6 { font-size: $heading-size-6; }
+  // h4 { font-size: $heading-size-4; }
+  // h5 { font-size: $heading-size-5; }
+  // h6 { font-size: $heading-size-6; }
 }

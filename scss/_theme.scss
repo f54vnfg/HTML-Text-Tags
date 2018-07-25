@@ -1,41 +1,39 @@
 
+$color1: #2d7ed2;
+$color2: #38b2ff;
+$color3: #453ad8;
+$color5: #464646;
+$color6: #323232;
+$color7: #e6e6e6;
+$color8: #f0f0f0;
 // $color1: #a6a553;
 // $color3: #20D499;
 // $color2: #FFA826;
 // $color4: #FFCF88;
 // $color6: #2d2d2d;
 
-$color1: #2D7ED2;
-$color2: #38b2ff;
-$color3: #453AD8;
-$color5: #464646;
-$color6: #323232;
-$color7: #e6e6e6;
-$color8: #f0f0f0;
-
 html {
-  background: $color7;
   color: $color6;
+  background: $color7;
 
   body {
     /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
   }
 }
 
 header {
   h1 {
-    background-color: $color2;
     color: $color7;
-
+    background-color: $color2;
     /* offset-x | offset-y | blur-radius | color */
     text-shadow: 3px 3px 0 $color6;
   }
 }
 
 #myBtn {
-  background-color: $color2;
   color: $color7;
+  background-color: $color2;
   /* offset-x | offset-y | blur-radius | color */
   // text-shadow: 1px 1px 0 $color5;
 }
@@ -61,7 +59,6 @@ nav {
 section {
   border-right: groove 2px $color8;
   border-left: groove 2px $color8;
-
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 1px 1px 3px 1px $color5;
 
@@ -71,8 +68,8 @@ section {
   }
 
   .example-box {
-    background: $color8;
     border: 1px groove $color8;
+    background: $color8;
     // box-shadow: 1px 1px 1px $color5;
   }
 }

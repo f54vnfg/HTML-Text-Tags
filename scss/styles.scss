@@ -8,23 +8,18 @@ body {
   max-width: 1260px;
   margin: 0 auto;
   text-align: justify;
-
   #wrap2layout {
     margin-top: $spacing-largest;
   }
-
   header > h1 {
     text-align: center;
-//  padding: $spacing-largest*3 0;
     margin-bottom: 0;
     background-image: url("img/backimage.jpg");
     background-size: cover;
   }
-
   div > h2 {
     padding-bottom: $spacing-normal;
   }
-
   section > div {
     padding: $spacing-larger;
   }
@@ -41,8 +36,6 @@ nav {
     display: inline-block;
   }
 }
-//
-//
 
 section {
   // padding: $spacing-large;
@@ -51,17 +44,14 @@ section {
     padding: $spacing-normal;
     border-radius: $spacing-smaller;
   }
-
   .bottom-padding {
     padding-bottom: $spacing-small;
   }
-
   .indent {
     margin-left: $spacing-normal;
   }
-
   .indent2 {
-    margin-left: $spacing-normal *2;
+    margin-left: $spacing-normal * 2;
   }
 }
 //
@@ -77,31 +67,43 @@ nav ul {
   display: grid;
 }
 //
+
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 30px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    // background-color: red; /* Set a background color */
-    // color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    // padding: 5px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 48px; /* Increase font size */
-    height: 50px;
-    width: 50px;
-    line-height: 0.7;
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 30px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  // background-color: red; /* Set a background color */
+  // color: white; /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  // padding: 5px; /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 48px;
+  /* Increase font size */
+  height: 50px;
+  width: 50px;
+  line-height: 0.7;
 }
 //
+
 #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555;
+  /* Add a dark-grey background on hover */
 }
 //
 @media only screen and (max-width: 480px) {
-
   //
   header > h1 {
     padding: $spacing-largest 0;
@@ -133,8 +135,8 @@ nav ul {
     margin-bottom: $spacing-normal;
   }
 }
-//
-@media only screen and (min-width: 768px), only screen and (min-width: 700px) and (orientation: landscape) {
+@media only screen and (min-width: 481px),
+  only screen and (min-width: 700px) and (orientation: landscape) {
   //
   header > h1 {
     padding: $spacing-largest 0;
@@ -168,15 +170,17 @@ nav ul {
 //
 @media only screen and (min-width: 1023px) {
   header > h1 {
-    padding: $spacing-largest*2 0;
+    padding: $spacing-largest * 2 0;
   }
   // This wraps all global sections.
   .contentWrapper {
     margin: 0 $spacing-large;
   }
+
   section {
     padding: $spacing-large;
   }
+
   .subWrap {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: $spacing-normal;
@@ -187,7 +191,6 @@ nav ul {
     padding: $spacing-normal 0 0;
     height: 150px;
   }
-
   // Space below nav menu.
   nav {
     margin-bottom: $spacing-larger;
