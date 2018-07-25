@@ -1,114 +1,124 @@
 // Main scss file
-@import "../extras/normalize";
+@import "../normalize";
 @import "sizes";
 @import "fonts";
 @import "theme";
 
 body {
+  // Max width for the whole website
   max-width: 1260px;
+  // Center the whole website
   margin: 0 auto;
+  // Justify all text
   text-align: justify;
+
   #wrap2layout {
+    // DEBUG: add some margin to separate
+    // 2nd section from the frust (temp)
     margin-top: $spacing-largest;
   }
+
   header > h1 {
-    text-align: center;
+    // Remove main website margins
     margin-bottom: 0;
-    background-image: url("img/backimage.jpg");
-    background-size: cover;
+    // Align main website heading
+    text-align: center;
   }
+
   div > h2 {
+    // Padding of the main section heading
     padding-bottom: $spacing-normal;
-  }
-  section > div {
-    padding: $spacing-larger;
   }
 }
 
 nav {
   li {
-    display: block;
+    // Separate menu items from background
     margin: $spacing-smaller;
   }
 
   a {
+    // Allow menu item to be epandable
+    display: block;
+    // Expand each menu item a little bit
     padding: $spacing-smaller;
-    display: inline-block;
   }
 }
 
 section {
-  // padding: $spacing-large;
   .example-box {
+    // Slight top margin for the example box
     margin-top: $spacing-smaller;
+    // Add padding to the example box
     padding: $spacing-normal;
+    // Add rounded border to the example box
     border-radius: $spacing-smaller;
   }
   .bottom-padding {
+    // Separate the "example" box from the "result"
     padding-bottom: $spacing-small;
   }
   .indent {
+    // 1nd level of indentetion for code examples
     margin-left: $spacing-normal;
   }
   .indent2 {
+    // 2nd level of indentetion for code examples
     margin-left: $spacing-normal * 2;
   }
 }
-//
-// Grid global variables.
 
 nav ul {
+  // Set nav menu layout as a grid
   display: grid;
+  // Center all menu items
   justify-items: center;
+  //Center the grid itself
   justify-content: center;
 }
 
 .subWrap {
+  // Set all code articles layouts as a CSS grid
   display: grid;
 }
-//
 
 #myBtn {
+  // Hidden by default
   display: none;
-  /* Hidden by default */
+  // Fixed/sticky position
   position: fixed;
-  /* Fixed/sticky position */
+  // Place the button at the bottom of the page
   bottom: 30px;
-  /* Place the button at the bottom of the page */
+  // Place the button 30px from the right
   right: 30px;
-  /* Place the button 30px from the right */
+  // Make sure it does not overlap
   z-index: 99;
-  /* Make sure it does not overlap */
+  // Remove borders
   border: none;
-  /* Remove borders */
+  // Remove outline
   outline: none;
-  /* Remove outline */
-  // background-color: red; /* Set a background color */
-  // color: white; /* Text color */
+  // Add a mouse pointer on hover
   cursor: pointer;
-  /* Add a mouse pointer on hover */
-  // padding: 5px; /* Some padding */
+  // Some padding
+  padding: 5px;
+  // Rounded corners
   border-radius: 10px;
-  /* Rounded corners */
+  // Increase font size
   font-size: 48px;
-  /* Increase font size */
-  height: 50px;
+  // Set fixed width and height
   width: 50px;
-  line-height: 0.7;
+  height: 50px;
+  // Adjust string symbol position
+  line-height: 0.1;
 }
-//
 
-#myBtn:hover {
-  background-color: #555;
-  /* Add a dark-grey background on hover */
-}
-//
 @media only screen and (max-width: 480px) {
+  //
+  // fix all coments below!
   //
   header > h1 {
     padding: $spacing-largest 0;
   }
-  //
   // This controls Nav Menu layout and spacing.
   nav ul {
     grid-template-columns: repeat(3, 80px);
@@ -135,10 +145,11 @@ nav ul {
     margin-bottom: $spacing-normal;
   }
 }
+
 @media only screen and (min-width: 481px),
   only screen and (min-width: 700px) and (orientation: landscape) {
-  //
   header > h1 {
+    //
     padding: $spacing-largest 0;
   }
   // This controls Nav Menu layout and spacing.
@@ -167,7 +178,7 @@ nav ul {
     margin-bottom: $spacing-normal;
   }
 }
-//
+
 @media only screen and (min-width: 1023px) {
   header > h1 {
     padding: $spacing-largest * 2 0;
@@ -194,5 +205,9 @@ nav ul {
   // Space below nav menu.
   nav {
     margin-bottom: $spacing-larger;
+  }
+  nav ul {
+    grid-template-columns: repeat(6, 80px);
+    grid-column-gap: 20px;
   }
 }
