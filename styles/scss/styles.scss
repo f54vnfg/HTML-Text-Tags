@@ -64,7 +64,7 @@ nav ul {
   display: grid;
   // Center all menu items
   justify-items: center;
-  //Center the grid itself
+  // Center the grid itself
   justify-content: center;
 }
 
@@ -78,7 +78,7 @@ nav ul {
   display: none;
   // Fixed/sticky position
   position: fixed;
-  // Place the button at the bottom of the page
+  // Button set at the bottom of the page
   bottom: 30px;
   // Place the button 30px from the right
   right: 30px;
@@ -91,17 +91,13 @@ nav ul {
   // Add a mouse pointer on hover
   cursor: pointer;
   // Some padding
-  padding: 5px;
+  padding-top: 25px;
   // Rounded corners
   border-radius: 10px;
-  // Increase font size
-  font-size: 48px;
   // Set button fixed width
   width: 50px;
   // Set button fixed height
   height: 50px;
-  // Set string symbol position, sort of
-  line-height: 0.1;
 }
 
 @media only screen and (max-width: 580px) {

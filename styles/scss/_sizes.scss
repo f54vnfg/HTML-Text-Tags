@@ -57,6 +57,13 @@ h2,h3,h4,h5,h6 {
   font-weight: $font-weight-heading;
 }
 
+#myBtn {
+  // Set to-top button font size
+  font-size: $spacing-small;
+  // Set to-top button font weight
+  font-weight: $font-weight-bolder;
+}
+
 @media only screen and (max-width: 480px) {
   // Set heading sizes
   h1 { font-size: $heading-size-3; }
