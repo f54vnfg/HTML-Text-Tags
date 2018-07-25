@@ -11,7 +11,7 @@ $font-weight-bold: 500;
 $font-weight-bolder: 700;
 $font-weight-heading: $font-weight-bold;
 
-// Spacing sizes;
+// Spacing sizes
 $spacing-smaller: $base-spacing-units / 3;
 $spacing-small: $base-spacing-units / 2;
 $spacing-normal: $base-spacing-units;
@@ -33,22 +33,27 @@ $heading-size-2: $base-font-size * 2;
 $heading-size-3: $base-font-size * 1.5;
 $heading-size-4: $base-font-size * 1.25;
 $heading-size-5: $base-font-size;
-$heading-size-6: $base-font-size * 0.9;
+// $heading-size-6: $base-font-size * 0.9;
 
 body {
+  // Set font weight of all text
   font-weight: $font-weight-normal;
-  letter-spacing: 0.6px;
+  // Set letter line spacing of all text
+  letter-spacing: 0.5px;
 
   nav li a {
+    // Set font weight of the navbar menu
     font-weight: $font-weight-bold;
   }
 }
 
 h1 {
+  // Set font weight of the website heading
   font-weight: $font-weight-bolder;
 }
 
 h2,h3,h4,h5,h6 {
+  // Set font weight of all other headings
   font-weight: $font-weight-heading;
 }
 
@@ -57,9 +62,6 @@ h2,h3,h4,h5,h6 {
   h1 { font-size: $heading-size-3; }
   h2 { font-size: $heading-size-4; }
   h3 { font-size: $heading-size-5; }
-  // h4 { font-size: $heading-size-6; }
-  // h5 { font-size: $heading-size-6; }
-  // h6 { font-size: $heading-size-6; }
 }
 
 @media only screen and (min-width: 768px), only screen and (min-width: 700px) and (orientation: landscape) {
@@ -67,7 +69,4 @@ h2,h3,h4,h5,h6 {
   h1 { font-size: $heading-size-1; }
   h2 { font-size: $heading-size-2; }
   h3 { font-size: $heading-size-3; }
-  // h4 { font-size: $heading-size-4; }
-  // h5 { font-size: $heading-size-5; }
-  // h6 { font-size: $heading-size-6; }
 }

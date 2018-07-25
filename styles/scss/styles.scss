@@ -1,4 +1,4 @@
-// Main scss file
+// Main scss partial file
 @import "../normalize";
 @import "sizes";
 @import "fonts";
@@ -11,12 +11,6 @@ body {
   margin: 0 auto;
   // Justify all text
   text-align: justify;
-
-  #wrap2layout {
-    // DEBUG: add some margin to separate
-    // 2nd section from the frust (temp)
-    margin-top: $spacing-largest;
-  }
   header > h1 {
     // Remove main website margins
     margin-bottom: 0;
@@ -24,7 +18,7 @@ body {
     text-align: center;
   }
   div > h2 {
-    // Padding of the main section heading
+    // Padding of the main article heading
     padding-bottom: $spacing-normal;
   }
 }
@@ -42,7 +36,7 @@ nav {
   }
 }
 
-section {
+article {
   .example-box {
     // Slight top margin for the example box
     margin-top: $spacing-smaller;
@@ -116,7 +110,7 @@ nav ul {
     padding: $spacing-largest 0;
   }
   div > h2 {
-    // Set margin of all global sections
+    // Set margin of all global articles
     margin-top: $spacing-normal;
   }
   nav ul {
@@ -130,14 +124,14 @@ nav ul {
     margin: 0 $spacing-small;
   }
   .subWrap {
-    // Set row gap of the article sections
+    // Set row gap of the article articles
     grid-row-gap: $spacing-normal;
   }
-  section {
+  article {
     // Set individual code article padding
     padding: $spacing-small;
   }
-  section > p {
+  article > p {
     // Set code article description padding
     padding: $spacing-normal 0 $spacing-small;
   }
@@ -150,7 +144,7 @@ nav ul {
     padding: $spacing-largest 0;
   }
   div > h2 {
-    // Set margin of all global sections
+    // Set margin of all global articles
     margin-top: $spacing-normal;
   }
   nav ul {
@@ -163,16 +157,15 @@ nav ul {
   // Set margin of the global content wrapper
     margin: 0 $spacing-normal;
   }
-
   .subWrap {
-    // Set row gap of the article sections
+    // Set row gap of the article articles
     grid-row-gap: $spacing-normal;
   }
-  section {
+  article {
     // Set individual code article padding
     padding: $spacing-normal;
   }
-  section > p {
+  article > p {
     // Set code article description padding
     padding: $spacing-normal 0 $spacing-small;
   }
@@ -183,7 +176,7 @@ nav ul {
     padding: $spacing-largest * 2 0;
   }
   div > h2 {
-    // Set margin of all global sections
+    // Set margin of all global articles
     margin-top: $spacing-normal;
   }
   nav ul {
@@ -204,14 +197,13 @@ nav ul {
     // Set row gap of the articles grid
     grid-row-gap: $spacing-normal;
   }
-  section {
+  article {
     // Set individual code article padding
     padding: $spacing-large;
   }
-  section > p {
+  article > p {
     // Set code article description padding
     padding: $spacing-normal 0 0;
     height: 150px;
   }
-
 }
