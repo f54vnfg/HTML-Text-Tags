@@ -15,8 +15,10 @@ body {
 
   header > h1 {
     text-align: center;
-    padding: $spacing-largest 0;
+//  padding: $spacing-largest*3 0;
     margin-bottom: 0;
+    background-image: url("img/backimage.jpg");
+    background-size: cover;
   }
 
   div > h2 {
@@ -83,14 +85,15 @@ nav ul {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
+    // background-color: red; /* Set a background color */
+    // color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    // padding: 5px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    // font-size: 18px; /* Increase font size */
+    font-size: 48px; /* Increase font size */
     height: 50px;
     width: 50px;
+    line-height: 0.7;
 }
 //
 #myBtn:hover {
@@ -98,8 +101,11 @@ nav ul {
 }
 //
 @media only screen and (max-width: 480px) {
-  //
 
+  //
+  header > h1 {
+    padding: $spacing-largest 0;
+  }
   //
   // This controls Nav Menu layout and spacing.
   nav ul {
@@ -130,6 +136,9 @@ nav ul {
 //
 @media only screen and (min-width: 768px), only screen and (min-width: 700px) and (orientation: landscape) {
   //
+  header > h1 {
+    padding: $spacing-largest 0;
+  }
   // This controls Nav Menu layout and spacing.
   nav ul {
     grid-template-columns: repeat(5, 80px);
@@ -158,6 +167,9 @@ nav ul {
 }
 //
 @media only screen and (min-width: 1023px) {
+  header > h1 {
+    padding: $spacing-largest*2 0;
+  }
   // This wraps all global sections.
   .contentWrapper {
     margin: 0 $spacing-large;

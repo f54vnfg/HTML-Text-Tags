@@ -29,8 +29,15 @@ header {
     color: $color7;
 
     /* offset-x | offset-y | blur-radius | color */
-    text-shadow: 1px 1px 0 $color5;
+    text-shadow: 3px 3px 0 $color6;
   }
+}
+
+#myBtn {
+  background-color: $color2;
+  color: $color7;
+  /* offset-x | offset-y | blur-radius | color */
+  // text-shadow: 1px 1px 0 $color5;
 }
 
 nav {
