@@ -1,4 +1,4 @@
-// Main scss partial file
+// Main scss file
 @import "../normalize";
 @import "sizes";
 @import "fonts";
@@ -174,7 +174,7 @@ nav ul {
 @media only screen and (min-width: 1023px) {
   header > h1 {
     // Remove h1 top margin style
-    margin-top: $spacing-large;
+    margin-top: $spacing-normal;
     // Set height of main website heading/image
     padding: $spacing-largest * 2 0;
   }
