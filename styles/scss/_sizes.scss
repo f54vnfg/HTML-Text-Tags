@@ -48,6 +48,7 @@ body {
 }
 
 h1 {
+  -webkit-font-smoothing: antialiased;
   // Set font weight of the website heading
   font-weight: $font-weight-bolder;
 }

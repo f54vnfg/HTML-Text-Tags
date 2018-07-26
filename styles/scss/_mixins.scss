@@ -1,0 +1,16 @@
+
+/*
+// Mixin lets you group CSS declarations
+// into single fuction, like my hover and
+// focus rule. You can call this fuction
+// any away in the project as long as
+// you "@include"ed this file.
+*/
+
+//TLDR: Mixin saves time writing code.
+
+@mixin hoverNfocus() {
+  &:hover, &:focus {
+    @content;
+  }
+}

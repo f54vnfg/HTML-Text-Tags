@@ -79,9 +79,9 @@ nav ul {
   // Fixed/sticky position
   position: fixed;
   // Button set at the bottom of the page
-  bottom: 30px;
+  bottom:3%;
   // Place the button 30px from the right
-  right: 30px;
+  right: 2%;
   // Make sure it does not overlap
   z-index: 99;
   // Remove borders
@@ -207,6 +207,7 @@ nav ul {
   article > p {
     // Set code article description padding
     padding: $spacing-normal 0 0;
+    // Set the article description height
     height: 150px;
   }
 }
