@@ -1,11 +1,11 @@
 
-/*
-// Mixin lets you group CSS declarations
-// into single fuction, like my hover and
-// focus rule. You can call this fuction
-// any away in the project as long as
-// you "@include"ed this file.
-*/
+
+//Mixin lets you group CSS declarations
+//into single fuction, like my hover and
+//focus rule. You can call this fuction
+//any away in the project as long as
+//you "@include"ed this file.
+
 
 //TLDR: Mixin saves time writing code.
 
@@ -13,4 +13,19 @@
   &:hover, &:focus {
     @content;
   }
+}
+
+
+//The following code is a bit of a
+//overkill for what I am trying to do.
+//None the less, it shows how the function
+//works and how it can be utilized.
+
+
+//TLDR: Make text pretty for browsers that support it.
+
+@mixin fontSmoothing($property, $value) {
+
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
 }

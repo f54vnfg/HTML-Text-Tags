@@ -1,3 +1,4 @@
+@import "mixins";
 
 // High level settings for the entire site.
 $base-spacing-units: 24px;
@@ -47,15 +48,19 @@ body {
   }
 }
 
-h1 {
-  -webkit-font-smoothing: antialiased;
-  // Set font weight of the website heading
-  font-weight: $font-weight-bolder;
+h1,h2,h3 {
+  // add antialiasing to all used headings
+ @include fontSmoothing(font-smoothing, antialiased);
 }
 
-h2,h3,h4,h5,h6 {
+h2,h3 {
   // Set font weight of all other headings
   font-weight: $font-weight-heading;
+}
+
+h1 {
+  // Set font weight of the website heading
+  font-weight: $font-weight-bolder;
 }
 
 #myBtn {
