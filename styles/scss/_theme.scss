@@ -2,7 +2,7 @@
 
 $color1: #2d7ed2;
 $color2: #38b2ff;
-$color2B: rgba(56, 178, 255, .5);
+$color2B: rgba(56, 178, 255, 0.5);
 $color3: #453ad8;
 $color5: #464646;
 $color6: #323232;
@@ -16,7 +16,7 @@ html {
   background: $color7;
   body {
     // offset-x | offset-y | blur-radius | color
-    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -27,7 +27,7 @@ header {
     // Main website background color
     background-color: $color2;
     // offset-x | offset-y | blur-radius | color
-    text-shadow: 3px 3px 0 $color6;
+    text-shadow: 3px 0 0 $color6;
     // Set background image to the main heading box model
     background-image: url("../../img/backimage2.jpg");
     // Make the background image cover the h1 box
@@ -50,8 +50,20 @@ header {
   background-position: center;
 
   @include hoverNfocus() {
-    // Set hover background color
-    background-color: $color1;
+    // animation: keyframeName | duration | transitions | delay | last keyframe
+    animation: myBtnAnimate 0.15s ease-in-out 0s forwards;
+  }
+}
+
+@keyframes myBtnAnimate {
+  from {
+    // What should happen at the beggning.
+    background-color: $color2B;
+  }
+  to {
+    // What should happen at the end.
+    background-color: $color2;
+    color: $color6;
   }
 }
 
@@ -59,18 +71,27 @@ nav {
   // Set navbar background color
   background-color: $color1;
   li {
-    // Set navbar items bottom border and values
-    border-bottom: groove 2px $color5;
     a {
       text-decoration: none;
       // Set navbar text color
       color: $color7;
-    }
 
-    @include hoverNfocus() {
-      // Set hover state bottom border color
-      border-bottom: groove 2px $color2;
+      @include hoverNfocus() {
+        // animation: keyframeName | duration | transitions | delay | last keyframe
+        animation: navAnimate 0.15s ease-in-out 0s forwards;
+      }
     }
+  }
+}
+
+@keyframes navAnimate {
+  from {
+    // What should happen at the beggning.
+    color: $color7;
+  }
+  to {
+    // What should happen at the end.
+    color: $color2;
   }
 }
 
@@ -82,9 +103,8 @@ article {
   box-shadow: 1px 1px 3px 1px $color5;
 
   @include hoverNfocus() {
-    // Set border hover state and values for all articles
-    border-right: groove 2px $color2;
-    border-left: groove 2px $color2;
+    // animation: keyframeName | duration | transitions | delay | last keyframe
+    animation: articleAnimate 0.15s ease-in-out 0s forwards;
   }
 
   .example-box {
@@ -92,5 +112,18 @@ article {
     border: 1px groove $color8;
     // Set background for the article example box
     background: $color8;
+  }
+}
+
+@keyframes articleAnimate {
+  from {
+    // What should happen at the beggning.
+    border-right: groove 2px $color8;
+    border-left: groove 2px $color8;
+  }
+  to {
+    // What should happen at the end.
+    border-right: groove 2px $color2;
+    border-left: groove 2px $color2;
   }
 }

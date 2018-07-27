@@ -27,12 +27,13 @@ nav {
   li {
     // Separate menu items from background
     margin: $spacing-smaller;
+    padding: $spacing-smaller;
   }
   a {
     // Allow menu item to be epandable
     display: block;
     // Expand each menu item a little bit
-    padding: $spacing-smaller;
+    // padding: $spacing-smaller;
   }
 }
 
@@ -79,7 +80,7 @@ nav ul {
   // Fixed/sticky position
   position: fixed;
   // Button set at the bottom of the page
-  bottom:3%;
+  bottom: 3%;
   // Place the button 30px from the right
   right: 2%;
   // Make sure it does not overlap
@@ -154,7 +155,7 @@ nav ul {
     grid-column-gap: 10px;
   }
   .contentWrapper {
-  // Set margin of the global content wrapper
+    // Set margin of the global content wrapper
     margin: 0 $spacing-normal;
   }
   .subWrap {
