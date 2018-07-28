@@ -98,26 +98,21 @@ article {
     // Set margin of all global articles
     margin-top: $spacing-normal;
   }
-
-  .navWrapper > button {
+  nav {
     display: none;
   }
-
   .navWrapper > button {
     display: block;
     width: $spacing-large;
     height: $spacing-large;
     margin: $spacing-smaller;
   }
-  
   .menuBtnDiv > a {
     display: block;
   }
-
   .navWrapper {
     padding: 5px;
   }
-
   nav ul {
     li {
       background-color: $color2B;
