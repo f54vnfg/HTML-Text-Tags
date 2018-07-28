@@ -35,41 +35,26 @@ header {
   }
 }
 
-#bckBtn {
-  // Set to-top button text color
-  color: $color8;
-  // Set to-top background color
-  background-color: $color2B;
-  // Load to-top background image
-  background-image: url("../../img/bkbutton-v5w.gif");
+.navWrapper {
+  // Set navbar background color
+  background-color: $color1;
+}
+
+#menuBtnDiv {
+  background-image: url("/img/menuIcon.png");
   // Set background image size
-  background-size: 35px;
+  background-size: 20px;
   // Disable default image repeat
   background-repeat: no-repeat;
   // Position image to the center
   background-position: center;
-
-  @include hoverNfocus() {
-    // animation: keyframeName | duration | transitions | delay | last keyframe
-    animation: myBtnAnimate 0.15s ease-in-out 0s forwards;
-  }
-}
-
-@keyframes myBtnAnimate {
-  from {
-    // What should happen at the beggning.
-    background-color: $color2B;
-  }
-  to {
-    // What should happen at the end.
-    background-color: $color2;
-    color: $color6;
-  }
+  //
+  background-color: $color7;
+  //
+  border: none;
 }
 
 nav {
-  // Set navbar background color
-  background-color: $color1;
   li {
     a {
       text-decoration: none;
@@ -125,5 +110,37 @@ article {
     // What should happen at the end.
     border-right: groove 2px $color2;
     border-left: groove 2px $color2;
+  }
+}
+
+#bckBtn {
+  // Set to-top button text color
+  color: $color8;
+  // Set to-top background color
+  background-color: $color2B;
+  // Load to-top background image
+  background-image: url("../../img/bkbutton-v5w.gif");
+  // Set background image size
+  background-size: 35px;
+  // Disable default image repeat
+  background-repeat: no-repeat;
+  // Position image to the center
+  background-position: center;
+
+  @include hoverNfocus() {
+    // animation: keyframeName | duration | transitions | delay | last keyframe
+    animation: myBtnAnimate 0.15s ease-in-out 0s forwards;
+  }
+}
+
+@keyframes myBtnAnimate {
+  from {
+    // What should happen at the beggning.
+    background-color: $color2B;
+  }
+  to {
+    // What should happen at the end.
+    background-color: $color2;
+    color: $color6;
   }
 }

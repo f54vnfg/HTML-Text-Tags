@@ -60,20 +60,6 @@ article {
   }
 }
 
-nav ul {
-  // Set nav menu layout as a grid
-  display: grid;
-  // Center all menu items
-  justify-items: center;
-  // Center the grid itself
-  justify-content: center;
-}
-
-.subWrap {
-  // Set all code articles layouts as a CSS grid
-  display: grid;
-}
-
 #bckBtn {
   // Hidden by default
   display: none;
@@ -112,11 +98,31 @@ nav ul {
     // Set margin of all global articles
     margin-top: $spacing-normal;
   }
+
+  .navWrapper > button {
+    display: none;
+  }
+
+  .navWrapper > button {
+    display: block;
+    width: $spacing-large;
+    height: $spacing-large;
+    margin: $spacing-smaller;
+  }
+  
+  .menuBtnDiv > a {
+    display: block;
+  }
+
+  .navWrapper {
+    padding: 5px;
+  }
+
   nav ul {
-    // Set nav menu to 3 columns, each 80px wide
-    grid-template-columns: repeat(3, 80px);
-    // Set nav menu items column gap to 10px
-    grid-column-gap: 10px;
+    li {
+      background-color: $color2B;
+      text-align: center;
+    }
   }
   .contentWrapper {
     // Set margin of the global content wrapper
@@ -144,21 +150,37 @@ nav ul {
     // Set height of main website heading/image
     padding: $spacing-largest 0;
   }
+
+  .navWrapper > button {
+    display: none;
+  }
+
+
   div > h2 {
     // Set margin of all global articles
     margin-top: $spacing-normal;
   }
+
   nav ul {
+    // Set nav menu layout as a grid
+    display: grid;
+    // Center all menu items
+    justify-items: center;
+    // Center the grid itself
+    justify-content: center;
     // Set nav menu to 6 columns, each 80px wide
     grid-template-columns: repeat(6, 80px);
     // Set nav menu items column gap to 10px
     grid-column-gap: 10px;
   }
+
   .contentWrapper {
     // Set margin of the global content wrapper
     margin: 0 $spacing-normal;
   }
   .subWrap {
+    // Set all code articles layouts as a CSS grid
+    display: grid;
     // Set row gap of the article articles
     grid-row-gap: $spacing-normal;
   }
