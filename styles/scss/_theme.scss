@@ -62,7 +62,7 @@ nav {
       color: $color7;
 
       @include hoverNfocus() {
-        // animation: keyframeName | duration | transitions | delay | last keyframe
+        // animation: name | duration | transitions | delay | playState
         animation: navAnimate 0.15s ease-in-out 0s forwards;
       }
     }

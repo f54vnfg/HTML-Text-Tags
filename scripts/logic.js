@@ -29,12 +29,15 @@ htmlWrapper.addEventListener("click", (event) => {
 
 function menuBtnFunc() {
   var visState = document.getElementById("mainNav");
+  var mainHeading = document.getElementById("mainHeading");
 
   if (visState.style.display === "none")
   {
     visState.style.display = "block";
+    mainHeading.style.display = "none";
   }
   else {
     visState.style.display = "none";
+    mainHeading.style.display = "block";
   }
 }

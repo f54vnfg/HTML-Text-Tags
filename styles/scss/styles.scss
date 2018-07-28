@@ -98,6 +98,11 @@ article {
     // Set margin of all global articles
     margin-top: $spacing-normal;
   }
+
+  // header {
+  //   display: flex;
+  //   flex-direction: column-reverse;
+  // }
   nav {
     display: none;
     li {
@@ -150,10 +155,12 @@ article {
     margin-top: 0;
     // Set height of main website heading/image
     padding: $spacing-largest 0;
+    //
+    display: block !important;
   }
 
   nav {
-    display: block;
+    display: block !important;
   }
 
   .navWrapper > button {
