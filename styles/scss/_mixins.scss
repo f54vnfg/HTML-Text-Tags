@@ -16,10 +16,10 @@
 }
 
 
-//The following code is a bit of a
+//The following code below is a bit of a
 //overkill for what I am trying to do.
 //None the less, it shows how the function
-//works and how it can be utilized.
+//works and how mixins can be utilized.
 
 
 //TLDR: Make text pretty for browsers that support it.
@@ -28,4 +28,11 @@
 
   -webkit-#{$property}: $value;
   -moz-#{$property}: $value;
+}
+
+// Proper implementation antialiased mixin will be:
+
+@mixin smoothFont() {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
 }
