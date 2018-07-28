@@ -146,6 +146,9 @@ article {
     // Set code article description padding
     padding: $spacing-normal 0 $spacing-small;
   }
+  #bckBtn {
+    display: none !important;
+  }
 }
 
 @media only screen and (min-width: 581px),
