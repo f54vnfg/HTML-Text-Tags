@@ -3,9 +3,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("bckBtn").style.display = "block";
     } else {
-        document.getElementById("myBtn").style.display = "none";
+        document.getElementById("bckBtn").style.display = "none";
     }
 }
 
