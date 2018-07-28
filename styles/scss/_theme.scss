@@ -50,12 +50,17 @@ header {
   background-position: center;
 
   @include hoverNfocus() {
+<<<<<<< HEAD
     // asdasd
+=======
+    // animation: keyframeName | duration | transitions | delay | last keyframe
+>>>>>>> ccf08dfffa5db7b83c34c253754004da4a4277bd
     animation: myBtnAnimate 0.15s ease-in-out 0s forwards;
   }
 }
 
 @keyframes myBtnAnimate {
+<<<<<<< HEAD
   //
   0% {
     background-color: $color2B;
@@ -66,6 +71,14 @@ header {
     //color: $color8;
   }
   100% {
+=======
+  from {
+    // What should happen at the beggning.
+    background-color: $color2B;
+  }
+  to {
+    // What should happen at the end.
+>>>>>>> ccf08dfffa5db7b83c34c253754004da4a4277bd
     background-color: $color2;
     color: $color6;
   }
@@ -81,7 +94,11 @@ nav {
       color: $color7;
 
       @include hoverNfocus() {
+<<<<<<< HEAD
         // asdasd
+=======
+        // animation: keyframeName | duration | transitions | delay | last keyframe
+>>>>>>> ccf08dfffa5db7b83c34c253754004da4a4277bd
         animation: navAnimate 0.15s ease-in-out 0s forwards;
       }
     }
@@ -89,6 +106,7 @@ nav {
 }
 
 @keyframes navAnimate {
+<<<<<<< HEAD
   //
   0% {
     color: $color7;
@@ -97,6 +115,14 @@ nav {
     color: $color7;
   }
   100% {
+=======
+  from {
+    // What should happen at the beggning.
+    color: $color7;
+  }
+  to {
+    // What should happen at the end.
+>>>>>>> ccf08dfffa5db7b83c34c253754004da4a4277bd
     color: $color2;
   }
 }
@@ -109,11 +135,16 @@ article {
   box-shadow: 1px 1px 3px 1px $color5;
 
   @include hoverNfocus() {
+<<<<<<< HEAD
     animation: articleAnimate 0.15s ease-in-out 0s forwards;
 
     // Set border hover state and values for all articles
     // border-right: groove 2px $color2;
     // border-left: groove 2px $color2;
+=======
+    // animation: keyframeName | duration | transitions | delay | last keyframe
+    animation: articleAnimate 0.15s ease-in-out 0s forwards;
+>>>>>>> ccf08dfffa5db7b83c34c253754004da4a4277bd
   }
 
   .example-box {
@@ -125,12 +156,22 @@ article {
 }
 
 @keyframes articleAnimate {
+<<<<<<< HEAD
   //
   0% {
     border-right: groove 2px $color8;
     border-left: groove 2px $color8;
   }
   100% {
+=======
+  from {
+    // What should happen at the beggning.
+    border-right: groove 2px $color8;
+    border-left: groove 2px $color8;
+  }
+  to {
+    // What should happen at the end.
+>>>>>>> ccf08dfffa5db7b83c34c253754004da4a4277bd
     border-right: groove 2px $color2;
     border-left: groove 2px $color2;
   }
