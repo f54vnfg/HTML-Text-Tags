@@ -1,0 +1,57 @@
+
+@media only screen and (min-width: 581px) {
+  nav li a {
+    @include hoverNfocus() {
+      // animation: name | duration | transitions | delay | playState
+      animation: navAnimate 0.15s ease-in-out 0s forwards;
+    }
+  }
+  article {
+    @include hoverNfocus() {
+      // animation: keyframeName | duration | transitions | delay | last keyframe
+      animation: articleAnimate 0.15s ease-in-out 0s forwards;
+    }
+  }
+  #bckBtn {
+    @include hoverNfocus() {
+      // animation: keyframeName | duration | transitions | delay | last keyframe
+      animation: myBtnAnimate 0.15s ease-in-out 0s forwards;
+    }
+  }
+}
+
+@keyframes navAnimate {
+  from {
+    // What should happen at the beggning.
+    color: $color7;
+  }
+  to {
+    // What should happen at the end.
+    color: $color2;
+  }
+}
+
+@keyframes articleAnimate {
+  from {
+    // What should happen at the beggning.
+    border-right: groove 2px $color8;
+    border-left: groove 2px $color8;
+  }
+  to {
+    // What should happen at the end.
+    border-right: groove 2px $color2;
+    border-left: groove 2px $color2;
+  }
+}
+
+@keyframes myBtnAnimate {
+  from {
+    // What should happen at the beggning.
+    background-color: $color2B;
+  }
+  to {
+    // What should happen at the end.
+    background-color: $color2;
+    color: $color6;
+  }
+}

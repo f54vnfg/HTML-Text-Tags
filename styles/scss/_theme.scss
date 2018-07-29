@@ -1,4 +1,5 @@
 @import "mixins";
+@import "cssAni"
 
 $color1: #2d7ed2;
 $color2: #38b2ff;
@@ -60,23 +61,7 @@ nav {
       text-decoration: none;
       // Set navbar text color
       color: $color7;
-
-      @include hoverNfocus() {
-        // animation: name | duration | transitions | delay | playState
-        animation: navAnimate 0.15s ease-in-out 0s forwards;
-      }
     }
-  }
-}
-
-@keyframes navAnimate {
-  from {
-    // What should happen at the beggning.
-    color: $color7;
-  }
-  to {
-    // What should happen at the end.
-    color: $color2;
   }
 }
 
@@ -100,19 +85,6 @@ article {
   }
 }
 
-@keyframes articleAnimate {
-  from {
-    // What should happen at the beggning.
-    border-right: groove 2px $color8;
-    border-left: groove 2px $color8;
-  }
-  to {
-    // What should happen at the end.
-    border-right: groove 2px $color2;
-    border-left: groove 2px $color2;
-  }
-}
-
 #bckBtn {
   // Set to-top button text color
   color: $color8;
@@ -126,21 +98,4 @@ article {
   background-repeat: no-repeat;
   // Position image to the center
   background-position: center;
-
-  @include hoverNfocus() {
-    // animation: keyframeName | duration | transitions | delay | last keyframe
-    animation: myBtnAnimate 0.15s ease-in-out 0s forwards;
-  }
-}
-
-@keyframes myBtnAnimate {
-  from {
-    // What should happen at the beggning.
-    background-color: $color2B;
-  }
-  to {
-    // What should happen at the end.
-    background-color: $color2;
-    color: $color6;
-  }
 }

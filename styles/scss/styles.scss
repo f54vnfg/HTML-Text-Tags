@@ -98,11 +98,6 @@ article {
     // Set margin of all global articles
     margin-top: $spacing-normal;
   }
-
-  // header {
-  //   display: flex;
-  //   flex-direction: column-reverse;
-  // }
   nav {
     display: none;
     li {
@@ -123,7 +118,6 @@ article {
   .menuBtnDiv > a {
     display: block;
   }
-
   nav ul {
     li {
       background-color: $color2B;
@@ -162,20 +156,16 @@ article {
     //
     display: block !important;
   }
-
   nav {
     display: block !important;
   }
-
   .navWrapper > button {
     display: none;
   }
-
   div > h2 {
     // Set margin of all global articles
     margin-top: $spacing-normal;
   }
-
   nav ul {
     // Set nav menu layout as a grid
     display: grid;
@@ -188,7 +178,6 @@ article {
     // Set nav menu items column gap to 10px
     grid-column-gap: 10px;
   }
-
   .contentWrapper {
     // Set margin of the global content wrapper
     margin: 0 $spacing-normal;
