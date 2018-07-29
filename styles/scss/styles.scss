@@ -26,8 +26,8 @@ body {
 nav {
   li {
     // Separate menu items from background
-    margin: $spacing-smaller / 2;
-    padding: $spacing-smaller/2;
+    margin: $spacing-smaller;
+    padding: $spacing-smaller;
   }
   a {
     // Allow menu item to be epandable
@@ -141,6 +141,7 @@ article {
   article {
     // Set individual code article padding
     padding: $spacing-small;
+    margin-bottom: $spacing-small;
   }
   article > p {
     // Set code article description padding
@@ -211,7 +212,7 @@ article {
 @media only screen and (min-width: 1023px) {
   header > h1 {
     // Remove h1 top margin style
-    margin-top: $spacing-normal;
+    //margin-top: 0;
     // Set height of main website heading/image
     padding: $spacing-largest * 2 0;
   }
@@ -246,5 +247,11 @@ article {
     padding: $spacing-normal 0 0;
     // Set the article description height
     height: 150px;
+  }
+}
+
+@media only screen and (min-width: 1439px) {
+  header > h1 {
+    margin-top: $spacing-normal;
   }
 }
