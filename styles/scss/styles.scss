@@ -3,6 +3,7 @@
 @import "sizes";
 @import "fonts";
 @import "theme";
+@import "cssAni";
 
 body {
   // Max width for the whole website
@@ -11,15 +12,21 @@ body {
   margin: 0 auto;
   // Justify all text
   text-align: justify;
+
   header > h1 {
     // Remove main website margins
     margin-bottom: 0;
-    // Align main website heading
-    text-align: center;
   }
+
   div > h2 {
     // Padding of the main article heading
     padding-bottom: $spacing-normal;
+  }
+
+  header > h1,
+  div > h2,
+  article > h3 {
+    text-align: center;
   }
 }
 
@@ -32,8 +39,6 @@ nav {
   a {
     // Allow menu item to be epandable
     display: block;
-    // Expand each menu item a little bit
-    // padding: $spacing-smaller;
   }
 }
 
