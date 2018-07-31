@@ -101,11 +101,15 @@ article {
     flex-direction: column-reverse;
   }
 
-  #mobileMenuDiv {
+  #dIcon {
+    display: block;
+  }
+
+  .icon {
     margin: $spacing-smaller;
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 43px;
     cursor: pointer;
     /* background color */
     background: #ccc;
@@ -113,12 +117,12 @@ article {
   }
 
   .hamMenu {
-    width: 27px;
+    width: 28px;
     height: 5px;
     background: $color6;
     position: absolute;
     top: 45%;
-    left: 15%;
+    left: 19%;
     transition: 0.25s;
     transition-delay: 0.25s;
   }
@@ -126,7 +130,7 @@ article {
   .hamMenu:after {
     content: "";
     position: absolute;
-    width: 27px;
+    width: 28px;
     height: 5px;
     background: $color6;
     transition: 0.25s;
@@ -134,11 +138,11 @@ article {
   }
 
   .hamMenu:before {
-    top: -10px;
+    top: -11px;
   }
 
   .hamMenu:after {
-    top: 10px;
+    top: 11px;
   }
 
   .active .hamMenu {
@@ -147,19 +151,15 @@ article {
     transition: 0.25s;
   }
 
-  .active .hamMenu:before,
+  .active .hamMenu:before {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
   .active .hamMenu:after {
     top: 0;
+    transform: rotate(135deg);
   }
-
-  .active .hamMenu:before {
-    transform: rotate(45deg);
-  }
-
-  .active .hamMenu:after {
-    transform: rotate(-45deg);
-  }
-
 
   header > h1 {
     // Remove h1 top margin style
@@ -182,10 +182,6 @@ article {
   .navWrapper {
     padding: 5px;
   }
-  #mobileMenuDiv {
-    display: block;
-  }
-
   nav ul {
     li {
       background-color: $color2B;
@@ -219,6 +215,11 @@ article {
   header {
     flex-direction: column;
   }
+
+  #dIcon {
+    display: none;
+  }
+
   header > h1 {
     // Remove h1 top margin style
     margin-top: 0;
@@ -229,9 +230,6 @@ article {
   }
   nav {
     display: block !important;
-  }
-  #mobileMenuDiv {
-    display: none;
   }
   div > h2 {
     // Set margin of all global articles
@@ -311,7 +309,7 @@ article {
 }
 
 @media only screen and (min-width: 1439px) {
-  header > h1 {
+  header {
     margin-top: $spacing-normal;
   }
 }

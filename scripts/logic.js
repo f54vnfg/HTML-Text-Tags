@@ -1,5 +1,3 @@
-var htmlWrapper = document.querySelector("body");
-
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
   scrollFunction()
@@ -7,7 +5,7 @@ window.onscroll = function() {
 
 //
 window.onload = function() {
-  menuBtnFunc();
+  toggleMonileMenu();
 }
 
 //
@@ -25,33 +23,9 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-//
-htmlWrapper.addEventListener("click", (event) => {
-  if (event.target.tagName == "BUTTON") {
-    if (event.target.id == "menuBtnDiv") {
-      menuBtnFunc();
-    }
-  }
-});
+document.getElementById('dIcon').onclick = function() {
 
-//
-function menuBtnFunc() {
-  var visState = document.getElementById("mainNav");
-  var mainHeading = document.getElementById("mainHeading");
-
-  if (visState.style.display === "none") {
-    visState.style.display = "block";
-    mainHeading.style.display = "none";
-  } else {
-    visState.style.display = "none";
-    mainHeading.style.display = "block";
-  }
-}
-
-//
-document.getElementById('mobileMenuDiv').onclick = function() {
-
-    var className = '' + mobileMenuDiv.className + ' ';
+    var className = '' + dIcon.className + ' ';
 
     if ( ~className.indexOf(' active ') ) {
         this.className = className.replace(' active ', '');
@@ -59,10 +33,10 @@ document.getElementById('mobileMenuDiv').onclick = function() {
         this.className += ' active';
     }
 
-    showMobileMenu();
+    toggleMonileMenu();
 }
 
-function showMobileMenu() {
+function toggleMonileMenu() {
   var visState = document.getElementById("mainNav");
   var mainHeading = document.getElementById("mainHeading");
 
@@ -73,4 +47,5 @@ function showMobileMenu() {
     visState.style.display = "none";
     mainHeading.style.display = "block";
   }
+
 }
