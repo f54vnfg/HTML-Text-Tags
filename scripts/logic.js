@@ -47,3 +47,30 @@ function menuBtnFunc() {
     mainHeading.style.display = "block";
   }
 }
+
+//
+document.getElementById('dIcon').onclick = function() {
+
+    var className = '' + dIcon.className + ' ';
+
+    if ( ~className.indexOf(' active ') ) {
+        this.className = className.replace(' active ', '');
+    } else {
+        this.className += ' active';
+    }
+
+    showMobileMenu();
+}
+
+function showMobileMenu() {
+  var visState = document.getElementById("mainNav");
+  var mainHeading = document.getElementById("mainHeading");
+
+  if (visState.style.display === "none") {
+    visState.style.display = "block";
+    mainHeading.style.display = "none";
+  } else {
+    visState.style.display = "none";
+    mainHeading.style.display = "block";
+  }
+}

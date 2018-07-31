@@ -13,6 +13,10 @@ body {
   // Justify all text
   text-align: justify;
 
+  header {
+    display: flex;
+  }
+
   header > h1 {
     // Remove main website margins
     margin-bottom: 0;
@@ -93,6 +97,11 @@ article {
 }
 
 @media only screen and (max-width: 580px) {
+
+  header {
+        flex-direction: column-reverse;
+  }
+
   header > h1 {
     // Remove h1 top margin style
     margin-top: 0;
@@ -114,15 +123,21 @@ article {
   .navWrapper {
     padding: 5px;
   }
-  .navWrapper > button {
+
+  // .navWrapper > button {
+  //   display: block;
+  //   width: $spacing-large;
+  //   height: $spacing-large;
+  //   margin: $spacing-smaller;
+  // }
+  // .menuBtnDiv > a {
+  //   display: block;
+  // }
+
+  #dIcon {
     display: block;
-    width: $spacing-large;
-    height: $spacing-large;
-    margin: $spacing-smaller;
   }
-  .menuBtnDiv > a {
-    display: block;
-  }
+
   nav ul {
     li {
       background-color: $color2B;
@@ -153,6 +168,10 @@ article {
 
 @media only screen and (min-width: 581px),
   only screen and (min-width: 700px) and (orientation: landscape) {
+    header {
+          flex-direction:column;
+    }
+
   header > h1 {
     // Remove h1 top margin style
     margin-top: 0;
@@ -164,9 +183,15 @@ article {
   nav {
     display: block !important;
   }
-  .navWrapper > button {
+
+  // .navWrapper > button {
+  //   display: none;
+  // }
+
+  #dIcon {
     display: none;
   }
+
   div > h2 {
     // Set margin of all global articles
     margin-top: $spacing-normal;
@@ -248,4 +273,60 @@ article {
   header > h1 {
     margin-top: $spacing-normal;
   }
+}
+
+// EXPEREMENTAL
+
+.icon {
+  margin: $spacing-smaller;
+  position: relative;
+  width: 43px;
+  height: 43px;
+  cursor: pointer;
+  /* background color */
+  background: #ccc;
+}
+
+.hamMenu {
+  width: 30px;
+  height: 5px;
+  background: $color6;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  transition: .25s;
+  transition-delay: 0.25s;
+}
+.hamMenu:before,.hamMenu:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background: $color6;
+  transition: .25s;
+  transition-delay: 0.15s;
+}
+
+.hamMenu:before {
+  top: -11px;
+}
+
+.hamMenu:after {
+  top: 11px;
+}
+
+.active .hamMenu {
+  // middle of menu
+  background: rgba(0,0,0,0);
+  transition: .25s;
+}
+
+.active .hamMenu:before {
+  top:0;
+  transform: rotate(45deg);
+}
+
+.active .hamMenu:after {
+  top:0;
+  transform: rotate(-45deg);
 }
