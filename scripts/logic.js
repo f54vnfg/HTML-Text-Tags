@@ -49,9 +49,9 @@ function menuBtnFunc() {
 }
 
 //
-document.getElementById('dIcon').onclick = function() {
+document.getElementById('mobileMenuDiv').onclick = function() {
 
-    var className = '' + dIcon.className + ' ';
+    var className = '' + mobileMenuDiv.className + ' ';
 
     if ( ~className.indexOf(' active ') ) {
         this.className = className.replace(' active ', '');
