@@ -29,8 +29,10 @@ function topFunction() {
 //
 htmlWrapper.addEventListener("click", (event) => {
   //console.log(event.target.parentNode.parentNode.parentNode.id == "mainNav");
-  if (event.target.parentNode.parentNode.parentNode.id == "mainNav") {
-    toggleMonileMenu(false);
+  if (event.target.tagName == "A") {
+    if (event.target.parentNode.parentNode.parentNode.id == "mainNav") {
+      toggleMonileMenu(false);
+    }
   }
   // if (event.target.id == "menuBtnDiv") {
   //   toggleMonileMenu(true);
