@@ -101,11 +101,8 @@ article {
     flex-direction: column-reverse;
   }
 
-  #dIcon {
+  #mobBtnDiv {
     display: block;
-  }
-
-  .icon {
     margin: $spacing-smaller;
     position: relative;
     width: 44px;
@@ -161,18 +158,60 @@ article {
     transform: rotate(135deg);
   }
 
+  // .navWrapper {
+  //   // transform: translate(20%, 100%);
+  //   transition: transform 300ms ease-in-out;
+  // }
+
+  .navWrapper {
+    overflow: hidden;
+  }
+
+  .navWrapper.firstState {
+    height: 69px;
+  }
+  
+  .navWrapper.inactive {
+    animation: mobMnuClose 1s ease-in-out 0s forwards;
+  }
+  .navWrapper.active {
+    animation: mobMnuOpen 1s ease-in-out 0s forwards;
+  }
+
+  @keyframes mobMnuOpen {
+    from {
+      height: 69px;
+    }
+    to {
+      height: 481px;
+    }
+  }
+
+  @keyframes mobMnuClose {
+    from {
+      height: 481px;
+    }
+    to {
+      height: 69px;
+    }
+  }
+
+  /*//*/
+
   header > h1 {
     // Remove h1 top margin style
     margin-top: 0;
     // Set height of main website heading/image
     padding: $spacing-largest 0;
   }
+
   div > h2 {
     // Set margin of all global articles
     margin-top: $spacing-normal;
   }
   nav {
-    display: none;
+    // NOTE: the line below.
+    // display: none;
     li {
       // Separate menu items from background
       margin: $spacing-normal;
@@ -216,7 +255,7 @@ article {
     flex-direction: column;
   }
 
-  #dIcon {
+  #mobBtnDiv {
     display: none;
   }
 

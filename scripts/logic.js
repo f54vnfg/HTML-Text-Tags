@@ -1,11 +1,11 @@
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 500px from the top of the document, show the button
 window.onscroll = function() {
   scrollFunction()
 };
 
 //
 window.onload = function() {
-  toggleMonileMenu();
+  document.getElementsByClassName("navWrapper")[0].className += ' firstState ';
 }
 
 //
@@ -23,29 +23,26 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-document.getElementById('dIcon').onclick = function() {
-
-    var className = '' + dIcon.className + ' ';
-
-    if ( ~className.indexOf(' active ') ) {
-        this.className = className.replace(' active ', '');
-    } else {
-        this.className += ' active';
-    }
-
-    toggleMonileMenu();
-}
-
-function toggleMonileMenu() {
-  var visState = document.getElementById("mainNav");
-  var mainHeading = document.getElementById("mainHeading");
-
-  if (visState.style.display === "none") {
-    visState.style.display = "block";
-    mainHeading.style.display = "none";
+document.getElementById('mobBtnDiv').onclick = function() {
+  var className = '' + mobBtnDiv.parentElement.className + '';
+  if (~className.indexOf(' firstState ')) {
+    this.parentElement.className = className.replace(' firstState', ' active');
+  } else if (~className.indexOf(' inactive ')) {
+    this.parentElement.className = className.replace(' inactive', ' active');
+  } else if (~className.indexOf(' active ')) {
+    this.parentElement.className = className.replace(' active', ' inactive');
   } else {
-    visState.style.display = "none";
-    mainHeading.style.display = "block";
+    this.parentElement.className += ' active ';
   }
-
 }
+ 
+// function toggleMonileMenu(show) {
+//
+//   var mainHeading = document.getElementById("mainHeading");
+//
+//   if (show !== true) {
+//     mainHeading.style.display = "none";
+//   } else {
+//     mainHeading.style.display = "block";
+//   }
+// }
