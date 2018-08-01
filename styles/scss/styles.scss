@@ -6,6 +6,11 @@
 @import "cssAni";
 
 body {
+  .navWrapper {
+    overflow: hidden;
+    height: 69px;
+  }
+
   // Max width for the whole website
   max-width: 1260px;
   // Center the whole website
@@ -13,9 +18,9 @@ body {
   // Justify all text
   text-align: justify;
 
-  // header {
-  //   display: flex;
-  // }
+  header {
+    display: flex;
+  }
 
   header > h1 {
     // Remove main website margins
@@ -99,9 +104,12 @@ article {
 @media only screen and (max-width: 580px) {
   header {
     //
-    // flex-direction: column;
+    flex-direction: column;
     position: relative;
-    margin-bottom: 90px;
+  }
+
+  #mainHeading {
+    margin-top: 69px;
   }
 
   .navWrapper {
@@ -255,9 +263,9 @@ article {
 
 @media only screen and (min-width: 581px),
   only screen and (min-width: 700px) and (orientation: landscape) {
-  // header {
-  //   flex-direction: column;
-  // }
+  header {
+    flex-direction: column;
+  }
 
   #mobBtnDiv {
     display: none;

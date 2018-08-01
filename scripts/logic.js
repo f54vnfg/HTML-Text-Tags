@@ -38,32 +38,37 @@ htmlWrapper.addEventListener("click", (event) => {
 });
 
 document.getElementById('mobBtnDiv').onclick = function() {
-  toggleMonileMenu(true);
+  toggleMonileMenu();
 }
 
-function toggleMonileMenu(scroll) {
+function toggleMonileMenu() {
   var className = '' + navWrapper.className + '';
+
   if (~className.indexOf(' inactive ')) {
     navWrapper.className = className.replace(' inactive', ' active');
-    if (scroll === true) {
-      scroltoPos(171);
-    }
-
+    // if (scroll === true) {
+    //   scroltoPos(171);
+    // }
   } else if (~className.indexOf(' active ')) {
     navWrapper.className = className.replace(' active', ' inactive');
-    if (scroll === true) {
-      scroltoPos(-171);;
-    }
+    // if (scroll === true) {
+    //   scroltoPos(-171);;
+    // }
+  } else {
+    navWrapper.className += ' active ';
+    // if (scroll === true) {
+    //   scroltoPos(171);
+    // }
   }
 }
 
-function scroltoPos(pos) {
-  window.scrollBy({
-    top: pos,
-    left: 0,
-    behavior: 'smooth'
-  });
-}
+// function scroltoPos(pos) {
+//   window.scrollBy({
+//     top: pos,
+//     left: 0,
+//     behavior: 'smooth'
+//   });
+// }
 
 // function toggleMonileMenu(show) {
 //
