@@ -8,7 +8,6 @@ window.onscroll = function() {
 
 //
 window.onload = function() {
-  // document.getElementsByClassName("navWrapper")[0].className += ' firstState ';
 }
 
 //
@@ -26,17 +25,12 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-//
 htmlWrapper.addEventListener("click", (event) => {
-  //console.log(event.target.parentNode.parentNode.parentNode.id == "mainNav");
   if (event.target.tagName == "A") {
     if (event.target.parentNode.parentNode.parentNode.id == "mainNav") {
       toggleMonileMenu(false);
     }
   }
-  // if (event.target.id == "menuBtnDiv") {
-  //   toggleMonileMenu(true);
-  // }
 });
 
 document.getElementById('mobBtnDiv').onclick = function() {
@@ -48,37 +42,9 @@ function toggleMonileMenu() {
 
   if (~className.indexOf(' inactive ')) {
     navWrapper.className = className.replace(' inactive', ' active');
-    // if (scroll === true) {
-    //   scroltoPos(171);
-    // }
   } else if (~className.indexOf(' active ')) {
     navWrapper.className = className.replace(' active', ' inactive');
-    // if (scroll === true) {
-    //   scroltoPos(-171);;
-    // }
   } else {
     navWrapper.className += ' active ';
-    // if (scroll === true) {
-    //   scroltoPos(171);
-    // }
   }
 }
-
-// function scroltoPos(pos) {
-//   window.scrollBy({
-//     top: pos,
-//     left: 0,
-//     behavior: 'smooth'
-//   });
-// }
-
-// function toggleMonileMenu(show) {
-//
-//   var mainHeading = document.getElementById("mainHeading");
-//
-//   if (show !== true) {
-//     mainHeading.style.display = "none";
-//   } else {
-//     mainHeading.style.display = "block";
-//   }
-// }
