@@ -98,7 +98,7 @@ article {
 
 @media only screen and (max-width: 580px) {
   header {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   #mobBtnDiv {
@@ -170,10 +170,10 @@ article {
 
   .navWrapper.inactive {
     // height: 69px;
-    animation: mobMnuClose 450ms forwards;
+    animation: mobMnuClose 300ms forwards;
   }
   .navWrapper.active {
-    animation: mobMnuOpen 450ms forwards;
+    animation: mobMnuOpen 300ms forwards;
   }
 
   @keyframes mobMnuOpen {
