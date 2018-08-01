@@ -1,3 +1,6 @@
+var htmlWrapper = document.querySelector("body");
+var navWrapper = document.querySelector(".navWrapper");
+
 // When the user scrolls down 500px from the top of the document, show the button
 window.onscroll = function() {
   scrollFunction()
@@ -23,23 +26,43 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-document.getElementById('mobBtnDiv').onclick = function() {
-  var className = '' + mobBtnDiv.parentElement.className + '';
-   if (~className.indexOf(' inactive ')) {
-    this.parentElement.className = className.replace(' inactive', ' active');
-    scroltoPos(171);
-  } else if (~className.indexOf(' active ')) {
-    this.parentElement.className = className.replace(' active', ' inactive');
-    scroltoPos(-171);;
-  } else {
-    this.parentElement.className += ' active ';
-    scroltoPos(171);
+//
+htmlWrapper.addEventListener("click", (event) => {
+  //console.log(event.target.parentNode.parentNode.parentNode.id == "mainNav");
+  if (event.target.parentNode.parentNode.parentNode.id == "mainNav") {
+    toggleMonileMenu(false);
   }
-  //document.getElementById( 'top' ).scrollIntoView();
+  // if (event.target.id == "menuBtnDiv") {
+  //   toggleMonileMenu(true);
+  // }
+});
+
+document.getElementById('mobBtnDiv').onclick = function() {
+  toggleMonileMenu(true);
+}
+
+function toggleMonileMenu(scroll) {
+  var className = '' + navWrapper.className + '';
+  if (~className.indexOf(' inactive ')) {
+    navWrapper.className = className.replace(' inactive', ' active');
+    if (scroll === true) {
+      scroltoPos(171);
+    }
+
+  } else if (~className.indexOf(' active ')) {
+    navWrapper.className = className.replace(' active', ' inactive');
+    if (scroll === true) {
+      scroltoPos(-171);;
+    }
+  }
 }
 
 function scroltoPos(pos) {
-  window.scrollBy({ top: pos, left: 0, behavior: 'smooth' });
+  window.scrollBy({
+    top: pos,
+    left: 0,
+    behavior: 'smooth'
+  });
 }
 
 // function toggleMonileMenu(show) {
