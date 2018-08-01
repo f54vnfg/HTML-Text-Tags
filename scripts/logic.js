@@ -25,15 +25,21 @@ function topFunction() {
 
 document.getElementById('mobBtnDiv').onclick = function() {
   var className = '' + mobBtnDiv.parentElement.className + '';
-  if (~className.indexOf(' firstState ')) {
-    this.parentElement.className = className.replace(' firstState', ' active');
-  } else if (~className.indexOf(' inactive ')) {
+   if (~className.indexOf(' inactive ')) {
     this.parentElement.className = className.replace(' inactive', ' active');
+    scroltoPos(171);
   } else if (~className.indexOf(' active ')) {
     this.parentElement.className = className.replace(' active', ' inactive');
+    scroltoPos(-171);;
   } else {
     this.parentElement.className += ' active ';
+    scroltoPos(171);
   }
+  //document.getElementById( 'top' ).scrollIntoView();
+}
+
+function scroltoPos(pos) {
+  window.scrollBy({ top: pos, left: 0, behavior: 'smooth' });
 }
 
 // function toggleMonileMenu(show) {
