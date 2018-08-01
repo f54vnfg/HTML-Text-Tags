@@ -7,8 +7,8 @@ window.onscroll = function() {
 };
 
 //
-window.onload = function() {
-}
+// window.onload = function() {
+// }
 
 //
 function scrollFunction() {
@@ -21,8 +21,10 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  // For Safari
+  document.body.scrollTop = 0;
+  // For Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTop = 0;
 }
 
 htmlWrapper.addEventListener("click", (event) => {
@@ -39,7 +41,6 @@ document.getElementById('mobBtnDiv').onclick = function() {
 
 function toggleMonileMenu() {
   var className = '' + navWrapper.className + '';
-
   if (~className.indexOf(' inactive ')) {
     navWrapper.className = className.replace(' inactive', ' active');
   } else if (~className.indexOf(' active ')) {

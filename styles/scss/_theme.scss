@@ -16,9 +16,7 @@ html {
   background: $color7;
   body {
     // offset-x | offset-y | blur-radius | color
-
-    //Enable this for descktops only.
-    // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -29,9 +27,8 @@ header {
     // Main website background color
     background-color: $color2;
 
-    //Enable this for descktops only.
     // offset-x | offset-y | blur-radius | color
-    //text-shadow: 3px 0 0 $color6;
+    text-shadow: 3px 0 0 $color6;
 
     // Set background image to the main heading box model
     background-image: url("../../img/backimage2.jpg");
@@ -74,9 +71,8 @@ article {
   border-right: groove 2px $color8;
   border-left: groove 2px $color8;
 
-  //Enable this for descktops only.
   // offset-x | offset-y | blur-radius | spread-radius | color
-  //box-shadow: 1px 1px 3px 1px $color5;
+  box-shadow: 1px 1px 3px 1px $color5;
 
   @include hoverNfocus() {
     // animation: keyframeName | duration | transitions | delay | last keyframe
