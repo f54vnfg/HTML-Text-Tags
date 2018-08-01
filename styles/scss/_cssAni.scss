@@ -1,5 +1,53 @@
 @import "theme";
 
+// Code that works only on mobile devices
+@media only screen and (max-width: 580px) {
+  .active .hamMenu {
+    // middle bit of the mobile menu
+    background: rgba(0, 0, 0, 0);
+    transition: 250ms;
+  }
+  .active .hamMenu:before {
+    // animation of the top mobile menu bit
+    top: 0;
+    transform: rotate(-135deg);
+  }
+  .active .hamMenu:after {
+    // animation of the bottom mobile menu bit
+    top: 0;
+    transform: rotate(135deg);
+  }
+  .navWrapper.active {
+    // animate menu on opening
+    // keyframe | duration | endstate
+    animation: mobMnuOpen 300ms forwards;
+  }
+  .navWrapper.inactive {
+    // animate menu on closing
+    // keyframe | duration | endstate
+    animation: mobMnuClose 300ms forwards;
+  }
+  @keyframes mobMnuOpen {
+    // What should happen at the beggning
+    from {
+      height: 69px;
+    }
+    // What should happen at the end
+    to {
+      height: 481px;
+    }
+  }
+  @keyframes mobMnuClose {
+    from {
+      height: 481px;
+    }
+    to {
+      height: 69px;
+    }
+  }
+}
+
+// Code that works only on larger devices
 @media only screen and (min-width: 581px) {
   nav li a {
     @include hoverNfocus() {
@@ -20,36 +68,30 @@
     }
   }
   @keyframes navAnimate {
+    // What should happen at the beggning
     from {
-      // What should happen at the beggning.
       color: $color7;
     }
+    // What should happen at the end
     to {
-      // What should happen at the end.
       color: $color2;
     }
   }
-
   @keyframes articleAnimate {
     from {
-      // What should happen at the beggning.
       border-right: groove 2px $color8;
       border-left: groove 2px $color8;
     }
     to {
-      // What should happen at the end.
       border-right: groove 2px $color2;
       border-left: groove 2px $color2;
     }
   }
-
   @keyframes myBtnAnimate {
     from {
-      // What should happen at the beggning.
       background-color: $color2B;
     }
     to {
-      // What should happen at the end.
       background-color: $color2;
       color: $color6;
     }

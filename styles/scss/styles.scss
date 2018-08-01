@@ -5,40 +5,31 @@
 @import "theme";
 @import "cssAni";
 
+// General website styling
 body {
-  // .navWrapper {
-  //   overflow: hidden;
-  //   height: 69px;
-  // }
-
   // Max width for the whole website
   max-width: 1260px;
   // Center the whole website
   margin: 0 auto;
   // Justify all text
   text-align: justify;
-
-  header {
-    display: flex;
-  }
-
   header > h1 {
     // Remove main website margins
     margin-bottom: 0;
   }
-
   div > h2 {
     // Padding of the main article heading
     padding-bottom: $spacing-normal;
   }
-
   header > h1,
   div > h2,
   article > h3 {
+    // Center align all headings
     text-align: center;
   }
 }
 
+// Website navigation
 nav {
   li {
     // Separate menu items from background
@@ -51,6 +42,7 @@ nav {
   }
 }
 
+// The small article boxes
 article {
   .example-box {
     // Slight top margin for the example box
@@ -74,6 +66,7 @@ article {
   }
 }
 
+// back-to-top button
 #bckBtn {
   // Hidden by default
   display: none;
@@ -86,9 +79,9 @@ article {
   // Make sure it does not overlap
   z-index: 99;
   // // Remove borders
-  // border: none;
-  // // Remove outline
-  // outline: none;
+  border: none;
+  // Remove outline
+  outline: none;
   // Add a mouse pointer on hover
   cursor: pointer;
   // Some padding
@@ -101,35 +94,37 @@ article {
   height: 50px;
 }
 
+// Code that works only on mobiles
 @media only screen and (max-width: 580px) {
   header {
-    //
-    flex-direction: column;
     position: relative;
   }
-
   #mainHeading {
+    // Add margin to compensate for the seprated menu
     margin-top: 69px;
   }
-
   .navWrapper {
+    // Separate the mobile menu from the website content
     position: absolute;
+    // Position the mobile nav menu to the absolute top
+    top: -69px;
+    right: 0px;
+    // The mobile menu wrapper should take the whole width
     width: 100%;
   }
-
   #mobBtnDiv {
+    // The background of the mobile burger menu
     display: block;
     margin: $spacing-smaller;
     position: relative;
     width: 44px;
     height: 43px;
     cursor: pointer;
-    /* background color */
     background: #ccc;
     border-radius: $spacing-smaller;
   }
-
   .hamMenu {
+    // The middle bit of the mobile burger menu
     width: 28px;
     height: 5px;
     background: $color6;
@@ -141,6 +136,7 @@ article {
   }
   .hamMenu:before,
   .hamMenu:after {
+    // The side bits of the mobile burger menu
     content: "";
     position: absolute;
     width: 28px;
@@ -149,76 +145,26 @@ article {
     transition: 250ms;
     transition-delay: 150ms;
   }
-
   .hamMenu:before {
+    // Move top side burger bit up
     top: -11px;
   }
-
   .hamMenu:after {
+    // Move bottom side burger bit down
     top: 11px;
   }
-
-  .active .hamMenu {
-    // middle of menu
-    background: rgba(0, 0, 0, 0);
-    transition: 250ms;
-  }
-
-  .active .hamMenu:before {
-    top: 0;
-    transform: rotate(-135deg);
-  }
-
-  .active .hamMenu:after {
-    top: 0;
-    transform: rotate(135deg);
-  }
-
-  // .navWrapper {
-  //   // transform: translate(20%, 100%);
-  //   transition: transform 300ms ease-in-out;
-  // }
-
   .navWrapper {
+    // Defult state of the mobile nav menu
     overflow: hidden;
     height: 69px;
+    padding: 5px;
   }
-
-  .navWrapper.inactive {
-    // height: 69px;
-    animation: mobMnuClose 300ms forwards;
-  }
-  .navWrapper.active {
-    animation: mobMnuOpen 300ms forwards;
-  }
-
-  @keyframes mobMnuOpen {
-    from {
-      height: 69px;
-    }
-    to {
-      height: 481px;
-    }
-  }
-
-  @keyframes mobMnuClose {
-    from {
-      height: 481px;
-    }
-    to {
-      height: 69px;
-    }
-  }
-
-  /*//*/
-
   header > h1 {
     // Remove h1 top margin style
     margin-top: 0;
     // Set height of main website heading/image
     padding: $spacing-largest 0;
   }
-
   div > h2 {
     // Set margin of all global articles
     margin-top: $spacing-normal;
@@ -230,10 +176,8 @@ article {
       padding: $spacing-normal/2;
     }
   }
-  .navWrapper {
-    padding: 5px;
-  }
   nav ul {
+    // Style the mobile nav menu list buttons
     li {
       background-color: $color2;
       text-align: center;
@@ -248,38 +192,37 @@ article {
     grid-row-gap: $spacing-normal;
   }
   article {
-    // Set individual code article padding
+    // Set individual article padding
     padding: $spacing-small;
-    margin-bottom: $spacing-small;
+    margin-bottom: $spacing-normal;
   }
   article > p {
     // Set code article description padding
     padding: $spacing-normal 0 $spacing-small;
   }
   #bckBtn {
+    // explicitly hide back-to-top button in the mobile view
     display: none !important;
   }
 }
 
+// Code that works only on tablets
 @media only screen and (min-width: 581px),
   only screen and (min-width: 700px) and (orientation: landscape) {
-  header {
-    flex-direction: column;
-  }
-
   #mobBtnDiv {
+    // Hide the show mobile nav button from this size on
     display: none;
   }
-
   header > h1 {
     // Remove h1 top margin style
     margin-top: 0;
     // Set height of main website heading/image
     padding: $spacing-largest 0;
-    //
+    // explicitly show main heading (obsolete code?)
     display: block !important;
   }
   nav {
+    // explicitly show nav menu (obsolete code?)
     display: block !important;
   }
   div > h2 {
@@ -318,10 +261,9 @@ article {
   }
 }
 
+// Code that works only on large screens
 @media only screen and (min-width: 1023px) {
   header > h1 {
-    // Remove h1 top margin style
-    //margin-top: 0;
     // Set height of main website heading/image
     padding: $spacing-largest * 2 0;
   }
@@ -359,10 +301,10 @@ article {
   }
 }
 
+// Code that works only on largest screens
 @media only screen and (min-width: 1439px) {
   header {
+    // Separate the website from the top
     margin-top: $spacing-normal;
   }
 }
-
-// EXPEREMENTAL

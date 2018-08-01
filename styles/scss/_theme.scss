@@ -26,10 +26,8 @@ header {
     color: $color7;
     // Main website background color
     background-color: $color2;
-
     // offset-x | offset-y | blur-radius | color
     text-shadow: 3px 0 0 $color6;
-
     // Set background image to the main heading box model
     background-image: url("../../img/backimage2.jpg");
     // Make the background image cover the h1 box
@@ -41,20 +39,6 @@ header {
   // Set navbar background color
   background-color: $color1;
 }
-
-// #menuBtnDiv {
-//   background-image: url("../../img/menuIcon.png");
-//   // Set background image size
-//   background-size: 20px;
-//   // Disable default image repeat
-//   background-repeat: no-repeat;
-//   // Position image to the center
-//   background-position: center;
-//   //
-//   background-color: $color7;
-//   //
-//   border: none;
-// }
 
 nav {
   li {
@@ -70,15 +54,12 @@ article {
   // Set border and values for all articles
   border-right: groove 2px $color8;
   border-left: groove 2px $color8;
-
   // offset-x | offset-y | blur-radius | spread-radius | color
   box-shadow: 1px 1px 3px 1px $color5;
-
   @include hoverNfocus() {
     // animation: keyframeName | duration | transitions | delay | last keyframe
     animation: articleAnimate 0.15s ease-in-out 0s forwards;
   }
-
   .example-box {
     // Set border and values for article example box
     border: 1px groove $color8;
