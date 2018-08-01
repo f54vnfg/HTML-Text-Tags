@@ -13,9 +13,9 @@ body {
   // Justify all text
   text-align: justify;
 
-  header {
-    display: flex;
-  }
+  // header {
+  //   display: flex;
+  // }
 
   header > h1 {
     // Remove main website margins
@@ -99,7 +99,14 @@ article {
 @media only screen and (max-width: 580px) {
   header {
     //
-    flex-direction: column;
+    // flex-direction: column;
+    position: relative;
+    margin-bottom: 90px;
+  }
+
+  .navWrapper {
+    position: absolute;
+    width: 100%;
   }
 
   #mobBtnDiv {
@@ -248,9 +255,9 @@ article {
 
 @media only screen and (min-width: 581px),
   only screen and (min-width: 700px) and (orientation: landscape) {
-  header {
-    flex-direction: column;
-  }
+  // header {
+  //   flex-direction: column;
+  // }
 
   #mobBtnDiv {
     display: none;
