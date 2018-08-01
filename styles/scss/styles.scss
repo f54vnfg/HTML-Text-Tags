@@ -170,7 +170,7 @@ article {
   .navWrapper.firstState {
     height: 69px;
   }
-  
+
   .navWrapper.inactive {
     animation: mobMnuClose 1s ease-in-out 0s forwards;
   }
@@ -210,8 +210,6 @@ article {
     margin-top: $spacing-normal;
   }
   nav {
-    // NOTE: the line below.
-    // display: none;
     li {
       // Separate menu items from background
       margin: $spacing-normal;
@@ -223,7 +221,7 @@ article {
   }
   nav ul {
     li {
-      background-color: $color2B;
+      background-color: $color2;
       text-align: center;
     }
   }

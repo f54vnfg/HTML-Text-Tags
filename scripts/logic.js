@@ -5,7 +5,7 @@ window.onscroll = function() {
 
 //
 window.onload = function() {
-  document.getElementsByClassName("navWrapper")[0].className += ' firstState ';
+  // document.getElementsByClassName("navWrapper")[0].className += ' firstState ';
 }
 
 //
@@ -35,7 +35,7 @@ document.getElementById('mobBtnDiv').onclick = function() {
     this.parentElement.className += ' active ';
   }
 }
- 
+
 // function toggleMonileMenu(show) {
 //
 //   var mainHeading = document.getElementById("mainHeading");
