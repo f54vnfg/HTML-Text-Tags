@@ -120,8 +120,8 @@ article {
     position: absolute;
     top: 45%;
     left: 19%;
-    transition: 0.25s;
-    transition-delay: 0.25s;
+    transition: 250ms;
+    transition-delay: 250ms;
   }
   .hamMenu:before,
   .hamMenu:after {
@@ -130,8 +130,8 @@ article {
     width: 28px;
     height: 5px;
     background: $color6;
-    transition: 0.25s;
-    transition-delay: 0.15s;
+    transition: 250ms;
+    transition-delay: 150ms;
   }
 
   .hamMenu:before {
@@ -145,7 +145,7 @@ article {
   .active .hamMenu {
     // middle of menu
     background: rgba(0, 0, 0, 0);
-    transition: 0.25s;
+    transition: 250ms;
   }
 
   .active .hamMenu:before {
@@ -165,17 +165,15 @@ article {
 
   .navWrapper {
     overflow: hidden;
-  }
-
-  .navWrapper.firstState {
     height: 69px;
   }
 
   .navWrapper.inactive {
-    animation: mobMnuClose 1s ease-in-out 0s forwards;
+    // height: 69px;
+    animation: mobMnuClose 450ms forwards;
   }
   .navWrapper.active {
-    animation: mobMnuOpen 1s ease-in-out 0s forwards;
+    animation: mobMnuOpen 450ms forwards;
   }
 
   @keyframes mobMnuOpen {
