@@ -1,0 +1,196 @@
+@import "sizes";
+
+/* General Styles */
+
+// body {
+//   border: dotted 1px #eee;
+//   width: 960px;
+//   margin: 0 auto;
+// }
+
+// p {
+//   font-size: 16px;
+//   font-family: helvetica;
+//   margin-bottom: 20px;
+//   text-align: justify;
+// }
+//
+// .centerText {
+//   text-align: center;
+// }
+//
+// .solidBorder {
+//   border: 1px solid #ccc;
+// }
+
+#wrap2layout article {
+  margin-bottom: $spacing-normal;
+}
+
+/*
+  On a side note, "!important" ups the importance of any property. Very useful! The one who is above all! :D
+*/
+
+.solidBorder2 {
+  border: 2px solid black !important;
+}
+
+.bottomMargin {
+  margin-bottom: 70px;
+}
+
+/*
+  Simple styles for the divs grid.
+*/
+
+.grid > div {
+  border: 1px solid #ccc;
+  background: #eee;
+  padding: 1em;
+}
+
+.grid > div:nth-child(odd) {
+  background: #ddd;
+}
+
+body p {
+  padding: 0 20px;
+}
+
+/* === Example 1 === */
+
+/*
+  Default look - no coding.
+*/
+
+/* === Example 2 === */
+
+.grid_2 {
+  display: grid;
+  /*
+  The below code declares width of each child div.
+  */
+  grid-template-columns: 2fr 3fr;
+  /* column-gap */
+  grid-column-gap: 5px;
+  /* row-gap */
+  grid-row-gap: 5px;
+}
+
+/*
+  You can also use %, em, rem and fr units - but they are not recommended for CSS Grids.
+*/
+
+/* === Example 3 === */
+
+.grid_3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 5px;
+}
+
+/* === Example 4 === */
+
+/*
+  When using CSS grids, keep the size units type the same, otherwise you will have some wired size inconsistencies.
+ */
+
+.grid_4 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/* === Example 5 === */
+
+.grid_5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* Below line defines a static height. */
+  /* grid-auto-rows: 100px; */
+  /* Below line defines variable height. */
+  grid-auto-rows: minmax(10px, auto);
+}
+
+.nestedDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 50px;
+  grid-gap: 5px;
+}
+
+.nestedDiv > div {
+  border: 1px dotted black;
+  padding-left: 5px;
+}
+
+/* justify-items */
+
+.nestedDiv2 {
+  justify-items: start;
+}
+
+.nestedDiv3 {
+  justify-items: center;
+}
+
+.nestedDiv4 {
+  justify-items: end;
+}
+
+/* align-items */
+
+.nestedDiv5 {
+  align-items: start;
+}
+
+.nestedDiv6 {
+  align-items: center;
+}
+
+.nestedDiv7 {
+  align-items: end;
+}
+
+/* align-self */
+
+.exampleDiv1 {
+  align-self: center;
+}
+
+.exampleDiv2 {
+  align-self: end;
+}
+
+/* === Example 6 === */
+
+.grid_6 {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 2fr 1fr;
+  /*
+    The value below sets the minimum and maximum height of each row. This is very useful to prevent content from overflowing its containing box.
+  */
+  grid-auto-rows: minmax(100px, auto);
+}
+
+/* "The start of the show" These value can change the layout of the gird itself. Making a single box take up more space by taking other boxes space with appropriate resizing and not overlapping them if you don't need to. */
+
+/*  The way that it works is by lines. Each container box having its own line. So you count lines instead of boxes to resize objects. see a picture example of these lines: http://media02.hongkiat.com/moving-css-grid-items/grid-lines.jpg*/
+
+.box_1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.box_2 {
+  grid-row: 1/3;
+}
+
+.box_4 {
+  grid-column: 2/4;
+}
+
+.box_3 {
+  grid-column: 1;
+  grid-row: 2/4;
+}

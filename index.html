@@ -235,11 +235,228 @@
 
     <div id="wrap2layout">
       <h2>CSS Layouts: Floats, Flexbox, CSS Grid</h2>
-      <div class="subWrap">
+      <div class="">
+        <h3>CSS Grid</h3>
+      </div>
+      <div class="">
         <article>
-          <h3></h3>
-
+          <p>The 1st example shows the default look of divs within a div, without any layout coding.</p>
+          <div class="grid grid_1 bottomMargin">
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque ipsum vel quo modi, aperiam rem molestias sapiente. Pariatur, natus.
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque ipsum vel quo modi, aperiam rem molestias sapiente. Pariatur, natus.
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque ipsum vel quo modi, aperiam rem molestias sapiente. Pariatur, natus.
+            </div>
+          </div>
         </article>
+
+        <article class="">
+          <h3></h3>
+          <p>In this 2nd example, you can see the divs have been split into two. Fractional units have been used. The fraction is - 2fr-3fr or 40%-60%. Fractions are preferred over static units because <strong>percentages, px, em or rem are static units </strong>.
+            you will have problems if you use padding, margins or gaps with static units.</p>
+          <div class="grid grid_2 bottomMargin">
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ratione voluptatem nesciunt voluptatibus natus, odio eius atque magni, nulla iure, molestiae dignissimos iste cum assumenda perspiciatis iusto. Aperiam, esse. Ex.
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ut laborum, harum explicabo sed molestiae rerum sit accusantium consequuntur voluptas, consectetur, necessitatibus praesentium sequi officiis. Dolores fuga blanditiis omnis reiciendis illum
+              praesentium consequuntur ipsa, est fugit iure facere quos, debitis quia ut magnam voluptates consectetur, id provident suscipit dolorem eum quis. Accusantium et vitae deserunt asperiores eaque libero odio, praesentium fuga ut recusandae
+              voluptates labore, sit. Autem voluptatum rem excepturi quaerat distinctio in. Facilis distinctio fugit accusamus at a quod.
+            </div>
+          </div>
+        </article>
+
+        <article class="">
+          <p>In this 3rd example you can see 4 divs, but the grid system uses 3 fr declarations - <strong>1fr-2fr-1fr</strong>. So, even if you add 10 more divs within the main div the system will keep the layout exactly the same.</p>
+          <div class="grid grid_3 bottomMargin">
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta, quam. Quasi cumque aspernatur temporibus, ducimus nobis sed explicabo nihil magni quae totam, neque possimus!
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloribus iusto esse sit facilis ex quaerat, voluptatem cupiditate. Molestias omnis officia aspernatur, nam inventore nihil adipisci assumenda debitis. Labore dignissimos quisquam sunt mollitia
+              consectetur ab magnam quas voluptate in, similique, iste ullam iure voluptas recusandae voluptatem inventore, iusto tempora animi!
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime veniam maiores voluptates deleniti quae asperiores unde libero necessitatibus minima minus voluptate nihil nemo nisi, non vel ab dolore repellat provident, totam cupiditate? Doloribus, pariatur,
+              cum.
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, obcaecati!
+            </div>
+          </div>
+        </article>
+
+        <article class="">
+          <p>In this 4th example you can see 6 column layout, however, repeat subfunction has been used here to demonstrate a simplified method if you need one.</p>
+          <div class="grid grid_4 bottomMargin">
+            <div>
+              Lorem ipsum dolor sit.
+            </div>
+            <div>
+              Lorem ipsum dolor sit.
+            </div>
+            <div>
+              Lorem ipsum dolor sit.
+            </div>
+            <div>
+              Lorem ipsum dolor sit.
+            </div>
+            <div>
+              Lorem ipsum dolor sit.
+            </div>
+            <div>
+              Lorem ipsum dolor sit.
+            </div>
+          </div>
+        </article>
+        <article class="">
+          <p>In this 5th example, you can see the minmax height subfunction used with parameters of 100px and auto. This means that the minimum height of a box will be 100px and if the content overflows the height of the box will adjust itself automatically,
+            as it can be seen below.</p>
+          <p> You can also see nested divs with their own grid system. Visually they have a gap value, also some padding and border. You can also see that they can be aligned any way you want using the appropriate coding.</p>
+          <div class="grid grid_5 bottomMargin">
+            <div class="nestedDiv nestedDiv1">
+              <div>lorem</div>
+              <div>lorem</div>
+              <div>lorem</div>
+              <div>lorem</div>
+              <div>lorem</div>
+              <div>lorem</div>
+              <div>lorem</div>
+              <div>lorem</div>
+              <div>lorem</div>
+              <div>lorem</div>
+              <div>lorem</div>
+              <div>lorem</div>
+            </div>
+            <div class="nestedDiv nestedDiv2">
+              <div>START</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+            </div>
+            <div class="nestedDiv nestedDiv3">
+              <div>CENTER</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+            </div>
+            <div class="nestedDiv nestedDiv4">
+              <div>END</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae harum, dolor aliquam sint aspernatur est aperiam repellendus modi quidem rerum, quos eaque quia! Ipsam esse voluptas ea quaerat quam incidunt in quisquam voluptatibus dicta,
+              illo quae minus autem omnis.
+            </div>
+            <div class="nestedDiv nestedDiv5">
+              <div>START</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+            </div>
+            <div class="nestedDiv nestedDiv6">
+              <div>START</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+            </div>
+            <div class="nestedDiv nestedDiv7">
+              <div>START</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+              <div>lo</div>
+            </div>
+            <div class="exampleDiv1">
+              Aligned to the center.
+            </div>
+            <div class="exampleDiv2">
+              Aligned to the end.
+            </div>
+          </div>
+        </article>
+
+        <article class="">
+          <p>As you can see below in this 6th example. This is perhaps the most powerful feature of the CSS Grid system. This separates it from flexbox and floats. As you can see you can stretch individual boxes in pretty much any direction within the box
+            model. All that being said as you can see the boxes automatically resize each other to keep within their boundaries.</p>
+          <div class="grid grid_6 bottomMargin">
+            <div class="box box_1">
+              box1
+            </div>
+            <div class="box box_2">
+              box2
+            </div>
+            <div class="box box_3 solidBorder2">
+              box3
+            </div>
+            <div class="box box_4">
+              box4
+            </div>
+            <div class="box box_5">
+              Lorem ipsum dolor sit.
+            </div>
+            <div>
+              Lorem ipsum dolor sit.
+            </div>
+            <div>
+              Lorem ipsum dolor sit.
+            </div>
+          </div>
+        </article>
+
       </div>
       <!-- subWrap ends -->
     </div>
