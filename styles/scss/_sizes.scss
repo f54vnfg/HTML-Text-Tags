@@ -5,6 +5,13 @@ $base-spacing-units: 24px;
 $base-font-size: 16px;
 $base-line-hight: $base-spacing-units;
 
+// Media Query Sizes
+$screen-size-small: 580px;    // max-width
+$screen-size-medium: 581px;   // min-width
+$screen-size-medium-landscape: 700px;
+$screen-size-large: 1023px;   // min-width
+$screen-size-largest: 1439px; // min-width
+
 // Font weights
 $font-weight-light: 300;
 $font-weight-normal: 400;
@@ -48,12 +55,15 @@ body {
   }
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   // add antialiasing to all used headings
- @include fontSmoothing(font-smoothing, antialiased);
+  @include fontSmoothing(font-smoothing, antialiased);
 }
 
-h2,h3 {
+h2,
+h3 {
   // Set font weight of all other headings
   font-weight: $font-weight-heading;
 }
@@ -72,14 +82,26 @@ h1 {
 
 @media only screen and (max-width: 580px) {
   // Set heading sizes
-  h1 { font-size: $heading-size-3; }
-  h2 { font-size: $heading-size-4; }
-  h3 { font-size: $heading-size-5; }
+  h1 {
+    font-size: $heading-size-3;
+  }
+  h2 {
+    font-size: $heading-size-4;
+  }
+  h3 {
+    font-size: $heading-size-5;
+  }
 }
 
-@media only screen and (min-width: 581px), only screen and (min-width: 700px) and (orientation: landscape) {
+@media only screen and (min-width: 581px) {
   // Set heading sizes
-  h1 { font-size: $heading-size-1; }
-  h2 { font-size: $heading-size-2; }
-  h3 { font-size: $heading-size-3; }
+  h1 {
+    font-size: $heading-size-1;
+  }
+  h2 {
+    font-size: $heading-size-2;
+  }
+  h3 {
+    font-size: $heading-size-3;
+  }
 }

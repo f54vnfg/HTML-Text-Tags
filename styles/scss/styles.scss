@@ -96,7 +96,7 @@ article {
 }
 
 // Code that works only on mobiles
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: $screen-size-small) {
   header {
     position: relative;
   }
@@ -208,8 +208,8 @@ article {
 }
 
 // Code that works only on tablets
-@media only screen and (min-width: 581px),
-  only screen and (min-width: 700px) and (orientation: landscape) {
+@media only screen and (min-width: $screen-size-medium),
+  only screen and (min-width: $screen-size-medium-landscape) and (orientation: landscape) {
   #mobBtnDiv {
     // Hide the show mobile nav button from this size on
     display: none;
@@ -263,7 +263,7 @@ article {
 }
 
 // Code that works only on large screens
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: $screen-size-large) {
   header > h1 {
     // Set height of main website heading/image
     padding: $spacing-largest * 2 0;
@@ -303,7 +303,7 @@ article {
 }
 
 // Code that works only on largest screens
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: $screen-size-largest) {
   header {
     // Separate the website from the top
     margin-top: $spacing-normal;

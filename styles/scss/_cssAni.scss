@@ -1,7 +1,7 @@
 @import "theme";
 
 // Code that works only on mobile devices
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: $screen-size-small) {
   .active .hamMenu {
     // middle bit of the mobile menu
     background: rgba(0, 0, 0, 0);
@@ -48,7 +48,7 @@
 }
 
 // Code that works only on larger devices
-@media only screen and (min-width: 581px) {
+@media only screen and (min-width: $screen-size-medium) {
   nav li a {
     @include hoverNfocus() {
       // animation: name | duration | transitions | delay | playState

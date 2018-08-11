@@ -1,28 +1,5 @@
 @import "sizes";
 
-/* General Styles */
-
-// body {
-//   border: dotted 1px #eee;
-//   width: 960px;
-//   margin: 0 auto;
-// }
-
-// p {
-//   font-size: 16px;
-//   font-family: helvetica;
-//   margin-bottom: 20px;
-//   text-align: justify;
-// }
-//
-// .centerText {
-//   text-align: center;
-// }
-//
-// .solidBorder {
-//   border: 1px solid #ccc;
-// }
-
 #wrap2layout article {
   margin-bottom: $spacing-normal;
 }
@@ -193,4 +170,28 @@ body p {
 .box_3 {
   grid-column: 1;
   grid-row: 2/4;
+}
+
+@media only screen and (max-width: $screen-size-small) {
+  .message-mobile {
+    display: block;
+  }
+  .content-large,.content-largest {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $screen-size-medium) {
+  .message-mobile {
+    display: block;
+  }
+  .content-largest {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $screen-size-large) {
+  // .content-largest {
+  //   display: none;
+  // }
 }
