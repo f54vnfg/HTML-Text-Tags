@@ -297,8 +297,11 @@ article {
   article > p {
     // Set code article description padding
     padding: $spacing-normal 0 0;
+
+  }
+  #wrap1html article > p {
     // Set the article description height
-    height: 150px;
+     height: 150px;
   }
 }
 

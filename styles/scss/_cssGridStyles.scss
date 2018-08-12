@@ -191,7 +191,7 @@ body p {
 }
 
 @media only screen and (min-width: $screen-size-large) {
-  // .content-largest {
-  //   display: none;
-  // }
+  .message-mobile {
+    display: none;
+  }
 }
