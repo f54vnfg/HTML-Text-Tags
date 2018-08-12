@@ -52,24 +52,17 @@ nav {
 
 article {
   // Set border and values for all articles
-  border-right: groove 2px $color8;
-  border-left: groove 2px $color8;
-  // offset-x | offset-y | blur-radius | spread-radius | color
-  box-shadow: 1px 1px 3px 1px $color5;
+  border: dotted 2px $color8;
+  background: white;
+
   @include hoverNfocus() {
     // animation: keyframeName | duration | transitions | delay | last keyframe
     animation: articleAnimate 0.15s ease-in-out 0s forwards;
   }
   .example-box, .message-mobile, .message-tablet {
-    // Set border and values for article example box
-    border: 1px groove $color8;
     // Set background for the article example box
-    background: $color8;
-  }
-
-  .message-mobile, .message-tablet {
-    padding: $spacing-smaller;
-    border-radius: $spacing-smaller;
+    background: $color6;
+    color: $color8;
   }
 }
 
@@ -86,4 +79,29 @@ article {
   background-repeat: no-repeat;
   // Position image to the center
   background-position: center;
+}
+
+/*
+  On a side note, "!important" ups the importance of any property. Very useful! The one who is above all! :D
+*/
+
+.solidBorder2 {
+  border: 2px solid black !important;
+}
+
+/*
+  Simple styles for the divs grid.
+*/
+.grid {
+  color: black;
+}
+.grid > div {
+  border: 1px solid #ccc;
+  background: #eee;
+  padding: 1em;
+  border-radius: $spacing-smaller;
+}
+
+.grid > div:nth-child(odd) {
+  background: #ddd;
 }

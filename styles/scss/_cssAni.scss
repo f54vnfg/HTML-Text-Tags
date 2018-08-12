@@ -79,12 +79,14 @@
   }
   @keyframes articleAnimate {
     from {
-      border-right: groove 2px $color8;
-      border-left: groove 2px $color8;
+      border: dotted 2px $color8;
+      // border-right: groove 2px $color8;
+      // border-left: groove 2px $color8;
     }
     to {
-      border-right: groove 2px $color2;
-      border-left: groove 2px $color2;
+      border: dotted 2px $color2;
+      // border-right: groove 2px $color2;
+      // border-left: groove 2px $color2;
     }
   }
   @keyframes myBtnAnimate {

@@ -95,6 +95,25 @@ article {
   height: 50px;
 }
 
+// CSS grid stuff
+
+#wrap2layout article {
+  margin-bottom: $spacing-normal;
+}
+
+#wrap2layout .example-box p {
+  padding-bottom: $spacing-normal;
+}
+
+.message-mobile, .message-tablet {
+  padding: $spacing-smaller;
+  border-radius: $spacing-smaller;
+}
+
+.bottomMargin {
+  margin-bottom: $spacing-normal;
+}
+
 // Code that works only on mobiles
 @media only screen and (max-width: $screen-size-small) {
   header {
