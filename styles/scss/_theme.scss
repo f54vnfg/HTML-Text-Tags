@@ -60,17 +60,16 @@ article {
     // animation: keyframeName | duration | transitions | delay | last keyframe
     animation: articleAnimate 0.15s ease-in-out 0s forwards;
   }
-  .example-box,
-  .message-mobile {
+  .example-box, .message-mobile, .message-tablet {
     // Set border and values for article example box
     border: 1px groove $color8;
     // Set background for the article example box
     background: $color8;
   }
 
-  .message-mobile {
-    padding: $spacing-smaller $spacing-smaller/2;
-    border-radius: $spacing-smaller/2;
+  .message-mobile, .message-tablet {
+    padding: $spacing-smaller;
+    border-radius: $spacing-smaller;
   }
 }
 

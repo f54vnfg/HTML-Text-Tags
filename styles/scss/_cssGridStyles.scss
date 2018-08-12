@@ -13,7 +13,7 @@
 }
 
 .bottomMargin {
-  margin-bottom: 70px;
+  margin-bottom: $spacing-normal;
 }
 
 /*
@@ -30,10 +30,13 @@
   background: #ddd;
 }
 
-body p {
-  padding: 0 20px;
-}
+// body p {
+//   padding: 0 20px;
+// }
 
+#wrap2layout .example-box p {
+  padding-bottom: $spacing-normal;
+}
 /* === Example 1 === */
 
 /*
@@ -172,17 +175,31 @@ body p {
   grid-row: 2/4;
 }
 
+// KISS methodology in action.
+
 @media only screen and (max-width: $screen-size-small) {
   .message-mobile {
     display: block;
   }
-  .content-large,.content-largest {
+  .message-tablet {
+    display: block;
+  }
+  .content-large {
+    display: none;
+  }
+  .content-largest {
     display: none;
   }
 }
 
 @media only screen and (min-width: $screen-size-medium) {
   .message-mobile {
+    display: none;
+  }
+  .message-tablet {
+    display: block;
+  }
+  .content-large {
     display: block;
   }
   .content-largest {
@@ -193,5 +210,14 @@ body p {
 @media only screen and (min-width: $screen-size-large) {
   .message-mobile {
     display: none;
+  }
+  .message-tablet {
+    display: none;
+  }
+  .content-large {
+    display: block;
+  }
+  .content-largest {
+    display: block;
   }
 }
