@@ -52,13 +52,9 @@ nav {
 
 article {
   // Set border and values for all articles
-  border: dotted 2px $color8;
+  border: solid 2px $color8;
   background: white;
 
-  @include hoverNfocus() {
-    // animation: keyframeName | duration | transitions | delay | last keyframe
-    animation: articleAnimate 0.15s ease-in-out 0s forwards;
-  }
   .example-box, .message-mobile, .message-tablet {
     // Set background for the article example box
     background: $color6;
@@ -104,4 +100,93 @@ article {
 
 .grid > div:nth-child(odd) {
   background: #ddd;
+}
+
+
+// Code that works only on mobile devices
+@media only screen and (max-width: $screen-size-small) {
+  .active .hamMenu {
+    // middle bit of the mobile menu
+    background: rgba(0, 0, 0, 0);
+    transition: 250ms;
+  }
+  .active .hamMenu:before {
+    // animation of the top mobile menu bit
+    top: 0;
+    transform: rotate(-135deg);
+  }
+  .active .hamMenu:after {
+    // animation of the bottom mobile menu bit
+    top: 0;
+    transform: rotate(135deg);
+  }
+  .navWrapper.active {
+    // animate menu on opening
+    // keyframe | duration | endstate
+    animation: mobMnuOpen 300ms forwards;
+  }
+  .navWrapper.inactive {
+    // animate menu on closing
+    // keyframe | duration | endstate
+    animation: mobMnuClose 300ms forwards;
+  }
+  @keyframes mobMnuOpen {
+    // What should happen at the beggning
+    from {
+      height: 69px;
+    }
+    // What should happen at the end
+    to {
+      height: 481px;
+    }
+  }
+  @keyframes mobMnuClose {
+    from {
+      height: 481px;
+    }
+    to {
+      height: 69px;
+    }
+  }
+}
+
+// Code that works only on larger devices
+@media only screen and (min-width: $screen-size-medium) {
+  nav li a {
+    @include hoverNfocus() {
+      // animation: name | duration | transitions | delay | playState
+      animation: navAnimate 0.15s ease-in-out 0s forwards;
+    }
+  }
+  article {
+    @include hoverNfocus() {
+      border: dotted 2px $color2;
+    }
+  }
+
+  #bckBtn {
+    @include hoverNfocus() {
+      // animation: keyframeName | duration | transitions | delay | last keyframe
+      animation: myBtnAnimate 0.15s ease-in-out 0s forwards;
+    }
+  }
+  @keyframes navAnimate {
+    // What should happen at the beggning
+    from {
+      color: $color7;
+    }
+    // What should happen at the end
+    to {
+      color: $color2;
+    }
+  }
+  @keyframes myBtnAnimate {
+    from {
+      background-color: $color2B;
+    }
+    to {
+      background-color: $color2;
+      color: $color6;
+    }
+  }
 }

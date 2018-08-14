@@ -42,8 +42,8 @@
         <article>
           <h3><strong>&lt;b&gt;</strong> and <strong>&lt;strong&gt;</strong></h3>
           <p>Both of
-            <these></these> tags will make text look bold. The second tag also describes a higher text importance than the first. Also, according to the HTML 5 specification, the <strong>&lt;b&gt;</strong> tag should only be used as a LAST resort when no other
-            tag is more appropriate.</p>
+            <these></these> tags will make text look bold. The second tag also describes a higher text importance than the first. Also, according to the HTML 5 specification, the
+            <strong>&lt;b&gt;</strong> tag should only be used as a LAST resort when no other tag is more appropriate.</p>
           <div class="example-box">
             <p class="bottom-padding">HTML : &lt;b&gt;bold text&lt;&sol;b&gt;</p>
             <p>Result : <b>bold text</b></p>
@@ -240,8 +240,35 @@
           <p>The 1st example shows the default look of divs within a div, without any layout coding.</p>
           <div class="example-box">
             <p>CSS:</p>
-            <div>
-              <p>Only visual CSS styling was used here.</p>
+            <div class="codeExample">
+              <div class="indent">
+                <p>
+                  &sol;&sol; The following visual styles are applied to all elements with .grid class.
+                  <br>&sol;&sol; Only set black text color if you use white or light gray background.
+                </p>
+                <p>
+                  &period;grid &lbrace; <br> &emsp; color&colon; black&semi;
+                  <br /> &rbrace;
+                </p>
+                <p>
+                  &sol;&sol; Set border, background, padding and border-radius for all CSS grid elements.
+                </p>
+                <p>
+                  &period;grid &gt; div &lbrace; <br> &emsp;border&colon; 1px solid &num;ccc&semi; <br /> &emsp;background&colon; &num;eee&semi; <br /> &emsp;padding&colon; 1em&semi; <br /> &emsp;border&dash;radius&colon; 5px&semi; <br /> &rbrace;
+                </p>
+                <p>
+                  &sol;&sol; Set different background to all odd CSS grid elements to make them stand out.
+                </p>
+                <p>
+                  &period;grid &gt; div&colon;nth&dash;child&lpar;odd&rpar; &lbrace; <br /> &emsp;background&colon; &num;ddd&semi; <br /> &rbrace;
+                </p>
+                <p>
+                  &sol;&sol; Set all elements with class grid to be displayed as a CSS grid. <br>&sol;&sol; Then add a gap of 10px which would be applied to row and colums.
+                </p>
+                <p>
+                  &period;grid &lbrace; <br /> &emsp; display&colon; grid&semi; <br /> &emsp; grid&dash;gap&colon; 10px&semi; <br /> &rbrace;
+                </p>
+              </div>
             </div>
 
             <p>Result:</p>
