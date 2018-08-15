@@ -1,4 +1,5 @@
 @import "mixins";
+@import "sizes";
 
 $color1: #2d7ed2;
 $color2: #38b2ff;
@@ -77,17 +78,14 @@ article {
   background-position: center;
 }
 
-/*
-  On a side note, "!important" ups the importance of any property. Very useful! The one who is above all! :D
-*/
+// On a side note, "!important" ups the importance of any property
 
 .solidBorder2 {
   border: 2px solid black !important;
 }
 
-/*
-  Simple styles for the divs grid.
-*/
+//  Simple styles for the divs grid
+
 .grid {
   color: black;
 }

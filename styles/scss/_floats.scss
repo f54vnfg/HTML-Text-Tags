@@ -1,33 +1,35 @@
-// Removes float property.
 .clearFloats {
+  // Removes float property
   clear: both;
 }
 
-// Fixes collapsed height due floating.
 .group::after {
+  // Fixes collapsed height due floating
   content: "";
   display: table;
   clear: both;
 }
 
-// Floating object to the right.
 .floatRight {
+  // Floating object to the right
   float: right;
 }
 
-// Floating object to the left.
 .floatLeft {
+  // Floating object to the left
   float: left;
 }
 
-.exampleBox {
+.floatExampleBox {
+  // Style for our example box
   height: 70px;
   width: 70px;
-  background-color: red;
   margin: 5px;
+  background-color: red;
 }
 
 .exampleBackground {
+  // Styles for the example background
   background-color: orange;
   border: solid 1px red;
   border-radius: 5px;
@@ -35,9 +37,11 @@
 }
 
 .exampleBackground > p {
+  // Padding for the lorem example text
   padding: 10px;
 }
 
 .floatNestedDivs > div {
+  // Flating all boxes from the multi-box example
   float: left;
 }

@@ -1,10 +1,5 @@
-// Main scss file
-@import "../normalize";
 @import "sizes";
-@import "fonts";
-@import "theme";
-@import "cssGridStyles";
-@import "floatStyles";
+
 
 // General website styling
 body {
@@ -19,6 +14,7 @@ body {
     margin-bottom: 0;
   }
   div > section > h2 {
+    // Add margin to the section headings
     margin-top: $spacing-largest;
     margin-bottom: $spacing-normal;
   }

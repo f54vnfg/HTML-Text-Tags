@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Website Coding Basics</title>
-  <link rel="stylesheet" href="styles/css/styles.min.css">
+  <link rel="stylesheet" href="styles/css/main.min.css">
   <!-- IE9 HTML5 Fix -->
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -245,14 +245,14 @@
             <h3>Example 1</h3>
               <p>Starndart behaviour, no floats are used there. There just standart styles, red box with height and width and the background is also has a background color to showcase how floats affect the parent object.</p>
               <div class="exampleBackground">
-                <div class="exampleBox"></div>
+                <div class="floatExampleBox"></div>
               </div>
           </article>
           <article>
             <h3>Example 2</h3>
             <p>Here is another example with two objects, text and our red box. Same visual styles are applied here as most of the examples in this section.</p>
             <div class="exampleBackground group">
-              <div class="exampleBox">
+              <div class="floatExampleBox">
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id perferendis totam quas tenetur dolore omnis beatae perspiciatis itaque voluptatum blanditiis. Dignissimos deleniti inventore optio totam voluptatibus eius molestiae impedit facilis,
                 dolore tenetur similique explicabo provident, quaerat corrupti cupiditate fuga, dolorum.</p>
@@ -262,7 +262,7 @@
             <h3>Example 3</h3>
             <p>Red box is floated to the left.</p>
             <div class="exampleBackground group">
-              <div class="exampleBox floatLeft"></div>
+              <div class="floatExampleBox floatLeft"></div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id perferendis totam quas tenetur dolore omnis beatae perspiciatis itaque voluptatum blanditiis. Dignissimos deleniti inventore optio totam voluptatibus eius molestiae impedit facilis,
                 dolore tenetur similique explicabo provident, quaerat corrupti cupiditate fuga, dolorum.</p>
             </div>
@@ -271,8 +271,8 @@
             <h3>Example 4</h3>
             <p>Two red boxes are floated to the right.</p>
             <div class="exampleBackground group">
-              <div class="exampleBox floatRight"></div>
-              <div class="exampleBox floatRight"></div>
+              <div class="floatExampleBox floatRight"></div>
+              <div class="floatExampleBox floatRight"></div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id perferendis totam quas tenetur dolore omnis beatae perspiciatis itaque voluptatum blanditiis. Dignissimos deleniti inventore optio totam voluptatibus eius molestiae impedit facilis,
                 dolore tenetur similique explicabo provident, quaerat corrupti cupiditate fuga, dolorum.</p>
             </div>
@@ -281,7 +281,7 @@
             <h3>Example 5</h3>
             <p> Red box is floated right. No float clearfix is used on parent. </p>
             <div class="exampleBackground">
-              <div class="exampleBox floatRight"></div>
+              <div class="floatExampleBox floatRight"></div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id perferendis totam quas tenetur dolore omnis beatae perspiciatis itaque voluptatum blanditiis. Dignissimos deleniti inventore optio totam voluptatibus eius molestiae impedit facilis,
                 dolore tenetur similique explicabo provident, quaerat corrupti cupiditate fuga, dolorum.</p>
             </div>
@@ -290,7 +290,7 @@
             <h3>Example 6</h3>
             <p>Empty div with clear:both; within the floated element does the same job as the clearfix function.</p>
             <div class="exampleBackground">
-              <div class="exampleBox floatRight"></div>
+              <div class="floatExampleBox floatRight"></div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id perferendis totam quas tenetur dolore omnis beatae perspiciatis itaque voluptatum blanditiis. Dignissimos deleniti inventore optio totam voluptatibus eius molestiae impedit facilis,
                 dolore tenetur similique explicabo provident, quaerat corrupti cupiditate fuga, dolorum.</p>
               <div class="clearFloats"></div>
@@ -300,30 +300,30 @@
             <h3>Example 7</h3>
             <p> Red box is floated right. No float clearfix is used on parent. </p>
             <div class="exampleBackground floatNestedDivs">
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
             </div>
             <div class="">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, totam officia officiis nulla id soluta itaque vero provident rerum commodi quisquam, asperiores obcaecati delectus blanditiis esse. Dolore tenetur hic eum sequi rem, officia
@@ -334,30 +334,30 @@
             <h3>Example 8</h3>
             <p> Red box is floated right. No float clearfix is used on parent. </p>
             <div class="exampleBackground floatNestedDivs group">
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
-              <div class="exampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
+              <div class="floatExampleBox"></div>
             </div>
             <div class="">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, totam officia officiis nulla id soluta itaque vero provident rerum commodi quisquam, asperiores obcaecati delectus blanditiis esse. Dolore tenetur hic eum sequi rem, officia
@@ -368,7 +368,7 @@
       </section>
 
       <section>
-        <h2>FlexBox</h2>
+        <h3>FlexBox</h3>
         <div>
           <article>
             <div class="">
