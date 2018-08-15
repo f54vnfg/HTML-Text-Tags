@@ -329,7 +329,7 @@
             <p>CSS:</p>
             <div class="indent">
               <p>
-                .grid&lowbar;3 &lbrace; <br> &emsp;grid&dash;template&dash;columns&colon; 1fr 2fr 1fr&semi; <br> &rbrace;
+                &sol;&sol; Set 3 column layout with the middle taking 50% of the space and the rest taking 25% each. <br> <br> .grid&lowbar;3 &lbrace; <br> &emsp;grid&dash;template&dash;columns&colon; 1fr 2fr 1fr&semi; <br> &rbrace;
               </p>
             </div>
             <p>Result:</p>
@@ -364,7 +364,7 @@
             <p>CSS:</p>
             <div class="indent">
               <p>
-                .grid&lowbar;4 &lbrace; <br> &emsp;grid&dash;template&dash;columns&colon; repeat&lpar;6, 1fr&rpar;&semi; <br> &rbrace;
+                &sol;&sol; Set layout as 6 equaly spaced out columns utilizing repeat function. <br> <br> .grid&lowbar;4 &lbrace; <br> &emsp;grid&dash;template&dash;columns&colon; repeat&lpar;6, 1fr&rpar;&semi; <br> &rbrace;
               </p>
             </div>
             <p>Result:</p>
@@ -402,57 +402,69 @@
             <p>CSS:</p>
             <div class="indent">
               <p>
+                &sol;&sol; Set layout as 5 equaly spaced out columns utilizing repeat function. <br> &sol;&sol; Set the minimum hieght of each nested div as 10px<br> &sol;&sol; and to be expandable if it needs to be. <br>
+              </p>
+              <p>
                 .grid&lowbar;5 &lbrace; <br> &emsp;grid&dash;template&dash;columns&colon; repeat&lpar;5, 1fr&rpar;&semi; <br> &emsp;gird&dash;auto&dash;rows&colon; minmax&lpar;10px, auto&rpar;&semi;
                 <br>&rbrace;
+              </p>
+              <p>
+                &sol;&sol; Set the nested divs to be displayed as CSS grid.<br> &sol;&sol; Set layout as 3 equaly spaced out columns utilizing repeat function. <br> &sol;&sol; Set static height of 50px for each of the nested divs.<br>
               </p>
               <p>
                 .nestedDiv &lbrace;<br> &emsp;display&colon; grid&semi;<br> &emsp;grid&dash;template&dash;columns&colon; repeat&lpar;3, 1fr&rpar;&semi;<br> &emsp;grid&dash;auto&dash;rows&colon; 50px&semi;
                 <br>&rbrace;
               </p>
               <p>
-                .nestedDiv &gt; div &lbrace;<br>
-                &emsp;border&colon; 1px dotted black&semi;<br>
-                &emsp;padding&colon;left&colon; 5px&semi;
+                &sol;&sol; Add border and padding to the nested divs to differentiate them from the parent div. <br>
+              </p>
+              <p>
+                .nestedDiv &gt; div &lbrace;<br> &emsp;border&colon; 1px dotted black&semi;<br> &emsp;padding&colon;left&colon; 5px&semi;
                 <br>&rbrace;
               </p>
               <p>
-                .nestedDiv2 &lbrace;<br>
-                &emsp;justify&dash;items&colon; start&semi;
+                &sol;&sol; Div 1 - Doesn't have any special coding. <br> <br> &sol;&sol; Div 2 to 7 - The CSS coding aligns items to particular space of their layout boundaries. <br>
+                &sol;&sol; For example, justify-items is capable of aligning the items vertically and align-items does the opposite, it aligns items horizontally. <br>
+                &sol;&sol; Also, you can use 3 different parameters on both, those include start, center, and end.
+              </p>
+              <p>
+                .nestedDiv2 &lbrace;<br> &emsp;justify&dash;items&colon; start&semi;
                 <br>&rbrace;
               </p>
               <p>
-                .nestedDiv3 &lbrace;<br>
-                &emsp;justify&dash;items&colon; center&semi;
+                .nestedDiv3 &lbrace;<br> &emsp;justify&dash;items&colon; center&semi;
                 <br>&rbrace;
               </p>
               <p>
-                .nestedDiv4 &lbrace;<br>
-                &emsp;justify&dash;items&colon; end&semi;
+                .nestedDiv4 &lbrace;<br> &emsp;justify&dash;items&colon; end&semi;
                 <br>&rbrace;
               </p>
               <p>
-                .nestedDiv5 &lbrace;<br>
-                &emsp;align&dash;items&colon; start&semi;
+                .nestedDiv5 &lbrace;<br> &emsp;align&dash;items&colon; start&semi;
                 <br>&rbrace;
               </p>
               <p>
-                .nestedDiv6 &lbrace;<br>
-                &emsp;align&dash;items&colon; center&semi;
+                .nestedDiv6 &lbrace;<br> &emsp;align&dash;items&colon; center&semi;
                 <br>&rbrace;
               </p>
               <p>
-                .nestedDiv7 &lbrace;<br>
-                &emsp;align&dash;items&colon; end&semi;
+                .nestedDiv7 &lbrace;<br> &emsp;align&dash;items&colon; end&semi;
                 <br>&rbrace;
               </p>
               <p>
-                .exampleDiv1 &lbrace;<br>
-                &emsp;align&dash;items&colon; center&semi;
+                &sol;&sol; The final 3 examples use classes on the parent divs, to move the divs to a particular spot within their layout boundary. <br>
+                &sol;&sol; No nested divs have been used here. <br>
+              </p>
+              <p>
+                .exampleDiv1 &lbrace;<br> &emsp;align&dash;items&colon; start&semi;
                 <br>&rbrace;
               </p>
               <p>
-                .exampleDiv2 &lbrace;<br>
-                &emsp;align&dash;items&colon; end&semi;
+                .exampleDiv2 &lbrace;<br> &emsp;align&dash;items&colon; center&semi;
+                <br>&rbrace;
+              </p>
+              <p>
+                .exampleDiv3 &lbrace;<br> &emsp;align&dash;items&colon; end&semi;
                 <br>&rbrace;
               </p>
             </div>
@@ -514,10 +526,6 @@
                 <div>lo</div>
                 <div>lo</div>
               </div>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae harum, dolor aliquam sint aspernatur est aperiam repellendus modi quidem rerum, quos eaque quia! Ipsam esse voluptas ea quaerat quam incidunt in quisquam voluptatibus dicta,
-                illo quae minus autem omnis.
-              </div>
               <div class="nestedDiv nestedDiv5">
                 <div>START</div>
                 <div>lo</div>
@@ -561,9 +569,12 @@
                 <div>lo</div>
               </div>
               <div class="exampleDiv1">
-                Aligned to the center.
+                Aligned to the start.
               </div>
               <div class="exampleDiv2">
+                Aligned to the center.
+              </div>
+              <div class="exampleDiv3">
                 Aligned to the end.
               </div>
             </div>
@@ -580,36 +591,38 @@
             <p>CSS:</p>
             <div class="indent">
               <p>
-                .grid&lowbar;4 &lbrace; <br> &emsp;grid&dash;template&dash;columns&colon; 1fr 2fr 1fr&semi; <br>
-                &emsp;grid&dash;auto&dash;rows&colon; minmax&lpar;100px, auto&rpar;&semi;
+                &sol;&sol; For this final example, we set the look of the gird. We use fractional units as 1-2-1. <br>
+                &sol;&sol; We also set the minimum height of the divs as 100px, which is expandable if it needs to be.
+              </p>
+              <p>
+                .grid&lowbar;6 &lbrace; <br> &emsp;grid&dash;template&dash;columns&colon; 1fr 2fr 1fr&semi; <br> &emsp;grid&dash;auto&dash;rows&colon; minmax&lpar;100px, auto&rpar;&semi;
                 <br> &rbrace;
               </p>
               <p>
-                .box&lowbar;1 &lbrace; <br>
-                &emsp;grid&dash;column&colon; 1&sol;3&semi; <br>
-                &emsp;grid&dash;row&colon; 1&sol;3&semi;
+                &sol;&sol; This is perhaps the most sophisticated feature of the CSS grid. The ability to overlap. <br>
+                &sol;&sol; This can be done by imagining the whole layout as a bunch of different lines.<br>
+                &sol;&sol; To see an example of these lines please click <a href="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia02.hongkiat.com%2Fmoving-css-grid-items%2Fgrid-lines.jpg&f=1">here</a>. <br>
+                &sol;&sol; Once you imagine your layout as having those lines, you can code different objects to overlap their boundaries and go into other objects while having those overlapped objects simply be moved automatically. <br>
+                &sol;&sol; To see it clearly please look at the below example and the picture from the above link.
+              </p>
+              <p>
+                .box&lowbar;1 &lbrace; <br> &emsp;grid&dash;column&colon; 1&sol;3&semi; <br> &emsp;grid&dash;row&colon; 1&sol;3&semi;
                 <br> &rbrace;
               </p>
               <p>
-                .box&lowbar;2 &lbrace; <br>
-                &emsp;grid&dash;row&colon; 1&sol;3&semi;
+                .box&lowbar;2 &lbrace; <br> &emsp;grid&dash;row&colon; 1&sol;3&semi;
                 <br> &rbrace;
               </p>
               <p>
-                .box&lowbar;3 &lbrace; <br>
-                &emsp;grid&dash;column&colon; 1&semi; <br>
-                &emsp;grid&dash;row&colon; 2&sol;4&semi;
+                .box&lowbar;3 &lbrace; <br> &emsp;grid&dash;column&colon; 1&semi; <br> &emsp;grid&dash;row&colon; 2&sol;4&semi;
                 <br> &rbrace;
               </p>
               <p>
-                .box&lowbar;3 &lbrace; <br>
-                &emsp;grid&dash;column&colon; 1&semi; <br>
-                &emsp;grid&dash;row&colon; 2&sol;4&semi;
+                .box&lowbar;3 &lbrace; <br> &emsp;grid&dash;column&colon; 1&semi; <br> &emsp;grid&dash;row&colon; 2&sol;4&semi;
                 <br> &rbrace;
               </p>
               <p>
-                .box&lowbar;4 &lbrace; <br>
-                &emsp;grid&dash;column&colon; 2&sol;4&semi;
+                .box&lowbar;4 &lbrace; <br> &emsp;grid&dash;column&colon; 2&sol;4&semi;
                 <br> &rbrace;
               </p>
             </div>
