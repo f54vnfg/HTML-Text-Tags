@@ -18,12 +18,12 @@ body {
     // Remove main website margins
     margin-bottom: 0;
   }
-  div > h2 {
-    // Padding of the main article heading
-    padding-bottom: $spacing-normal;
+  div > section > h2 {
+    margin-top: $spacing-largest;
+    margin-bottom: $spacing-normal;
   }
   header > h1,
-  div > h2,
+  div > section > h2,
   article > h3 {
     // Center align all headings
     text-align: center;

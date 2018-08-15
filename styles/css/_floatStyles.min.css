@@ -1,0 +1,1 @@
+.clearFloats{clear:both}.group::after{content:"";display:table;clear:both}.floatRight{float:right}.floatLeft{float:left}.exampleBox{height:70px;width:70px;background-color:red;margin:5px}.exampleBackground{background-color:orange;border:solid 1px red;border-radius:5px;border:1px orange solid}.exampleBackground>p{padding:10px}.floatNestedDivs>div{float:left}

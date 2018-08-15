@@ -1,4 +1,3 @@
-
 // Removes float property.
 .clearFloats {
   clear: both;
@@ -30,5 +29,15 @@
 
 .exampleBackground {
   background-color: orange;
+  border: solid 1px red;
+  border-radius: 5px;
   border: 1px orange solid;
+}
+
+.exampleBackground > p {
+  padding: 10px;
+}
+
+.floatNestedDivs > div {
+  float: left;
 }
