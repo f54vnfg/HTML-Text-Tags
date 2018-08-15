@@ -1,0 +1,34 @@
+
+// Removes float property.
+.clearFloats {
+  clear: both;
+}
+
+// Fixes collapsed height due floating.
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// Floating object to the right.
+.floatRight {
+  float: right;
+}
+
+// Floating object to the left.
+.floatLeft {
+  float: left;
+}
+
+.exampleBox {
+  height: 70px;
+  width: 70px;
+  background-color: red;
+  margin: 5px;
+}
+
+.exampleBackground {
+  background-color: orange;
+  border: 1px orange solid;
+}
