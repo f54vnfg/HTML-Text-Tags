@@ -86,17 +86,20 @@ article {
 
 //  Simple styles for the divs grid
 
-.grid {
+.styleNestedBoxes {
   color: black;
+  border: 1px solid red;
+  border-radius: $spacing-smaller;
 }
-.grid > div {
+.styleNestedBoxes > div {
   border: 1px solid #ccc;
   background: #eee;
   padding: 1em;
+    margin: 10px;
   border-radius: $spacing-smaller;
 }
 
-.grid > div:nth-child(odd) {
+.styleNestedBoxes > div:nth-child(odd) {
   background: #ddd;
 }
 

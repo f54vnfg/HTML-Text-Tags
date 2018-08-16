@@ -243,10 +243,10 @@
         <div>
           <article>
             <h3>Example 1</h3>
-              <p>Starndart behaviour, no floats are used there. There just standart styles, red box with height and width and the background is also has a background color to showcase how floats affect the parent object.</p>
-              <div class="exampleBackground">
-                <div class="floatExampleBox"></div>
-              </div>
+            <p>Starndart behaviour, no floats are used there. There just standart styles, red box with height and width and the background is also has a background color to showcase how floats affect the parent object.</p>
+            <div class="exampleBackground">
+              <div class="floatExampleBox"></div>
+            </div>
           </article>
           <article>
             <h3>Example 2</h3>
@@ -371,9 +371,136 @@
         <h3>FlexBox</h3>
         <div>
           <article>
-            <div class="">
-              <h3>Example 1</h3>
-              <p></p>
+            <h3>Example 1</h3>
+            <p>No flex used. Divs have been styled with css</p>
+            <div class="styleNestedBoxes">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Example 2</h3>
+            <p> Display flex, column-reverse</p>
+            <div class="styleNestedBoxes flex flexExample2">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Example 3</h3>
+            <p>flex standart look</p>
+            <div class="styleNestedBoxes flex">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Example 4</h3>
+            <p>flex row-reverse</p>
+            <div class="styleNestedBoxes flex flexExample4">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Example 5</h3>
+            <p>flex, each item has been set width of 40% , but no flex-wrap: nowrap has been used.</p>
+            <div class="styleNestedBoxes flex flexExample5">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Example 6</h3>
+            <p>flex, each item has been set width of 40%, but flex-wrap: wrap has been used this tiem. you can also use wrap reverse but results are wired.</p>
+            <div class="styleNestedBoxes flex flexExample6">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Example 7</h3>
+            <p>justify-content - flex-start center and flex-end</p>
+            <div class="styleNestedBoxes flex flexExample7a">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+            <div class="styleNestedBoxes flex flexExample7b">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+            <div class="styleNestedBoxes flex flexExample7c">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Example 8</h3>
+            <p>justify-content - space-between & space-around</p>
+            <div class="styleNestedBoxes flex flexExample8a">
               <div>
                 <p>Box_1</p>
               </div>
@@ -385,6 +512,120 @@
               </div>
               <div>
                 <p>Box_4</p>
+              </div>
+            </div>
+            <div class="styleNestedBoxes flex flexExample8b">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+              <div>
+                <p>Box_4</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Example 9</h3>
+            <p>parent height set to 150px. align-items - flex-start, center, flex-end, stretch</p>
+            <div class="styleNestedBoxes flex flexExample9a">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+            <div class="styleNestedBoxes flex flexExample9b">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+            <div class="styleNestedBoxes flex flexExample9c">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+            <div class="styleNestedBoxes flex flexExample9d">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Example 10</h3>
+            <p>height: 150px, align-self - flex-start, center & flex-end</p>
+            <div class="styleNestedBoxes flex flexExample10a">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+            <div class="styleNestedBoxes flex flexExample10b">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+            <div class="styleNestedBoxes flex flexExample10c">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Example 11</h3>
+            <p>:nth-child(3), flex-grow: 1 for all,  flex-grow: 3 for 3rd item</p>
+            <div class="styleNestedBoxes flex flexExample11">
+              <div>
+                <p>Box_1</p>
+              </div>
+              <div>
+                <p>Box_2</p>
+              </div>
+              <div>
+                <p>Box_3</p>
               </div>
             </div>
           </article>
@@ -429,7 +670,7 @@
                 </div>
               </div>
               <p>Result:</p>
-              <div class="grid grid_1 bottomMargin">
+              <div class="grid grid_1 bottomMargin styleNestedBoxes">
                 <div>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque ipsum vel quo modi, aperiam rem molestias sapiente. Pariatur, natus.
                 </div>
@@ -465,7 +706,7 @@
               </div>
               <p>Result:</p>
 
-              <div class="grid grid_2">
+              <div class="grid grid_2 styleNestedBoxes">
                 <div>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ratione voluptatem nesciunt voluptatibus natus, odio eius atque magni, nulla iure, molestiae dignissimos iste cum assumenda perspiciatis iusto. Aperiam, esse. Ex.
                 </div>
@@ -492,7 +733,7 @@
               </div>
               <p>Result:</p>
 
-              <div class="grid grid_3">
+              <div class="grid grid_3 styleNestedBoxes">
                 <div>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta, quam. Quasi cumque aspernatur temporibus, ducimus nobis sed explicabo nihil magni quae totam, neque possimus!
                 </div>
@@ -527,7 +768,7 @@
               </div>
               <p>Result:</p>
 
-              <div class="grid grid_4">
+              <div class="grid grid_4 styleNestedBoxes">
                 <div>
                   Lorem ipsum dolor sit.
                 </div>
@@ -626,7 +867,7 @@
                 </p>
               </div>
               <p>Result:</p>
-              <div class="grid grid_5">
+              <div class="grid grid_5 styleNestedBoxes">
                 <div class="nestedDiv nestedDiv1">
                   <div>lorem</div>
                   <div>lorem</div>
@@ -782,7 +1023,7 @@
                 </p>
               </div>
               <p>Result:</p>
-              <div class="grid grid_6">
+              <div class="grid grid_6 styleNestedBoxes">
                 <div class="box box_1">
                   box1
                 </div>
