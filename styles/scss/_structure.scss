@@ -1,6 +1,5 @@
 @import "sizes";
 
-
 // General website styling
 body {
   // Max width for the whole website
@@ -41,7 +40,7 @@ nav {
 
 // The small article boxes
 article {
-  .example-box {
+  .codeExampleWrap {
     // Slight top margin for the example box
     margin-top: $spacing-smaller;
     // Add padding to the example box
@@ -49,6 +48,10 @@ article {
     // Add rounded border to the example box
     border-radius: $spacing-smaller;
   }
+  .codeExampleWrap-large {
+    height: 420px;
+  }
+
   .bottom-padding {
     // Separate the "example" box from the "result"
     padding-bottom: $spacing-small;
@@ -91,17 +94,33 @@ article {
   height: 50px;
 }
 
+// Floats Section
+
+.exampleBackground {
+  // Float example wrap
+  border-radius: $spacing-smaller;
+  padding: $spacing-normal;
+}
+
+.floatExampleBox {
+  // Float example box
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+}
+
 // CSS grid stuff
 
 #wrap2layout article {
   margin-bottom: $spacing-normal;
 }
 
-#wrap2layout .example-box p {
+#wrap2layout .codeExampleWrap p {
   padding-bottom: $spacing-normal;
 }
 
-.message-mobile, .message-tablet {
+.message-mobile,
+.message-tablet {
   padding: $spacing-smaller;
   border-radius: $spacing-smaller;
 }
@@ -312,11 +331,10 @@ article {
   #wrap1html article > p {
     // Set code article description padding
     padding: $spacing-normal 0 0;
-
   }
   #wrap1html article > p {
     // Set the article description height
-     height: 150px;
+    height: 150px;
   }
 }
 

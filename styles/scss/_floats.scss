@@ -20,27 +20,6 @@
   float: left;
 }
 
-.floatExampleBox {
-  // Style for our example box
-  height: 70px;
-  width: 70px;
-  margin: 5px;
-  background-color: red;
-}
-
-.exampleBackground {
-  // Styles for the example background
-  background-color: orange;
-  border: solid 1px red;
-  border-radius: 5px;
-  border: 1px orange solid;
-}
-
-.exampleBackground > p {
-  // Padding for the lorem example text
-  padding: 10px;
-}
-
 .floatNestedDivs > div {
   // Flating all boxes from the multi-box example
   float: left;

@@ -9,6 +9,7 @@ $color5: #464646;
 $color6: #323232;
 $color7: #e6e6e6;
 $color8: #f0f0f0;
+$color9: FireBrick;
 
 html {
   // Set main text color
@@ -56,7 +57,9 @@ article {
   border: solid 2px $color8;
   background: white;
 
-  .example-box, .message-mobile, .message-tablet {
+  .codeExampleWrap,
+  .message-mobile,
+  .message-tablet {
     // Set background for the article example box
     background: $color6;
     color: $color8;
@@ -78,24 +81,37 @@ article {
   background-position: center;
 }
 
-// On a side note, "!important" ups the importance of any property
-
-.solidBorder2 {
-  border: 2px solid black !important;
+.exampleBackground {
+  background-color: $color6;
 }
 
-//  Simple styles for the divs grid
+.floatExampleBox {
+  background-color: $color9;
+}
 
-.styleNestedBoxes {
-  color: black;
-  border: 1px solid red;
+.floatExampleWrap > p {
+  color: $color7;
+  padding: 10px;
+}
+
+#section_flexbox .styleNestedBoxes {
+  margin: 15px 0;
+}
+
+//  CSS Grid Section
+
+.styleNestedBoxes,
+.floatExampleWrap {
+  border: 2px solid $color9;
   border-radius: $spacing-smaller;
+  color: black;
 }
+
 .styleNestedBoxes > div {
   border: 1px solid #ccc;
   background: #eee;
   padding: 1em;
-    margin: 10px;
+  margin: 10px;
   border-radius: $spacing-smaller;
 }
 
@@ -103,6 +119,13 @@ article {
   background: #ddd;
 }
 
+// On a side note, "!important" ups the importance of any property
+
+.solidBorder2 {
+  border: 2px solid black !important;
+}
+
+// Flexbox Section
 
 // Code that works only on mobile devices
 @media only screen and (max-width: $screen-size-small) {
