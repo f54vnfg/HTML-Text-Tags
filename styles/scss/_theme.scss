@@ -182,11 +182,11 @@ article {
       animation: navAnimate 0.15s ease-in-out 0s forwards;
     }
   }
-  article {
-    @include hoverNfocus() {
-      border: dotted 2px $color2;
-    }
-  }
+  // article {
+  //   @include hoverNfocus() {
+  //     border: dotted 2px $color2;
+  //   }
+  // }
 
   #bckBtn {
     @include hoverNfocus() {
