@@ -2,7 +2,7 @@ var htmlWrapper = document.querySelector("body");
 var navWrapper = document.querySelector(".navWrapper");
 
 // On scroll call this function
-window.onscroll = function() {
+window.onscroll = function () {
   scrollFunction()
 };
 
@@ -32,7 +32,7 @@ htmlWrapper.addEventListener("click", (event) => {
       // Toggle mobile menu visability
       toggleMonileMenu();
     } // Check if we are clicking the mobile menu button
-  }  else if (event.target.id == "mobBtnDiv" || event.target.id == "menuBtnDiv") {
+  } else if (event.target.id == "mobBtnDiv" || event.target.id == "menuBtnDiv") {
     // Toggle mobile menu visability.
     toggleMonileMenu();
   }
