@@ -1,0 +1,12 @@
+
+// px to rem calculator
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+// font px to rem calc
+@mixin fontSize($size) {
+  font-size: $size; // IE8 - px fallback
+  font-size: calculateRem($size);
+}

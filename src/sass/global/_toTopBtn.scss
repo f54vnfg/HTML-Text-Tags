@@ -1,0 +1,47 @@
+
+.toTopBtn {
+  background: rgba(56,178,255,0.5) url("../images/bkbutton-v5w.gif") no-repeat center center / 35px;
+  color: #f0f0f0;
+  transition: background-color 300ms,
+  opacity 300ms ease-in-out;
+
+  position: fixed;
+  z-index: 10;
+  bottom: 3%;
+  right: 2%;
+
+  height: 50px;
+  width: 50px;
+
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  opacity: 0;
+  pointer-events: none;
+
+  &:hover {
+    background-color: #38b2ff;
+  }
+
+  &:hover &__text {
+    color: red;
+  }
+
+  &__text {
+    transition: color 300ms;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+.toTopBtn--active {
+  @include above-tablet {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

@@ -1,0 +1,104 @@
+
+.siteHeader {
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse; 
+  }
+}
+
+.siteTitle {
+  height: 350px;
+  position: relative;
+
+  &__bgImage {
+    background-color: #38b2ff;
+    background: url("../images/backimage2.jpg") no-repeat top center / cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__text {
+    text-shadow: 3px 0 0 #323232;
+    font-size: 55px;
+    width: 100%;
+    text-align: center;
+    color: #e6e6e6;
+    display: block;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    font-weight: 500;
+  }
+}
+
+.mainNav {
+  &__wrap {
+    background-color: #2d7ed2;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+
+    @include mobile {
+      transition: height 500ms;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px 0;
+      height: 0;
+    }
+  }
+
+  &__wrap--active {
+    height: 280px;
+  }
+
+  &__item {
+    display: flex;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 15px 20px;
+    transition: color 500ms,
+    border 300ms;
+    border-bottom: 2px solid transparent;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #e6e6e6;
+    cursor: pointer;
+    font-weight: 500;
+
+    &:hover {
+      border-bottom: 2px solid firebrick;
+    }
+  }
+}
+
+.menu-btn {
+  width: 45px;
+  height: 45px;
+  border: 1px solid grey;
+  padding: 5px 1px;
+  margin: 10px;
+  margin-left: 10px;
+  background-color: lightgrey;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &__line {
+    height: 5px;
+    width: 30px;
+    background-color: black;
+    border-radius: 10px;
+  }
+
+  &__wrap {
+    background-color: #38b2ff;
+
+    @include above-mobile {
+       display: none !important;
+    }
+  }
+}
