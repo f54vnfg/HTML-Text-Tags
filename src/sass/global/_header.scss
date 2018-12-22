@@ -37,6 +37,9 @@
     justify-content: center;
     display: flex;
     overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 
     @include mobile {
       transition: height 500ms;
@@ -100,5 +103,18 @@
     @include above-mobile {
        display: none !important;
     }
+  }
+}
+
+.siteBody {
+  font-family: 'Quicksand', helvetica, sans-serif;
+  color: #323232;
+  background-color: #e6e6e6;
+  
+
+  @include above-desktop-regular {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-width: 1440px;
+    margin: 30px auto 0;
   }
 }
