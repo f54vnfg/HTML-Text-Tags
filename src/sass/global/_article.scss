@@ -1,15 +1,25 @@
 .siteSection {
-  margin: 100px 0 50px;
+  margin: 50px 0;
   padding: 0 30px; 
 
   &__heading {
     text-align: center;
+    padding: 10px 0 20px;
+  }
+
+  &__sub-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
 .dev-article {
-  max-width: 500px;
-  background-color: orangered;
+  margin: 20px 0;
+  padding: 20px 50px;
+  width: 40%;
+  background-color: white;
+  border-radius: 5px;
 
   &__title {
     text-align: center;
@@ -18,17 +28,33 @@
   &__text {
     text-align: justify;
   }
+}
 
-  &__example-wrap {
-    
+.code-example {
+  border-radius: 5px;
+  padding: 5px 15px;
+
+  &__title {
+    font-weight: bold;
   }
 
   &__code-input {
-
+    margin-top: 20px;
   }
 
   &__code-output {
-
+    margin-top: 20px;
   }
 
+  &__indent-1 {
+    margin: 0 0 0 15px;
+  }
+
+  &__indent-2 {
+    margin: 0 0 0 30px;
+  }
+
+  &__indent-3 {
+    margin: 0 0 0 45px;
+  }
 }
