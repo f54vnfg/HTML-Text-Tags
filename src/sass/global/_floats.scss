@@ -1,0 +1,20 @@
+.float-wrap {
+  display: float;
+  border: 1px solid #b22222;
+}
+
+.float-box {
+  background-color: #b22222;
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
