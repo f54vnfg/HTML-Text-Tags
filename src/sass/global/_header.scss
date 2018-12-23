@@ -51,7 +51,9 @@
   }
 
   &__wrap--active {
-    height: 280px;
+    @include mobile {
+      height: 280px;
+    }
   }
 
   &__item {
@@ -77,11 +79,11 @@
 
 .menu-btn {
   width: 45px;
-  height: 45px;
+  height: 35px;
   border: 1px solid grey;
-  padding: 5px 1px;
+  padding: 5px 0;
   margin: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
   background-color: lightgrey;
   border-radius: 5px;
 
@@ -92,7 +94,7 @@
 
   &__line {
     height: 5px;
-    width: 30px;
+    width: 33px;
     background-color: black;
     border-radius: 10px;
   }
