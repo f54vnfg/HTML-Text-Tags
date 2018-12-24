@@ -1,0 +1,106 @@
+.red-border {
+  border: 2px solid orangered;
+}
+
+.gray-box {
+  background-color: gray;
+  color: whitesmoke;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-2 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 150px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.width40 {
+  width: 40%;
+}
+
+.width15 {
+  width: 15%;
+}
+
+.colum-reverse {
+  flex-direction: column-reverse;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.just-start {
+  justify-content: flex-start;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.just-end {
+  justify-content: flex-end;
+}
+
+.just-between {
+  justify-content: space-between;
+}
+
+.just-around {
+  justify-content: space-around;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.gray-box-1, .gray-box-2, .gray-box-3  {
+  flex-grow: 1;
+}
+
+.gray-box-2 {
+  flex-grow: 3;
+}
+
+.gray-box-2-1, .gray-box-2-2, .gray-box-2-3 {
+ flex: 1 1 15%;
+}
+
+.gray-box-2-2 {
+  flex: 1 1 33%;
+}
