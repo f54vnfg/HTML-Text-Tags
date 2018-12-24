@@ -1,9 +1,8 @@
-.float-wrap {
-  display: float;
+.red-wrap {
   border: 1px solid #b22222;
 }
 
-.float-box {
+.red-box {
   background-color: #b22222;
   height: 70px;
   width: 70px;
@@ -16,5 +15,11 @@
 
 .float-right {
   float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 

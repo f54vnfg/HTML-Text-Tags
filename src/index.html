@@ -485,18 +485,16 @@
 
       <article class="dev-article">
         <h2 class="dev-article__title">Example 1</h2>
-        <p class="dev-article__text">The standard behavior of div within a div, the inner box has set dimensions of
-          70x70 and all around margin 5px. Box and parent border have been styled, but no elements have been floated
-          here.</p>
+        <p class="dev-article__text">In this first example, we have a div within div, a box, and a wrap. The box has been styled with fixed with and height, plus a small margin and the wrap has a red border. This is the standard behavior of a div within a div, nothing has been floated here.</p>
         <div class="code-example">
           <div class="code-example__code-input">
-            <p class="code-example__title">HTML:</p>
-            <p></p>
+            <p class="code-example__title">HTML + CSS:</p>
+            <script src="https://gist.github.com/f54vnfg/810f2628d7cb0c5d0aaa5f248e685925.js"></script>
           </div>
           <div class="code-example__code-output">
             <p class="code-example__title">Result:</p>
-            <div class="float-wrap">
-              <div class="float-box"></div>
+            <div class="red-wrap">
+              <div class="red-box"></div>
             </div>
           </div>
         </div>
@@ -504,21 +502,16 @@
 
       <article class="dev-article">
         <h2 class="dev-article__title">Example 2</h2>
-        <p class="dev-article__text">In this example, you can see the standard look of two objects within a parent div,
-          a box, and some text. The Same visual styles have been applied as example 1 as there are for most of the
-          example in this section. Again, no floats have been used.</p>
+        <p class="dev-article__text">This is our first proper example of floating an element. As you can see the div has been floated to the right, and it has moved all the way to the top right. The problem with floating objects is that their parent loses its height. As you can see, the parent wrap no has 0 height.</p>
         <div class="code-example">
           <div class="code-example__code-input">
-            <p class="code-example__title">HTML:</p>
+            <p class="code-example__title">HTML + CSS:</p>
+            <script src="https://gist.github.com/f54vnfg/df05687b8a56f20b9d86a85c12a15756.js"></script>
           </div>
           <div class="code-example__code-output">
             <p class="code-example__title">Result:</p>
-            <div class="float-wrap">
-              <div class="float-box"></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id perferendis totam quas tenetur dolore
-                omnis beatae perspiciatis itaque voluptatum blanditiis. Dignissimos deleniti inventore optio totam
-                voluptatibus eius molestiae impedit facilis, dolore tenetur similique explicabo provident, quaerat
-                corrupti cupiditate fuga, dolorum.</p>
+            <div class="red-wrap">
+              <div class="red-box float-right"></div>
             </div>
           </div>
         </div>
@@ -526,19 +519,19 @@
 
       <article class="dev-article">
         <h2 class="dev-article__title">Example 3</h2>
-        <p class="dev-article__text">Red box is floated to the left.</p>
+        <p class="dev-article__text">In this example, we have text wrapped in P-tag and div, both within a single div. This is the standard behavior of the objects. No floats have been applied here.</p>
         <div class="code-example">
           <div class="code-example__code-input">
             <p class="code-example__title">HTML:</p>
+            <script src="https://gist.github.com/f54vnfg/f71e287297eef0234c0d0be1f683d7ae.js"></script>
           </div>
           <div class="code-example__code-output">
             <p class="code-example__title">Result:</p>
-            <div class="float-wrap">
-              <div class="float-box float-left"></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id perferendis totam quas tenetur dolore
-                omnis beatae perspiciatis itaque voluptatum blanditiis. Dignissimos deleniti inventore optio totam
-                voluptatibus eius molestiae impedit facilis, dolore tenetur similique explicabo provident, quaerat
-                corrupti cupiditate fuga, dolorum.</p>
+            <div class="red-wrap">
+              <div class="red-box"></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque natus, in illum, quas eaque optio
+                ducimus laudantium vitae cumque rerum deserunt rem adipisci hic quidem debitis eius tenetur enim
+                necessitatibus?</p>
             </div>
           </div>
         </div>
@@ -546,37 +539,62 @@
 
       <article class="dev-article">
         <h2 class="dev-article__title">Example 4</h2>
-        <p class="dev-article__text">Two red boxes are floated to the right.</p>
+        <p class="dev-article__text">This is a continuation from the previous example. Let us say you want to have a picture within the text and you want the text to wrap around it. Well, you can use a float. No clearfix has been applied, the parent height isn't 0, what happened? Well, the parent box wrapping itself around the text.</p>
         <div class="code-example">
           <div class="code-example__code-input">
             <p class="code-example__title">HTML:</p>
+            <script src="https://gist.github.com/f54vnfg/be47d911bd27b659ea2b65710876a9d9.js"></script>
           </div>
           <div class="code-example__code-output">
             <p class="code-example__title">Result:</p>
-            <div class="float-wrap">
-              <div class="float-box float-right"></div>
-              <div class="float-box float-right"></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id perferendis totam quas tenetur dolore
-                omnis beatae perspiciatis itaque voluptatum blanditiis. Dignissimos deleniti inventore optio totam
-                voluptatibus eius molestiae impedit facilis, dolore tenetur similique explicabo provident, quaerat
-                corrupti cupiditate fuga, dolorum.</p>
+            <div class="red-wrap">
+              <div class="red-box float-right"></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque natus, in illum, quas eaque optio
+                ducimus laudantium vitae cumque rerum deserunt rem adipisci hic quidem debitis eius tenetur enim
+                necessitatibus?</p>
             </div>
           </div>
         </div>
       </article>
 
       <article class="dev-article">
-          <h2 class="dev-article__title">Example 5</h2>
-          <p class="dev-article__text">Red box is floated right. No float clearfix is used on parent.</p>
-          <div class="code-example">
-            <div class="code-example__code-input">
-              <p class="code-example__title">HTML:</p>
-            </div>
-            <div class="code-example__code-output">
-              <p class="code-example__title">Result:</p>
-            </div>
+        <h2 class="dev-article__title">Example 5</h2>
+        <p class="dev-article__text">Look What happens if we have the same example, but the text tag is outside of the red div wrap that we used previously. The height has collapsed to 0. But in many cases, we don't want this to happen.</p>
+        <div class="code-example">
+          <div class="code-example__code-input">
+            <p class="code-example__title">HTML:</p>
+            <script src="https://gist.github.com/f54vnfg/13a446e4c7aad51cb27cea0c5f4a8520.js"></script>
           </div>
-        </article>
+          <div class="code-example__code-output">
+            <p class="code-example__title">Result:</p>
+            <div class="red-wrap">
+              <div class="red-box float-right"></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque natus, in illum, quas eaque optio ducimus
+              laudantium vitae cumque rerum deserunt rem adipisci hic quidem debitis eius tenetur enim necessitatibus?</p>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="dev-article">
+        <h2 class="dev-article__title">Example 6</h2>
+        <p class="dev-article__text">Here is the solution to the previous problem, the clear fix function which fixes the collapsed height of the red wrapper div. This is very useful because if you don't clearfix your floats, most times your layout will get messed up.</p>
+        <div class="code-example">
+          <div class="code-example__code-input">
+            <p class="code-example__title">HTML:</p>
+            <script src="https://gist.github.com/f54vnfg/6ba3783cb0e26c6a7a8b77c5e2d615ee.js"></script>
+          </div>
+          <div class="code-example__code-output">
+            <p class="code-example__title">Result:</p>
+            <div class="red-wrap clearfix">
+              <div class="red-box float-right"></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque natus, in illum, quas eaque optio ducimus
+              laudantium vitae cumque rerum deserunt rem adipisci hic quidem debitis eius tenetur enim necessitatibus?</p>
+          </div>
+        </div>
+      </article>
 
     </div>
   </section>
