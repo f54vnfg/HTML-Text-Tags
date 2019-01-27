@@ -1,4 +1,3 @@
-
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
@@ -25,7 +24,9 @@ gulp.task('message', function () {
 // Copy all HTML files
 gulp.task('copyHtml', function () {
   gulp.src('src/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest('dist'));
 });
 
@@ -37,29 +38,35 @@ gulp.task('imageMin', () =>
 );
 
 // Compile sass
-gulp.task('sass', function(){
+gulp.task('sass', function () {
   gulp.src('src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({browsers: ['last 2 versions'],
-      cascade: false}))
-    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(cleanCSS({
+      compatibility: 'ie8'
+    }))
     .pipe(gulp.dest('dist/css'));
 });
 
 // Scripts merge
-gulp.task('scripts', function(){
+gulp.task('scripts', function () {
   gulp.src('src/js/*js')
     .pipe(concat('main.js'))
-    .pipe(babel({presets: ['@babel/env']}))
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('default', ['message', 'copyHtml', 'imageMin', 'sass', 'scripts']);
 
-gulp.task('watch', function(){
-  gulp.watch('src/js/*.js',['scripts']);
-  gulp.watch('src/images/*',['imageMin']);
+gulp.task('watch', function () {
+  gulp.watch('src/js/*.js', ['scripts']);
+  gulp.watch('src/images/*', ['imageMin']);
   gulp.watch('src/sass/**/*.scss', ['sass']);
-  gulp.watch('src/*.html',['copyHtml']);
+  gulp.watch('src/*.html', ['copyHtml']);
 });
