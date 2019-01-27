@@ -1,18 +1,21 @@
-const menu_btn = document.querySelector('.menu-btn');
-const mainNav = document.querySelector('.mainNav__wrap');
+(function () {
+  const menu_btn = document.querySelector('.menu-btn');
+  const mainNav = document.querySelector('.mainNav__container');
+  let mobMenuActive = false;
 
-if (menu_btn != null & mainNav != null) {
-  menu_btn.addEventListener('click', function (e) {
+  if (menu_btn != null & mainNav != null) {
+    menu_btn.addEventListener('click', function (e) {
 
-    menu_btn.classList.toggle('active');
+      if (mobMenuActive == "false") {
+        mainNav.classList.add('active');
+        menu_btn.classList.add('active');
+        mobMenuActive = "true";
+      } else {
+        mainNav.classList.remove('active');
+        menu_btn.classList.remove('active');
+        mobMenuActive = "false";
+      }
 
-    if (mainNav.dataset.active == "false") {
-      mainNav.classList.add('mainNav__wrap--active');
-      mainNav.dataset.active = "true";
-    } else {
-      mainNav.classList.remove('mainNav__wrap--active');
-      mainNav.dataset.active = "false";
-    }
-
-  });
-}
+    });
+  }
+})()
