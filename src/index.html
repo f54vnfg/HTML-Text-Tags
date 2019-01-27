@@ -35,9 +35,9 @@
 
     <div class="menu-btn__wrap">
       <div class="menu-btn">
-        <div class="menu-btn__line"></div>
-        <div class="menu-btn__line"></div>
-        <div class="menu-btn__line"></div>
+        <div class="menu-btn__line menu-btn__line-1"></div>
+        <div class="menu-btn__line menu-btn__line-2"></div>
+        <div class="menu-btn__line menu-btn__line-3"></div>
       </div>
     </div>
   </header>
@@ -926,7 +926,8 @@
 
       <article class="dev-article-2">
         <h2 class="dev-article__title">Example 1</h2>
-        <p class="dev-article__text">Again, in this first example, we begin with the default look of 3 divs within a parent div. No layout CSS has been applied, just simple styling.</p>
+        <p class="dev-article__text">Again, in this first example, we begin with the default look of 3 divs within a
+          parent div. No layout CSS has been applied, just simple styling.</p>
         <div class="code-example">
           <div class="code-example__code-input">
             <p class="code-example__title">HTML + CSS:</p>
@@ -945,7 +946,10 @@
 
       <article class="dev-article-2">
         <h2 class="dev-article__title">Example 2</h2>
-        <p class="dev-article__text">In this example, we have applied a display grid to the parent element. As you can see something wired happens. The space between objects starts to look wired. This is because every box gets put into a grid layout, and each box is technically no longer teach each other. Now you can see the full margin being applied to each box.</p>
+        <p class="dev-article__text">In this example, we have applied a display grid to the parent element. As you can
+          see something wired happens. The space between objects starts to look wired. This is because every box gets
+          put into a grid layout, and each box is technically no longer teach each other. Now you can see the full
+          margin being applied to each box.</p>
         <div class="code-example">
           <div class="code-example__code-input">
             <p class="code-example__title">HTML + CSS:</p>
@@ -964,7 +968,10 @@
 
       <article class="dev-article-2">
         <h2 class="dev-article__title">Example 3</h2>
-        <p class="dev-article__text">In this example, we are exploring setting the grid layout. You can see a layout of 3 rows, the middle being larger than the rest. Here we have used grid template columns to apply 1by2by1 ratio with fr units. As you can see you have set the layout for the first column, but it trickles down in the same style, no matter how many boxes you put.</p>
+        <p class="dev-article__text">In this example, we are exploring setting the grid layout. You can see a layout of
+          3 rows, the middle being larger than the rest. Here we have used grid template columns to apply 1by2by1 ratio
+          with fr units. As you can see you have set the layout for the first column, but it trickles down in the same
+          style, no matter how many boxes you put.</p>
         <div class="code-example">
           <div class="code-example__code-input">
             <p class="code-example__title">HTML + CSS:</p>
@@ -985,7 +992,11 @@
 
       <article class="dev-article-2">
         <h2 class="dev-article__title">Example 4</h2>
-        <p class="dev-article__text">If we have a lot of equally sized boxes we can use the shorthand property repeat(3, 1fr) which would make the column have 3 boxes all with 1fr width. Also, you can use grid-gap instead of margins. this is really cool as you won't have to remove, add, or equalize tricks margins with the boxes on each side and the parent box itself to make it look nice. Just plain and simple, add your grid-gap and everything will look as it should.</p>
+        <p class="dev-article__text">If we have a lot of equally sized boxes we can use the shorthand property
+          repeat(3, 1fr) which would make the column have 3 boxes all with 1fr width. Also, you can use grid-gap
+          instead of margins. this is really cool as you won't have to remove, add, or equalize tricks margins with the
+          boxes on each side and the parent box itself to make it look nice. Just plain and simple, add your grid-gap
+          and everything will look as it should.</p>
         <div class="code-example">
           <div class="code-example__code-input">
             <p class="code-example__title">HTML + CSS:</p>
@@ -994,15 +1005,15 @@
           <div class="code-example__code-output">
             <p class="code-example__title">Result:</p>
             <div class="red-border grid grid-rp-3">
-                <div class="gray-box">box-1</div>
-                <div class="gray-box">box-2</div>
-                <div class="gray-box">box-3</div>
-                <div class="gray-box">box-4</div>
-                <div class="gray-box">box-5</div>
-                <div class="gray-box">box-6</div>
-                <div class="gray-box">box-7</div>
-                <div class="gray-box">box-8</div>
-                <div class="gray-box">box-9</div>
+              <div class="gray-box">box-1</div>
+              <div class="gray-box">box-2</div>
+              <div class="gray-box">box-3</div>
+              <div class="gray-box">box-4</div>
+              <div class="gray-box">box-5</div>
+              <div class="gray-box">box-6</div>
+              <div class="gray-box">box-7</div>
+              <div class="gray-box">box-8</div>
+              <div class="gray-box">box-9</div>
             </div>
           </div>
         </div>
@@ -1010,7 +1021,11 @@
 
       <article class="dev-article-2">
         <h2 class="dev-article__title">Example 5</h2>
-        <p class="dev-article__text">As you can see in this example, you can align boxes in a lot of different ways within the grid. You can use <b>align-items, justify-content, and align-self</b> - much like flexbox. Even though you can use similar code, both grid and flex-box are different and should be used for different application. Also, remember that grid is newer technology, and if you are after browser support, you should probably avoid using it.</p>
+        <p class="dev-article__text">As you can see in this example, you can align boxes in a lot of different ways
+          within the grid. You can use <b>align-items, justify-content, and align-self</b> - much like flexbox. Even
+          though you can use similar code, both grid and flex-box are different and should be used for different
+          application. Also, remember that grid is newer technology, and if you are after browser support, you should
+          probably avoid using it.</p>
         <div class="code-example">
           <div class="code-example__code-input">
             <p class="code-example__title">HTML + CSS:</p>
@@ -1029,7 +1044,11 @@
 
       <article class="dev-article-2">
         <h2 class="dev-article__title">Example 6</h2>
-        <p class="dev-article__text">As you can see in this example, the first box is much larger than all the other boxes. This is one of the best uses of a grid, it can allow you to make on box bigger than the rest quickly while not breaking your layout at all. As you can see the first image spans across 6 rows and 2 columns. This is great for galleries, as you can set them up really quickly without having to mess or fix code when you change something later on.</p>
+        <p class="dev-article__text">As you can see in this example, the first box is much larger than all the other
+          boxes. This is one of the best uses of a grid, it can allow you to make on box bigger than the rest quickly
+          while not breaking your layout at all. As you can see the first image spans across 6 rows and 2 columns. This
+          is great for galleries, as you can set them up really quickly without having to mess or fix code when you
+          change something later on.</p>
         <div class="code-example">
           <div class="code-example__code-input">
             <p class="code-example__title">HTML + CSS:</p>
@@ -1038,15 +1057,15 @@
           <div class="code-example__code-output">
             <p class="code-example__title">Result:</p>
             <div class="red-border grid grid-rp-3 grid-ar-100">
-                <div class="gray-box grid-gall">box-1</div>
-                <div class="gray-box">box-2</div>
-                <div class="gray-box">box-3</div>
-                <div class="gray-box">box-4</div>
-                <div class="gray-box">box-5</div>
-                <div class="gray-box">box-6</div>
-                <div class="gray-box">box-7</div>
-                <div class="gray-box">box-8</div>
-                <div class="gray-box">box-9</div>
+              <div class="gray-box grid-gall">box-1</div>
+              <div class="gray-box">box-2</div>
+              <div class="gray-box">box-3</div>
+              <div class="gray-box">box-4</div>
+              <div class="gray-box">box-5</div>
+              <div class="gray-box">box-6</div>
+              <div class="gray-box">box-7</div>
+              <div class="gray-box">box-8</div>
+              <div class="gray-box">box-9</div>
             </div>
           </div>
         </div>

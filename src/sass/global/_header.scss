@@ -1,8 +1,7 @@
-
 .siteHeader {
   @include mobile {
     display: flex;
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
   }
 }
 
@@ -63,7 +62,7 @@
     padding: 5px 0;
     margin: 10px 20px;
     transition: color 500ms,
-    border 300ms;
+      border 300ms;
     border-bottom: 2px solid transparent;
     font-size: 16px;
     letter-spacing: 2px;
@@ -80,7 +79,7 @@
 .menu-btn {
   width: 45px;
   height: 35px;
-  border: 1px solid grey;
+  //border: 1px solid grey;
   padding: 5px 0;
   margin: 10px;
   margin-left: 15px;
@@ -92,30 +91,55 @@
   justify-content: space-around;
   align-items: center;
 
+  position: relative;
+
   &__line {
     height: 5px;
-    width: 33px;
+    width: 30px;
+    position: absolute;
     background-color: black;
     border-radius: 10px;
+
+    transition: opacity 50ms,
+      top 200ms,
+      transform 200ms;
+  }
+
+  &__line-1 {
+    top: 9px;
+  }
+
+  &__line-2 {
+    top: 20px;
+  }
+
+  &__line-3 {
+    top: 31px;
   }
 
   &__wrap {
     background-color: #38b2ff;
 
     @include above-mobile {
-       display: none !important;
+      display: none !important;
     }
   }
 }
 
-.siteBody {
-  font-family: 'Quicksand', helvetica, sans-serif;
-  color: #323232;
-  background-color: #e6e6e6;
+.menu-btn.active {
+  background-color: orange;
 
-  @include above-desktop-regular {
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    max-width: 1440px;
-    margin: 30px auto 0;
+  .menu-btn__line-1 {
+    transform: rotate(45deg);
+    top: 21px;
+  }
+
+  .menu-btn__line-2 {
+    opacity: 0;
+  }
+
+  .menu-btn__line-3 {
+    transform: rotate(-45deg);
+    top: 20px;
   }
 }
