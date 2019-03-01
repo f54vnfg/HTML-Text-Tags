@@ -1,6 +1,14 @@
-
 # HTML5-Basic-Tags
 
-This is a small project which explores the major html5 tags and their uses. The purpose of this project is meant to serve as a quick reference guide for myself and other interested parties.
+This project is started as a library for my initial knowledge of HTML and CSS. It was about the basics of building websites, the bare foundations. I wanted to have this as a way I could reference back. It's very basic but it utilizes the fundamental ideas for a decent website.
 
-To view the project please click **[here](https://f54vnfg.github.io/html5-the-basics/dist/index.html)**.
+This is a renovation of an older project I did a while ago. It was modernized with a gulp, better CSS written in SCSS and some basic javascript with concatenations instead of fancy ES6 components which should be the better way of doing this.
+
+The project utilizes gulp for task running and has a whole lot of tasks chained together.  The gulp highlight tasks are CSS auto prefixing. Also minification of JS, CSS, and HTML. It has babel, but ES6 hasn't been used in this project.
+
+
+How the framework works:
+
+Everything gets coded inside the src folder, gulp then does it's tasks and transfers everything into the dist folder. To run gulp, in your terminal you can either do gulp for a single run or gulp watch for a continuous watch for changes. If the commands don't work, you have to run npm install - to install all the npm packages. 
+
+To view this project please click **[here](https://f54vnfg.github.io/HTML5-The-Basics/dist/index.html)**.
