@@ -28,6 +28,8 @@ module.exports = {
       "never"
     ],
     "linebreak-style": 0,
-    "eol-last": 0
+    "no-unused-vars": 1,
+    "comma-dangle": 2,
+    "eol-last": 0,
   }
 };
