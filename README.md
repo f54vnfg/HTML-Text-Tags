@@ -11,4 +11,4 @@ How the framework works:
 
 Everything gets coded inside the src folder, gulp then does it's tasks and transfers everything into the dist folder. To run gulp, in your terminal you can either do gulp for a single run or gulp watch for a continuous watch for changes. If the commands don't work, you have to run npm install - to install all the npm packages. 
 
-To view this project please click **[here](https://f54vnfg.github.io/HTML5-The-Basics/dist/index.html)**.
+To view this project please click **[here](https://w3althambition.github.io/html5-the-basics/dist/index.html)**.
